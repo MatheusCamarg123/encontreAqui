@@ -118,5 +118,18 @@ namespace Definição_do_objetivo_do_sistema
 
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            btnCadastrar.Text = "Cadastrar";
+            Form frmCPF = new frmCPF();
+            frmCPF.WindowState = FormWindowState.Maximized;
+            frmCPF.Show();
+        }
     }
 }

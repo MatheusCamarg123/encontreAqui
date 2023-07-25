@@ -53,6 +53,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label8 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.Respon = new System.Windows.Forms.Label();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label
@@ -266,6 +267,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label8.Size = new System.Drawing.Size(82, 13);
             this.label8.TabIndex = 21;
             this.label8.Text = "Nº Funcionários";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // btnCalcular
             // 
@@ -287,11 +289,22 @@ namespace Definição_do_objetivo_do_sistema
             this.Respon.TabIndex = 23;
             this.Respon.Text = ".";
             // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Location = new System.Drawing.Point(1110, 529);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(138, 60);
+            this.btnCadastrar.TabIndex = 24;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 681);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.Respon);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.label8);
@@ -350,6 +363,7 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label Respon;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }
 
