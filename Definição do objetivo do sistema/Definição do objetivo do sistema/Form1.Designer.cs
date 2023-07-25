@@ -291,7 +291,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 681);
+            this.ClientSize = new System.Drawing.Size(1521, 681);
             this.Controls.Add(this.Respon);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.label8);
