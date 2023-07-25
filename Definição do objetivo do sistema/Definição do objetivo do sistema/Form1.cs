@@ -118,5 +118,14 @@ namespace Definição_do_objetivo_do_sistema
 
 
         }
+
+        private void btncadastrar_Click(object sender, EventArgs e)
+        {
+            btncadastrar.Text = " Cadastrar ";
+            Form FrmDadosCadastro = new FrmDadosCadastro ();
+            FrmDadosCadastro.WindowState = FormWindowState.Maximized;
+            FrmDadosCadastro.Show();
+
+        }
     }
 }
