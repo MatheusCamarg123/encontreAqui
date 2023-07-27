@@ -47,6 +47,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnContinuar = new System.Windows.Forms.Button();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.BtnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -208,11 +209,23 @@ namespace Definição_do_objetivo_do_sistema
             this.label9.Text = "Estado";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
+            // BtnLimpar
+            // 
+            this.BtnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimpar.Location = new System.Drawing.Point(16, 486);
+            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Size = new System.Drawing.Size(92, 33);
+            this.BtnLimpar.TabIndex = 18;
+            this.BtnLimpar.Text = "Limpar";
+            this.BtnLimpar.UseVisualStyleBackColor = true;
+            this.BtnLimpar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CadastroMapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 591);
+            this.Controls.Add(this.BtnLimpar);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnContinuar);
@@ -259,5 +272,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Button btnContinuar;
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button BtnLimpar;
     }
 }
