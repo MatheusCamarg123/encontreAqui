@@ -24,7 +24,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void lblDefinicao_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -68,7 +68,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void lblFuncional_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -107,7 +107,7 @@ namespace Definição_do_objetivo_do_sistema
             string imovel = Imobiliaria.Text;
             decimal func = Convert.ToDecimal(Funcionarios.Text);
 
-            if (func >0 && func <= 50)
+            if (func > 0 && func <= 50)
             {
                 Respon.Text = "Aprovado";
             }
