@@ -16,5 +16,29 @@ namespace Definição_do_objetivo_do_sistema
         {
             InitializeComponent();
         }
+
+        private void btnPróximo_Click(object sender, EventArgs e)
+        {
+           
+            string batata = txtPrincipal.Text;
+            string carne = txtConfirmacao.Text;
+            if (batata == carne)
+            {
+                MessageBox.Show("E-mails corretos");
+                return;
+                
+            }
+            MessageBox.Show("Dados Incorretos");
+
+
+
+
+
+        }
+
+        private void txtPrincipal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

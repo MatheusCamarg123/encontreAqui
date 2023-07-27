@@ -30,10 +30,10 @@ namespace Definição_do_objetivo_do_sistema
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPrincipal = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblcCnfirmacao = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtConfirmacao = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnPróximo = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -47,13 +47,14 @@ namespace Definição_do_objetivo_do_sistema
             this.label1.Size = new System.Drawing.Size(0, 24);
             this.label1.TabIndex = 0;
             // 
-            // textBox1
+            // txtPrincipal
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(280, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 29);
-            this.textBox1.TabIndex = 1;
+            this.txtPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrincipal.Location = new System.Drawing.Point(280, 127);
+            this.txtPrincipal.Name = "txtPrincipal";
+            this.txtPrincipal.Size = new System.Drawing.Size(164, 29);
+            this.txtPrincipal.TabIndex = 1;
+            this.txtPrincipal.TextChanged += new System.EventHandler(this.txtPrincipal_TextChanged);
             // 
             // lblEmail
             // 
@@ -75,13 +76,13 @@ namespace Definição_do_objetivo_do_sistema
             this.lblcCnfirmacao.TabIndex = 4;
             this.lblcCnfirmacao.Text = "Confirmação do E-mail";
             // 
-            // textBox2
+            // txtConfirmacao
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(280, 183);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 29);
-            this.textBox2.TabIndex = 3;
+            this.txtConfirmacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmacao.Location = new System.Drawing.Point(280, 183);
+            this.txtConfirmacao.Name = "txtConfirmacao";
+            this.txtConfirmacao.Size = new System.Drawing.Size(164, 29);
+            this.txtConfirmacao.TabIndex = 3;
             // 
             // checkBox1
             // 
@@ -105,6 +106,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnPróximo.TabIndex = 6;
             this.btnPróximo.Text = "Próximo";
             this.btnPróximo.UseVisualStyleBackColor = false;
+            this.btnPróximo.Click += new System.EventHandler(this.btnPróximo_Click);
             // 
             // FrmDadosCadastro
             // 
@@ -114,9 +116,9 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.btnPróximo);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblcCnfirmacao);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtConfirmacao);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPrincipal);
             this.Controls.Add(this.label1);
             this.Name = "FrmDadosCadastro";
             this.Text = "Cadastrar";
@@ -128,10 +130,10 @@ namespace Definição_do_objetivo_do_sistema
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPrincipal;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblcCnfirmacao;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtConfirmacao;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnPróximo;
     }
