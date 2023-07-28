@@ -39,7 +39,7 @@ namespace Definição_do_objetivo_do_sistema
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.BackColor = System.Drawing.Color.DarkMagenta;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(185, 77);
@@ -51,6 +51,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnAbrir
             // 
+            this.btnAbrir.BackColor = System.Drawing.Color.DarkMagenta;
             this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbrir.Location = new System.Drawing.Point(203, 216);
@@ -58,14 +59,14 @@ namespace Definição_do_objetivo_do_sistema
             this.btnAbrir.Size = new System.Drawing.Size(168, 35);
             this.btnAbrir.TabIndex = 2;
             this.btnAbrir.Text = "Abrir";
-            this.btnAbrir.UseVisualStyleBackColor = true;
+            this.btnAbrir.UseVisualStyleBackColor = false;
             this.btnAbrir.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(607, 43);
+            this.pictureBox.Location = new System.Drawing.Point(535, 29);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(233, 193);
+            this.pictureBox.Size = new System.Drawing.Size(853, 575);
             this.pictureBox.TabIndex = 3;
             this.pictureBox.TabStop = false;
             this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);

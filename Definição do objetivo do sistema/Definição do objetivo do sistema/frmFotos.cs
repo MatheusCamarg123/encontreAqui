@@ -33,6 +33,12 @@ namespace Definição_do_objetivo_do_sistema
                 {
                     pictureBox.Image = Image.FromStream(ms);
                 }
+                this.Size = new Size(500, 500);
+                this.StartPosition = FormStartPosition.CenterScreen;
+
+                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                pictureBox.Dock = DockStyle.Fill;
+                this.WindowState = FormWindowState.Maximized;
             }
             catch (Exception ex)
             {
@@ -49,16 +55,6 @@ namespace Definição_do_objetivo_do_sistema
 
         private void pictureBox_Click(object sender, EventArgs e)
         {
-            // Configuração da janela principal
-            this.Text = "PictureBox com Imagem a partir de URL";
-            this.Size = new Size(500, 500);
-            this.StartPosition = FormStartPosition.CenterScreen;
-
-            // Criação e configuração do PictureBox
-            pictureBox = new PictureBox();
-            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox.Dock = DockStyle.Fill;
-            this.Controls.Add(pictureBox);
         }
     }
 }
