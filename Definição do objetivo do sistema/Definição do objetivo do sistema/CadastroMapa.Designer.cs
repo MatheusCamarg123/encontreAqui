@@ -53,7 +53,9 @@ namespace Definição_do_objetivo_do_sistema
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Violet;
             this.label1.Location = new System.Drawing.Point(188, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(273, 31);
@@ -181,13 +183,16 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnContinuar
             // 
+            this.btnContinuar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnContinuar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnContinuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinuar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnContinuar.Location = new System.Drawing.Point(250, 527);
             this.btnContinuar.Name = "btnContinuar";
             this.btnContinuar.Size = new System.Drawing.Size(185, 36);
             this.btnContinuar.TabIndex = 15;
             this.btnContinuar.Text = "Continuar";
-            this.btnContinuar.UseVisualStyleBackColor = true;
+            this.btnContinuar.UseVisualStyleBackColor = false;
             this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
             // 
             // txtEstado
@@ -211,13 +216,16 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // BtnLimpar
             // 
+            this.BtnLimpar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnLimpar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimpar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnLimpar.Location = new System.Drawing.Point(16, 486);
             this.BtnLimpar.Name = "BtnLimpar";
             this.BtnLimpar.Size = new System.Drawing.Size(92, 33);
             this.BtnLimpar.TabIndex = 18;
             this.BtnLimpar.Text = "Limpar";
-            this.BtnLimpar.UseVisualStyleBackColor = true;
+            this.BtnLimpar.UseVisualStyleBackColor = false;
             this.BtnLimpar.Click += new System.EventHandler(this.button1_Click);
             // 
             // CadastroMapa
