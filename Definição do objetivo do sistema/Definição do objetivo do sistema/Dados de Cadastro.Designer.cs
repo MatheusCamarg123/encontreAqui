@@ -36,6 +36,8 @@ namespace Definição_do_objetivo_do_sistema
             this.txtConfirmacao = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnPróximo = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -55,6 +57,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtPrincipal.Size = new System.Drawing.Size(164, 29);
             this.txtPrincipal.TabIndex = 1;
             this.txtPrincipal.TextChanged += new System.EventHandler(this.txtPrincipal_TextChanged);
+            this.txtPrincipal.Validated += new System.EventHandler(this.txtPrincipal_Validated);
             // 
             // lblEmail
             // 
@@ -83,6 +86,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtConfirmacao.Name = "txtConfirmacao";
             this.txtConfirmacao.Size = new System.Drawing.Size(164, 29);
             this.txtConfirmacao.TabIndex = 3;
+            this.txtConfirmacao.TextChanged += new System.EventHandler(this.txtConfirmacao_TextChanged);
             // 
             // checkBox1
             // 
@@ -98,7 +102,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnPróximo
             // 
-            this.btnPróximo.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnPróximo.BackColor = System.Drawing.Color.Purple;
             this.btnPróximo.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnPróximo.Location = new System.Drawing.Point(681, 394);
             this.btnPróximo.Name = "btnPróximo";
@@ -106,13 +110,36 @@ namespace Definição_do_objetivo_do_sistema
             this.btnPróximo.TabIndex = 6;
             this.btnPróximo.Text = "Próximo";
             this.btnPróximo.UseVisualStyleBackColor = false;
-            this.btnPróximo.Click += new System.EventHandler(this.btnPróximo_Click);
+            this.btnPróximo.Click += new System.EventHandler(this.txtPróximo_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Purple;
+            this.panel1.Location = new System.Drawing.Point(-1, 60);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1464, 14);
+            this.panel1.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(204, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(394, 39);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "CADASTRO DO E-MAIL";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // FrmDadosCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnPróximo);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblcCnfirmacao);
@@ -120,8 +147,12 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtPrincipal);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "FrmDadosCadastro";
             this.Text = "Cadastrar";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Load += new System.EventHandler(this.FrmDadosCadastro_Load);
+            this.Validated += new System.EventHandler(this.FrmDadosCadastro_Validated);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +167,7 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.TextBox txtConfirmacao;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnPróximo;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
     }
 }
