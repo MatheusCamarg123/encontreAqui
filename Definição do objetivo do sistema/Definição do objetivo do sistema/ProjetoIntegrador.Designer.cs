@@ -1,7 +1,7 @@
 ﻿
 namespace Definição_do_objetivo_do_sistema
 {
-    partial class Form1
+    partial class ProjetoIntegrador
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -218,7 +218,7 @@ namespace Definição_do_objetivo_do_sistema
             // APIs
             // 
             this.APIs.AutoSize = true;
-            this.APIs.Location = new System.Drawing.Point(77, 577);
+            this.APIs.Location = new System.Drawing.Point(100, 566);
             this.APIs.Name = "APIs";
             this.APIs.Size = new System.Drawing.Size(35, 13);
             this.APIs.TabIndex = 16;
@@ -227,14 +227,14 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // Funcionarios
             // 
-            this.Funcionarios.Location = new System.Drawing.Point(681, 559);
+            this.Funcionarios.Location = new System.Drawing.Point(727, 557);
             this.Funcionarios.Name = "Funcionarios";
             this.Funcionarios.Size = new System.Drawing.Size(120, 20);
             this.Funcionarios.TabIndex = 17;
             // 
             // Imobiliaria
             // 
-            this.Imobiliaria.Location = new System.Drawing.Point(681, 506);
+            this.Imobiliaria.Location = new System.Drawing.Point(727, 504);
             this.Imobiliaria.Name = "Imobiliaria";
             this.Imobiliaria.Size = new System.Drawing.Size(120, 20);
             this.Imobiliaria.TabIndex = 18;
@@ -244,7 +244,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(707, 473);
+            this.label6.Location = new System.Drawing.Point(753, 471);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 13);
             this.label6.TabIndex = 19;
@@ -253,7 +253,7 @@ namespace Definição_do_objetivo_do_sistema
             // labelll
             // 
             this.labelll.AutoSize = true;
-            this.labelll.Location = new System.Drawing.Point(620, 509);
+            this.labelll.Location = new System.Drawing.Point(666, 507);
             this.labelll.Name = "labelll";
             this.labelll.Size = new System.Drawing.Size(55, 13);
             this.labelll.TabIndex = 20;
@@ -262,7 +262,7 @@ namespace Definição_do_objetivo_do_sistema
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(593, 562);
+            this.label8.Location = new System.Drawing.Point(639, 560);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 13);
             this.label8.TabIndex = 21;
@@ -270,7 +270,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(685, 602);
+            this.btnCalcular.Location = new System.Drawing.Point(731, 600);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(101, 31);
             this.btnCalcular.TabIndex = 22;
@@ -282,7 +282,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.Respon.AutoSize = true;
             this.Respon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Respon.Location = new System.Drawing.Point(727, 649);
+            this.Respon.Location = new System.Drawing.Point(773, 647);
             this.Respon.Name = "Respon";
             this.Respon.Size = new System.Drawing.Size(11, 13);
             this.Respon.TabIndex = 23;
