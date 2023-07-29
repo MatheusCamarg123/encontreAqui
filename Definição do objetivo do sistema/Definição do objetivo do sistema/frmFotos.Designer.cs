@@ -53,7 +53,8 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.btnAbrir.BackColor = System.Drawing.Color.DarkMagenta;
             this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrir.ForeColor = System.Drawing.Color.White;
             this.btnAbrir.Location = new System.Drawing.Point(203, 216);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(168, 35);
@@ -83,6 +84,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1472, 649);
             this.Controls.Add(this.Link);
             this.Controls.Add(this.pictureBox);
