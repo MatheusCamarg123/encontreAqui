@@ -297,7 +297,6 @@ namespace Definição_do_objetivo_do_sistema
             this.btncadastrar.TabIndex = 24;
             this.btncadastrar.Text = "Cadastrar";
             this.btncadastrar.UseVisualStyleBackColor = true;
-            this.btncadastrar.Click += new System.EventHandler(this.btncadastrar_Click);
             // 
             // Form1
             // 
