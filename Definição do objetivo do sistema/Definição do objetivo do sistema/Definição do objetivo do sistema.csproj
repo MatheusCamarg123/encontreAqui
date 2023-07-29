@@ -76,6 +76,24 @@
     <Compile Include="Dados de Cadastro.Designer.cs">
       <DependentUpon>Dados de Cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmJuridico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJuridico.Designer.cs">
+      <DependentUpon>frmJuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFisica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFisica.Designer.cs">
+      <DependentUpon>frmFisica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCPF.Designer.cs">
+      <DependentUpon>frmCPF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ProjetoIntegrador.resx">
@@ -92,6 +110,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dados de Cadastro.resx">
       <DependentUpon>Dados de Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFisica.resx">
+      <DependentUpon>frmFisica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCPF.resx">
+      <DependentUpon>frmCPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJuridico.resx">
+      <DependentUpon>frmJuridico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

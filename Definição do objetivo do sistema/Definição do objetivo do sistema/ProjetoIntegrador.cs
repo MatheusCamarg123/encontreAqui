@@ -109,7 +109,7 @@ namespace Definição_do_objetivo_do_sistema
 
             if (func >0 && func <= 50)
             {
-                Respon.Text = "Aprovado";
+                Respon.Text = ("Aprovado");
             }
             else
             {
@@ -119,19 +119,17 @@ namespace Definição_do_objetivo_do_sistema
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label8_Click(object sender, EventArgs e)
         {
-            Form Kett = new frmBV();
-            Kett.Show();
+
         }
 
-        private void btncadastrar_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            btncadastrar.Text = " Cadastrar ";
-            Form FrmDadosCadastro = new FrmDadosCadastro ();
-            FrmDadosCadastro.WindowState = FormWindowState.Maximized;
-            FrmDadosCadastro.Show();
-
+            btnCadastrar.Text = "Cadastrar";
+            Form frmCPF = new frmCPF();
+            frmCPF.WindowState = FormWindowState.Maximized;
+            frmCPF.Show();
         }
     }
 }

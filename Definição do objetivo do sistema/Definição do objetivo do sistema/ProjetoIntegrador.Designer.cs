@@ -267,6 +267,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label8.Size = new System.Drawing.Size(82, 13);
             this.label8.TabIndex = 21;
             this.label8.Text = "Nº Funcionários";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // btnCalcular
             // 
