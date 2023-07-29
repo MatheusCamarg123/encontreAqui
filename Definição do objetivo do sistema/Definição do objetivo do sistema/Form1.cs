@@ -109,7 +109,7 @@ namespace Definição_do_objetivo_do_sistema
 
             if (func >0 && func <= 50)
             {
-                Respon.Text = "Aprovado";
+                Respon.Text = ("Aprovado");
             }
             else
             {

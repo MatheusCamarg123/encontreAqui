@@ -52,11 +52,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="frmJuridico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="frmJuridico.Designer.cs">
+      <DependentUpon>frmJuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFisica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFisica.Designer.cs">
+      <DependentUpon>frmFisica.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCPF.cs">
       <SubType>Form</SubType>
@@ -69,11 +75,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="frmFisica.resx">
+      <DependentUpon>frmFisica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCPF.resx">
       <DependentUpon>frmCPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJuridico.resx">
+      <DependentUpon>frmJuridico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

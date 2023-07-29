@@ -10,26 +10,33 @@ using System.Windows.Forms;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class Form2 : Form
+    public partial class frmJuridico : Form
     {
-        public Form2()
+        public frmJuridico()
         {
             InitializeComponent();
         }
 
-        private void btnProximo_Click(object sender, EventArgs e)
+        private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            string document = txtCPF.Text;
-            if (chkFisica.Checked)
+            string juridico = mtbCNPJ.Text;
+           
+
+            if (juridico.Length<18)
             {
-                if (document.Length < 11)
-                {
-                    MessageBox.Show("não validado");
-                    return;
-                }
-                   
+                MessageBox.Show("Dado incorreto");
+                return;
                 
             }
+             MessageBox.Show("Dado correto:" + juridico);
+
+            
+           
+
+
+
+
+
 
 
         }

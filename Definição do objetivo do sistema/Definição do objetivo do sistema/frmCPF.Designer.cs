@@ -29,131 +29,94 @@ namespace Definição_do_objetivo_do_sistema
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnProximo = new System.Windows.Forms.Button();
-            this.txtRG = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pessoaJuridica = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pessoaFisica = new System.Windows.Forms.CheckBox();
-            this.txtCPF = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.gbTipo = new System.Windows.Forms.GroupBox();
+            this.rbJuridico = new System.Windows.Forms.RadioButton();
+            this.rbFisica = new System.Windows.Forms.RadioButton();
+            this.btnConfirma = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.gbTipo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnProximo
+            // gbTipo
             // 
-            this.btnProximo.BackColor = System.Drawing.Color.Blue;
-            this.btnProximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProximo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnProximo.Location = new System.Drawing.Point(533, 272);
-            this.btnProximo.Margin = new System.Windows.Forms.Padding(4);
-            this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(136, 49);
-            this.btnProximo.TabIndex = 17;
-            this.btnProximo.Text = "Próximo ➡️ ";
-            this.btnProximo.UseVisualStyleBackColor = false;
+            this.gbTipo.Controls.Add(this.rbJuridico);
+            this.gbTipo.Controls.Add(this.rbFisica);
+            this.gbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbTipo.ForeColor = System.Drawing.Color.Purple;
+            this.gbTipo.Location = new System.Drawing.Point(191, 130);
+            this.gbTipo.Name = "gbTipo";
+            this.gbTipo.Size = new System.Drawing.Size(577, 161);
+            this.gbTipo.TabIndex = 31;
+            this.gbTipo.TabStop = false;
+            this.gbTipo.Text = "Tipo";
+            this.gbTipo.Enter += new System.EventHandler(this.gbTipo_Enter);
             // 
-            // txtRG
+            // rbJuridico
             // 
-            this.txtRG.Location = new System.Drawing.Point(452, 214);
-            this.txtRG.Margin = new System.Windows.Forms.Padding(4);
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(278, 20);
-            this.txtRG.TabIndex = 16;
+            this.rbJuridico.AutoSize = true;
+            this.rbJuridico.ForeColor = System.Drawing.Color.Purple;
+            this.rbJuridico.Location = new System.Drawing.Point(326, 64);
+            this.rbJuridico.Name = "rbJuridico";
+            this.rbJuridico.Size = new System.Drawing.Size(217, 33);
+            this.rbJuridico.TabIndex = 1;
+            this.rbJuridico.Text = "Pessoa Jurídica";
+            this.rbJuridico.UseVisualStyleBackColor = true;
+            this.rbJuridico.CheckedChanged += new System.EventHandler(this.rbJuridico_CheckedChanged);
             // 
-            // label3
+            // rbFisica
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(448, 175);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 18);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Informar RG:";
+            this.rbFisica.AutoSize = true;
+            this.rbFisica.ForeColor = System.Drawing.Color.Purple;
+            this.rbFisica.Location = new System.Drawing.Point(85, 64);
+            this.rbFisica.Name = "rbFisica";
+            this.rbFisica.Size = new System.Drawing.Size(195, 33);
+            this.rbFisica.TabIndex = 0;
+            this.rbFisica.Text = "Pessoa Física";
+            this.rbFisica.UseVisualStyleBackColor = true;
+            this.rbFisica.CheckedChanged += new System.EventHandler(this.rbFisica_CheckedChanged);
             // 
-            // pessoaJuridica
+            // btnConfirma
             // 
-            this.pessoaJuridica.AutoSize = true;
-            this.pessoaJuridica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pessoaJuridica.Location = new System.Drawing.Point(660, 20);
-            this.pessoaJuridica.Margin = new System.Windows.Forms.Padding(4);
-            this.pessoaJuridica.Name = "pessoaJuridica";
-            this.pessoaJuridica.Size = new System.Drawing.Size(113, 19);
-            this.pessoaJuridica.TabIndex = 14;
-            this.pessoaJuridica.Text = "Pessoa Jurídica";
-            this.pessoaJuridica.UseVisualStyleBackColor = true;
+            this.btnConfirma.BackColor = System.Drawing.Color.Purple;
+            this.btnConfirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirma.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnConfirma.Location = new System.Drawing.Point(361, 462);
+            this.btnConfirma.Name = "btnConfirma";
+            this.btnConfirma.Size = new System.Drawing.Size(163, 50);
+            this.btnConfirma.TabIndex = 4;
+            this.btnConfirma.Text = "Confirmar";
+            this.btnConfirma.UseVisualStyleBackColor = false;
+            this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 
-            // label1
+            // panel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(445, 21);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 18);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Tipo:";
-            // 
-            // pessoaFisica
-            // 
-            this.pessoaFisica.AutoSize = true;
-            this.pessoaFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pessoaFisica.Location = new System.Drawing.Point(522, 20);
-            this.pessoaFisica.Margin = new System.Windows.Forms.Padding(4);
-            this.pessoaFisica.Name = "pessoaFisica";
-            this.pessoaFisica.Size = new System.Drawing.Size(102, 19);
-            this.pessoaFisica.TabIndex = 12;
-            this.pessoaFisica.Text = "Pessoa Física";
-            this.pessoaFisica.UseVisualStyleBackColor = true;
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(452, 129);
-            this.txtCPF.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(278, 20);
-            this.txtCPF.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(448, 86);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 18);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Informar CPF/CNPJ:";
+            this.panel1.BackColor = System.Drawing.Color.Purple;
+            this.panel1.Location = new System.Drawing.Point(-482, 411);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2346, 10);
+            this.panel1.TabIndex = 32;
             // 
             // frmCPF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1314, 612);
-            this.Controls.Add(this.btnProximo);
-            this.Controls.Add(this.txtRG);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pessoaJuridica);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pessoaFisica);
-            this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(947, 833);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnConfirma);
+            this.Controls.Add(this.gbTipo);
             this.Name = "frmCPF";
             this.Text = "Form2";
+            this.gbTipo.ResumeLayout(false);
+            this.gbTipo.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnProximo;
-        private System.Windows.Forms.TextBox txtRG;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox pessoaJuridica;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox pessoaFisica;
-        private System.Windows.Forms.TextBox txtCPF;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox gbTipo;
+        private System.Windows.Forms.RadioButton rbFisica;
+        private System.Windows.Forms.RadioButton rbJuridico;
+        private System.Windows.Forms.Button btnConfirma;
+        private System.Windows.Forms.Panel panel1;
     }
 }
