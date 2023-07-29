@@ -41,7 +41,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnJuridica.BackColor = System.Drawing.Color.DarkViolet;
             this.btnJuridica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJuridica.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnJuridica.Location = new System.Drawing.Point(923, 303);
+            this.btnJuridica.Location = new System.Drawing.Point(921, 303);
             this.btnJuridica.Name = "btnJuridica";
             this.btnJuridica.Size = new System.Drawing.Size(162, 93);
             this.btnJuridica.TabIndex = 7;
@@ -99,14 +99,14 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1173, 450);
+            this.ClientSize = new System.Drawing.Size(1401, 772);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnJuridica);
             this.Controls.Add(this.btnFisica);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmBV";
-            this.Text = "Form2";
+            this.Text = "Bem - Vindo";
             this.Load += new System.EventHandler(this.frmBV_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class Form1 : Form
+    public partial class ProjetoIntegrador : Form
     {
-        public Form1()
+        public ProjetoIntegrador()
         {
             InitializeComponent();
         }

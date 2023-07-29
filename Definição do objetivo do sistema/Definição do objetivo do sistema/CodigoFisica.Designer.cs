@@ -1,7 +1,7 @@
 ﻿
 namespace Definição_do_objetivo_do_sistema
 {
-    partial class PessoaFisica
+    partial class CodigoFisica
     {
         /// <summary>
         /// Required designer variable.

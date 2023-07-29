@@ -19,7 +19,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnFisica_Click(object sender, EventArgs e)
         {
-            Form Fisica = new PessoaFisica();
+            Form Fisica = new CodigoFisica();
             Fisica.Show();
         }
 

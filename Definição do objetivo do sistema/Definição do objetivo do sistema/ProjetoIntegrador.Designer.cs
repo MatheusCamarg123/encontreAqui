@@ -1,7 +1,7 @@
 ﻿
 namespace Definição_do_objetivo_do_sistema
 {
-    partial class Form1
+    partial class ProjetoIntegrador
     {
         /// <summary>
         /// Variável de designer necessária.

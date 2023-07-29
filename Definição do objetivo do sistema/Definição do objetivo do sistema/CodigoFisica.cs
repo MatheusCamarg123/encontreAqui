@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class PessoaFisica : Form
+    public partial class CodigoFisica : Form
     {
-        public PessoaFisica()
+        public CodigoFisica()
         {
             InitializeComponent();
         }
