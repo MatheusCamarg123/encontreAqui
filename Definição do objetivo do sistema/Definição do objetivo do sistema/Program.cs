@@ -16,7 +16,7 @@ namespace Definição_do_objetivo_do_sistema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProjetoIntegrador());
+            Application.Run(new frmBV());
         }
     }
 }

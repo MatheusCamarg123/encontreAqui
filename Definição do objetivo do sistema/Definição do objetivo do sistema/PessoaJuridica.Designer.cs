@@ -166,6 +166,8 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.label2);
             this.Name = "PessoaJuridica";
             this.Text = "Pessoa Juridica";
+            this.Load += new System.EventHandler(this.PessoaJuridica_Load);
+            this.Shown += new System.EventHandler(this.PessoaJuridica_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

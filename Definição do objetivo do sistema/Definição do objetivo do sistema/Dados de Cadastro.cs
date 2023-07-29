@@ -21,7 +21,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void txtPrincipal_TextChanged(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -35,16 +35,9 @@ namespace Definição_do_objetivo_do_sistema
 
         }
 
-        private void txtPróximo_Click(object sender, EventArgs e)
+        private void btnConfimar_Click(object sender, EventArgs e)
         {
-            string batata = txtPrincipal.Text;
-            string carne = txtConfirmacao.Text;
-            if (batata == carne)
-            {
-                MessageBox.Show("E-mail correto");
-                return;
-            }
-            MessageBox.Show("Dados Incorretos");
+            
         }
 
         private void FrmDadosCadastro_Load(object sender, EventArgs e)
@@ -61,11 +54,30 @@ namespace Definição_do_objetivo_do_sistema
         {
             string email = txtPrincipal.Text;
             Regex regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
-            if (!regex.IsMatch (email))
+            if (!regex.IsMatch(email))
             {
                 MessageBox.Show("Email inválido");
             }
 
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            string batata = txtPrincipal.Text;
+            string carne = txtConfirmacao.Text;
+            if (batata == carne)
+            {
+                MessageBox.Show("E-mail correto");
+                return;
+            }
+            MessageBox.Show("Dados Incorretos");
+
+        }
+
+        private void btnProximo_Click(object sender, EventArgs e)
+        {
+            Form CPF = new frmCPF();
+            CPF.Show();
         }
     }
 }

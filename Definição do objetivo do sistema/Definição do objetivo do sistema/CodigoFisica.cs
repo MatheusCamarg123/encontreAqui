@@ -68,6 +68,10 @@ namespace Definição_do_objetivo_do_sistema
             {
                 lbl8.Text = "EM ANALISE\nLOGO ENTRAREMOS EM CONTATO";
             }
+
+
+            Form Email = new FrmDadosCadastro();
+            Email.Show();
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)
@@ -75,5 +79,9 @@ namespace Definição_do_objetivo_do_sistema
            
         }
 
+        private void CodigoFisica_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

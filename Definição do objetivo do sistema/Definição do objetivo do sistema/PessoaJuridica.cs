@@ -15,6 +15,7 @@ namespace Definição_do_objetivo_do_sistema
         public PessoaJuridica()
         {
             InitializeComponent();
+
         }
 
         private void txtFuncionario_TextChanged(object sender, EventArgs e)
@@ -62,7 +63,21 @@ namespace Definição_do_objetivo_do_sistema
             else if (func > 50)
             {
                 lbl6.Text = "ENTRE EM CONTATO CONOSCO";
+
             }
+
+            Form Email = new FrmDadosCadastro();
+            Email.Show();
+        }
+
+        private void PessoaJuridica_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void PessoaJuridica_Shown(object sender, EventArgs e)
+        {
+            
         }
     }
 }

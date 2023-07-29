@@ -35,9 +35,10 @@ namespace Definição_do_objetivo_do_sistema
             this.lblcCnfirmacao = new System.Windows.Forms.Label();
             this.txtConfirmacao = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.btnPróximo = new System.Windows.Forms.Button();
+            this.btnConfirmar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnProximo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,17 +101,18 @@ namespace Definição_do_objetivo_do_sistema
     "mail.";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // btnPróximo
+            // btnConfirmar
             // 
-            this.btnPróximo.BackColor = System.Drawing.Color.Purple;
-            this.btnPróximo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnPróximo.Location = new System.Drawing.Point(681, 394);
-            this.btnPróximo.Name = "btnPróximo";
-            this.btnPróximo.Size = new System.Drawing.Size(107, 32);
-            this.btnPróximo.TabIndex = 6;
-            this.btnPróximo.Text = "Próximo";
-            this.btnPróximo.UseVisualStyleBackColor = false;
-            this.btnPróximo.Click += new System.EventHandler(this.txtPróximo_Click);
+            this.btnConfirmar.BackColor = System.Drawing.Color.Purple;
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnConfirmar.Location = new System.Drawing.Point(301, 306);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(110, 34);
+            this.btnConfirmar.TabIndex = 6;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = false;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // panel1
             // 
@@ -132,15 +134,29 @@ namespace Definição_do_objetivo_do_sistema
             this.label2.Text = "CADASTRO DO E-MAIL";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // btnProximo
+            // 
+            this.btnProximo.BackColor = System.Drawing.Color.Purple;
+            this.btnProximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProximo.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnProximo.Location = new System.Drawing.Point(681, 408);
+            this.btnProximo.Name = "btnProximo";
+            this.btnProximo.Size = new System.Drawing.Size(107, 30);
+            this.btnProximo.TabIndex = 9;
+            this.btnProximo.Text = "Próximo";
+            this.btnProximo.UseVisualStyleBackColor = false;
+            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
+            // 
             // FrmDadosCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnProximo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnPróximo);
+            this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblcCnfirmacao);
             this.Controls.Add(this.txtConfirmacao);
@@ -166,8 +182,9 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label lblcCnfirmacao;
         private System.Windows.Forms.TextBox txtConfirmacao;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button btnPróximo;
+        private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnProximo;
     }
 }

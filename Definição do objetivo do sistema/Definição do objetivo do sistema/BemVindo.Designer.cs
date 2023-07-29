@@ -99,7 +99,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1401, 772);
+            this.ClientSize = new System.Drawing.Size(1155, 519);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnJuridica);
             this.Controls.Add(this.btnFisica);

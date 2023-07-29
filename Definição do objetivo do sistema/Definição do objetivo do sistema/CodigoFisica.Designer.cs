@@ -195,7 +195,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtData.TabIndex = 36;
             this.txtData.ValidatingType = typeof(System.DateTime);
             // 
-            // PessoaFisica
+            // CodigoFisica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -215,8 +215,9 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "PessoaFisica";
+            this.Name = "CodigoFisica";
             this.Text = "Pessoa Fisica";
+            this.Load += new System.EventHandler(this.CodigoFisica_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
