@@ -137,5 +137,11 @@ namespace Definição_do_objetivo_do_sistema
             Form FormCadastro = new FormCadastro();
             FormCadastro.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form CEP = new CadastroMapa();
+            CEP.Show();
+        }
     }
 }
