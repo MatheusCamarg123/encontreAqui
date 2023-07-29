@@ -131,5 +131,11 @@ namespace Definição_do_objetivo_do_sistema
             frmCPF.WindowState = FormWindowState.Maximized;
             frmCPF.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form FormCadastro = new FormCadastro();
+            FormCadastro.Show();
+        }
     }
 }

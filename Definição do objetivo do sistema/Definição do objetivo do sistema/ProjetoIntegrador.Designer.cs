@@ -212,7 +212,7 @@ namespace Definição_do_objetivo_do_sistema
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(494, 255);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(582, 10);
+            this.panel2.Size = new System.Drawing.Size(565, 10);
             this.panel2.TabIndex = 15;
             // 
             // APIs
