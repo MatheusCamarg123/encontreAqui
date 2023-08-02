@@ -106,6 +106,12 @@
     <Compile Include="frmFotos.Designer.cs">
       <DependentUpon>frmFotos.cs</DependentUpon>
     </Compile>
+	<Compile Include="FormDefSystem.cs">
+		<SubType>Form</SubType>
+	</Compile>
+	<Compile Include="FormDefSystem.Designer.cs">
+		<DependentUpon>FormDefSystem.cs</DependentUpon>
+	</Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ProjetoIntegrador.resx">
@@ -138,6 +144,9 @@
     <EmbeddedResource Include="frmFotos.resx">
       <DependentUpon>frmFotos.cs</DependentUpon>
     </EmbeddedResource>
+	<EmbeddedResource Include="FormDefSystem.resx">
+		<DependentUpon>FormDefSystem.cs</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

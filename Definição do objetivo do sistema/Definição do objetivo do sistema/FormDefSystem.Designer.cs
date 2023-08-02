@@ -1,7 +1,11 @@
 ﻿
 namespace Definição_do_objetivo_do_sistema
 {
+<<<<<<<< HEAD:Definição do objetivo do sistema/Definição do objetivo do sistema/ProjetoIntegrador.Designer.cs
     partial class ProjetoIntegrador
+========
+    partial class FormDefSistem
+>>>>>>>> Luis:Definição do objetivo do sistema/Definição do objetivo do sistema/FormDefSystem.Designer.cs
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -298,7 +302,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btncadastrar.Text = "Cadastrar";
             this.btncadastrar.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FormDefSistem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -328,7 +332,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label);
-            this.Name = "Form1";
+            this.Name = "FormDefSistem";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

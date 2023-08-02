@@ -10,9 +10,15 @@ using System.Windows.Forms;
 
 namespace Definição_do_objetivo_do_sistema
 {
+<<<<<<<< HEAD:Definição do objetivo do sistema/Definição do objetivo do sistema/ProjetoIntegrador.cs
     public partial class ProjetoIntegrador : Form
     {
         public ProjetoIntegrador()
+========
+    public partial class FormDefSistem : Form
+    {
+        public FormDefSistem()
+>>>>>>>> Luis:Definição do objetivo do sistema/Definição do objetivo do sistema/FormDefSystem.cs
         {
             InitializeComponent();
         }
