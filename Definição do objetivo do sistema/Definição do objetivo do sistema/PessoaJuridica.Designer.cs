@@ -29,7 +29,6 @@ namespace Definição_do_objetivo_do_sistema
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl6 = new System.Windows.Forms.Label();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtLocalidade = new System.Windows.Forms.TextBox();
@@ -41,17 +40,6 @@ namespace Definição_do_objetivo_do_sistema
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lbl6
-            // 
-            this.lbl6.AutoSize = true;
-            this.lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6.Location = new System.Drawing.Point(281, 385);
-            this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(18, 25);
-            this.lbl6.TabIndex = 36;
-            this.lbl6.Text = ".";
-            this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnConfirmar
             // 
@@ -69,14 +57,14 @@ namespace Definição_do_objetivo_do_sistema
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.label1.Location = new System.Drawing.Point(119, 41);
+            this.label1.Location = new System.Drawing.Point(27, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(610, 50);
+            this.label1.Size = new System.Drawing.Size(743, 48);
             this.label1.TabIndex = 34;
-            this.label1.Text = "Olá, para conhecermos um pouco mais da sua empresa, \r\nnos conte um pouco de vocês" +
-    "!";
+            this.label1.Text = "Olá, obrigado por escolher o ENCONTRE AQUI para ser o seu time captação,\r\n para d" +
+    "ar início a esse relacionamento preencha as informações corretamente!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtLocalidade
@@ -153,7 +141,6 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbl6);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtLocalidade);
@@ -174,8 +161,6 @@ namespace Definição_do_objetivo_do_sistema
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbl6;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtLocalidade;

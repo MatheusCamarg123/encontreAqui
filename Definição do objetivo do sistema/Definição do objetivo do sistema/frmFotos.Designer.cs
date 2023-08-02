@@ -91,7 +91,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.label1);
             this.Name = "frmFotos";
-            this.Text = "Fotos da Residencia ";
+            this.Text = "r";
             this.Load += new System.EventHandler(this.frmFotos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);

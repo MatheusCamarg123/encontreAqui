@@ -132,9 +132,6 @@
     <EmbeddedResource Include="frmJuridico.resx">
       <DependentUpon>frmJuridico.cs</DependentUpon>
     </EmbeddedResource>
-	<EmbeddedResource Include="CadastroMapa.resx">
-		<DependentUpon>CadastroMapa.cs</DependentUpon>
-	</EmbeddedResource>
     <EmbeddedResource Include="Telefone.resx">
       <DependentUpon>Telefone.cs</DependentUpon>
     </EmbeddedResource>

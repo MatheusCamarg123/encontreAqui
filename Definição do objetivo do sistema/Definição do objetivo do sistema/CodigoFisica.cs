@@ -29,45 +29,31 @@ namespace Definição_do_objetivo_do_sistema
 
             if (txtNome.Text == "")
             {
-                MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
                 return;
             }
 
             if (txtData.Text == "")
             {
-                MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
                 return;
             }
 
             if (txtIdade.Text == "")
             {
-                MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
                 return;
             }
 
             if (txtLocalidade.Text == "")
             {
-                MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
                 return;
             }
 
 
             
 
-
-            if (txtNome.Text == "" && txtLocalidade.Text == "" && txtIdade.Text == "" && txtData.Text == "")
-            {
-                lbl8.Text = "";
-            }
-            else
-            {
-                lbl8.Text = "EM ANALISE\nLOGO ENTRAREMOS EM CONTATO";
-            }
-
-            if (ccb1.Checked || ccb2.Checked)
-            {
-                lbl8.Text = "EM ANALISE\nLOGO ENTRAREMOS EM CONTATO";
-            }
 
 
             Form Email = new FrmDadosCadastro();

@@ -30,5 +30,12 @@ namespace Definição_do_objetivo_do_sistema
             MessageBox.Show("Dado correto:" + fisico);
             
         }
+
+        private void btnProximo_Click(object sender, EventArgs e)
+        {
+            Form tel = new FormCadastro();
+            tel.Show();
+
+        }
     }
 }

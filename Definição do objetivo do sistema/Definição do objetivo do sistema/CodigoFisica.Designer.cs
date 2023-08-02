@@ -29,33 +29,17 @@ namespace Definição_do_objetivo_do_sistema
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl8 = new System.Windows.Forms.Label();
             this.btnConfirma = new System.Windows.Forms.Button();
             this.txtLocalidade = new System.Windows.Forms.TextBox();
             this.txtIdade = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.lblAnunciar = new System.Windows.Forms.Label();
-            this.lblAchar = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ccb1 = new System.Windows.Forms.RadioButton();
-            this.ccb2 = new System.Windows.Forms.RadioButton();
             this.txtData = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
-            // 
-            // lbl8
-            // 
-            this.lbl8.AutoSize = true;
-            this.lbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl8.Location = new System.Drawing.Point(270, 400);
-            this.lbl8.Name = "lbl8";
-            this.lbl8.Size = new System.Drawing.Size(13, 20);
-            this.lbl8.TabIndex = 29;
-            this.lbl8.Text = ".";
-            this.lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnConfirma
             // 
@@ -91,26 +75,6 @@ namespace Definição_do_objetivo_do_sistema
             this.txtNome.Size = new System.Drawing.Size(159, 20);
             this.txtNome.TabIndex = 22;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
-            // 
-            // lblAnunciar
-            // 
-            this.lblAnunciar.AutoSize = true;
-            this.lblAnunciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnunciar.Location = new System.Drawing.Point(59, 317);
-            this.lblAnunciar.Name = "lblAnunciar";
-            this.lblAnunciar.Size = new System.Drawing.Size(211, 20);
-            this.lblAnunciar.TabIndex = 21;
-            this.lblAnunciar.Text = "Deseja Anunciar uma Casa?";
-            // 
-            // lblAchar
-            // 
-            this.lblAchar.AutoSize = true;
-            this.lblAchar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAchar.Location = new System.Drawing.Point(59, 279);
-            this.lblAchar.Name = "lblAchar";
-            this.lblAchar.Size = new System.Drawing.Size(190, 20);
-            this.lblAchar.TabIndex = 20;
-            this.lblAchar.Text = "Deseja Achar uma Casa?";
             // 
             // label5
             // 
@@ -155,36 +119,15 @@ namespace Definição_do_objetivo_do_sistema
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.label1.Location = new System.Drawing.Point(158, 18);
+            this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(584, 50);
+            this.label1.Size = new System.Drawing.Size(785, 48);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Olá, para conhecermos um pouco mais do seu sonho, \r\nnos conte um pouco sobre você" +
-    "!";
+            this.label1.Text = "Olá, obrigado por escolher o ENCONTRE AQUI para anunciar o seu ímovel,\r\n preencha" +
+    " os dados corretamente para dar início a venda do seu empreendimento!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ccb1
-            // 
-            this.ccb1.AutoSize = true;
-            this.ccb1.Location = new System.Drawing.Point(284, 286);
-            this.ccb1.Name = "ccb1";
-            this.ccb1.Size = new System.Drawing.Size(14, 13);
-            this.ccb1.TabIndex = 30;
-            this.ccb1.TabStop = true;
-            this.ccb1.UseVisualStyleBackColor = true;
-            this.ccb1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // ccb2
-            // 
-            this.ccb2.AutoSize = true;
-            this.ccb2.Location = new System.Drawing.Point(284, 324);
-            this.ccb2.Name = "ccb2";
-            this.ccb2.Size = new System.Drawing.Size(14, 13);
-            this.ccb2.TabIndex = 31;
-            this.ccb2.TabStop = true;
-            this.ccb2.UseVisualStyleBackColor = true;
             // 
             // txtData
             // 
@@ -201,15 +144,10 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtData);
-            this.Controls.Add(this.ccb2);
-            this.Controls.Add(this.ccb1);
-            this.Controls.Add(this.lbl8);
             this.Controls.Add(this.btnConfirma);
             this.Controls.Add(this.txtLocalidade);
             this.Controls.Add(this.txtIdade);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.lblAnunciar);
-            this.Controls.Add(this.lblAchar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -224,21 +162,15 @@ namespace Definição_do_objetivo_do_sistema
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbl8;
         private System.Windows.Forms.Button btnConfirma;
         private System.Windows.Forms.TextBox txtLocalidade;
         private System.Windows.Forms.TextBox txtIdade;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Label lblAnunciar;
-        private System.Windows.Forms.Label lblAchar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton ccb1;
-        private System.Windows.Forms.RadioButton ccb2;
         private System.Windows.Forms.MaskedTextBox txtData;
     }
 }

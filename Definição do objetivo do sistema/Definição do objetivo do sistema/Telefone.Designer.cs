@@ -148,6 +148,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnConfirmar);
             this.Name = "FormCadastro";
+            this.Load += new System.EventHandler(this.FormCadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

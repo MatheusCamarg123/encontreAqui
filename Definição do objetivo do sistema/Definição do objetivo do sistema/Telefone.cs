@@ -40,6 +40,7 @@ namespace Definição_do_objetivo_do_sistema
                 return;
             }
 
+            Form maps = new 
         }
 
         private void mtTelefone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -48,6 +49,11 @@ namespace Definição_do_objetivo_do_sistema
         }
 
         private void mtCelular1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void FormCadastro_Load(object sender, EventArgs e)
         {
 
         }

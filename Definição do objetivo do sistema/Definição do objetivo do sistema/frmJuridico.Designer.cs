@@ -33,6 +33,7 @@ namespace Definição_do_objetivo_do_sistema
             this.mtbCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnConfirmar = new System.Windows.Forms.Button();
+            this.btnProximo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCNPJ
@@ -76,11 +77,24 @@ namespace Definição_do_objetivo_do_sistema
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
+            // btnProximo
+            // 
+            this.btnProximo.BackColor = System.Drawing.Color.DarkMagenta;
+            this.btnProximo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnProximo.Location = new System.Drawing.Point(622, 392);
+            this.btnProximo.Name = "btnProximo";
+            this.btnProximo.Size = new System.Drawing.Size(58, 24);
+            this.btnProximo.TabIndex = 4;
+            this.btnProximo.Text = "Próximo";
+            this.btnProximo.UseVisualStyleBackColor = false;
+            this.btnProximo.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmJuridico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 450);
+            this.Controls.Add(this.btnProximo);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.mtbCNPJ);
@@ -98,5 +112,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.MaskedTextBox mtbCNPJ;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnConfirmar;
+        private System.Windows.Forms.Button btnProximo;
     }
 }

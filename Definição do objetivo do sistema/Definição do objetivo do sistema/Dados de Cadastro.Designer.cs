@@ -95,10 +95,10 @@ namespace Definição_do_objetivo_do_sistema
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(65, 236);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(682, 24);
+            this.checkBox1.Size = new System.Drawing.Size(690, 24);
             this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Autorizo que me encaminhem mensagens relacionado ao mercado imobiliário no meu E-" +
-    "mail.";
+            this.checkBox1.Text = "Autorizo que me encaminhem mensagens relacionadas ao mercado imobiliário no meu E" +
+    "-mail.";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // btnConfirmar
@@ -125,11 +125,11 @@ namespace Definição_do_objetivo_do_sistema
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(204, 9);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(190, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(394, 39);
+            this.label2.Size = new System.Drawing.Size(412, 39);
             this.label2.TabIndex = 8;
             this.label2.Text = "CADASTRO DO E-MAIL";
             this.label2.Click += new System.EventHandler(this.label2_Click);

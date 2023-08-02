@@ -40,5 +40,11 @@ namespace Definição_do_objetivo_do_sistema
 
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form tel = new FormCadastro();
+            tel.Show();
+        }
     }
 }
