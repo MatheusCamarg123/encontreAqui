@@ -1,7 +1,7 @@
 ﻿
 namespace Definição_do_objetivo_do_sistema
 {
-    partial class Form1
+    partial class FormDefSistem
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -298,7 +298,7 @@ namespace Definição_do_objetivo_do_sistema
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // FormDefSistem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -328,7 +328,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label);
-            this.Name = "Form1";
+            this.Name = "FormDefSistem";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
