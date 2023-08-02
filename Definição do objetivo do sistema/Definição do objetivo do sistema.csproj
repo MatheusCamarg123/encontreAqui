@@ -52,6 +52,12 @@
     <Compile Include="BemVindo.Designer.cs">
       <DependentUpon>BemVindo.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroMapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroMapa.Designer.cs">
+      <DependentUpon>CadastroMapa.cs</DependentUpon>
+    </Compile>
     <Compile Include="CodigoFisica.cs">
       <SubType>Form</SubType>
     </Compile>
