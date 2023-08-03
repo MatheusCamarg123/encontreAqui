@@ -12,14 +12,18 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class CadastroMapa : Form
     {
-        public CadastroMapa()
+        bool cnpj;
+        public CadastroMapa(bool isCNPJ)
         {
+            this.cnpj = isCNPJ;
             InitializeComponent();
         }
 
         private void CadastroMapa_Load(object sender, EventArgs e)
         {
-
+            Form tele = Application.OpenForms["FormCadastro"];
+            if (tele != null)
+                tele.Close();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -37,7 +41,7 @@ namespace Definição_do_objetivo_do_sistema
           
             if (txtEndereco.Text == "") 
             {
-                MessageBox.Show("Campo invalido");
+                MessageBox.Show("Preenchimento Obrigatório");
                 
                 return;
                 
@@ -45,7 +49,7 @@ namespace Definição_do_objetivo_do_sistema
 
             if (txtBairro.Text == "")
             {
-                MessageBox.Show("Campo invalido");
+                MessageBox.Show("Preenchimento Obrigatório");
                
                 return;
 
@@ -53,7 +57,7 @@ namespace Definição_do_objetivo_do_sistema
 
             if (txtCEP.Text == "")
             {
-                MessageBox.Show("Campo invalido");
+                MessageBox.Show("Preenchimento Obrigatório");
                
                 return;
 
@@ -61,7 +65,7 @@ namespace Definição_do_objetivo_do_sistema
 
             if (txtCepCobranca.Text == "")
             {
-                MessageBox.Show("Campo invalido");
+                MessageBox.Show("Preenchimento Obrigatório");
                
                 return;
 
@@ -69,7 +73,7 @@ namespace Definição_do_objetivo_do_sistema
 
             if (txtCidade.Text == "")
             {
-                MessageBox.Show("Campo invalido");
+                MessageBox.Show("Preenchimento Obrigatório");
               
                 return;
 
@@ -77,7 +81,7 @@ namespace Definição_do_objetivo_do_sistema
 
             if (txtEndCobranca.Text == "")
             {
-                MessageBox.Show("Campo invalido");
+                MessageBox.Show("Preenchimento Obrigatório");
                
                 return;
 
@@ -85,7 +89,7 @@ namespace Definição_do_objetivo_do_sistema
 
             if (txtEstado.Text == "")
             {
-                MessageBox.Show("Campo invalido");
+                MessageBox.Show("Preenchimento Obrigatório");
                 
                 return;
 
@@ -93,12 +97,20 @@ namespace Definição_do_objetivo_do_sistema
 
             if (txtReferencia.Text == "")
             {
-                MessageBox.Show("Campo invalido");
+                MessageBox.Show("Preenchimento Obrigatório");
                 
                 return;
 
             }
-
+            if (!this.cnpj)
+            {
+                Form Fotos = new frmFotos();
+                Fotos.Show();
+            }
+            else
+            {
+                MessageBox.Show("cadastrado");
+            }
 
         }
 

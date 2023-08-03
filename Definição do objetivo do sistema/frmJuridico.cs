@@ -12,8 +12,10 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class frmJuridico : Form
     {
-        public frmJuridico()
+        bool cnpj;
+        public frmJuridico(bool isCNPJ)
         {
+            this.cnpj = isCNPJ;
             InitializeComponent();
         }
 
@@ -43,8 +45,15 @@ namespace Definição_do_objetivo_do_sistema
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form tel = new FormCadastro();
+            Form tel = new FormCadastro(this.cnpj);
             tel.Show();
+        }
+
+        private void frmJuridico_Load(object sender, EventArgs e)
+        {
+            Form email = Application.OpenForms["FrmDadosCadastro"];
+            if (email != null)
+                email.Close();
         }
     }
 }

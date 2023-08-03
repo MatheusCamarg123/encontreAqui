@@ -12,8 +12,10 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class FormCadastro : Form
     {
-        public FormCadastro()
+        bool cnpj;
+        public FormCadastro(bool isCNPJ)
         {
+            this.cnpj = isCNPJ;
             InitializeComponent();
         }
 
@@ -40,7 +42,8 @@ namespace Definição_do_objetivo_do_sistema
                 return;
             }
 
-            Form maps = new 
+            Form maps = new CadastroMapa(this.cnpj);
+            maps.Show();
         }
 
         private void mtTelefone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -56,6 +59,14 @@ namespace Definição_do_objetivo_do_sistema
         private void FormCadastro_Load(object sender, EventArgs e)
         {
 
+            Form cpf1 = Application.OpenForms["frFisico"];
+            Form cnpj = Application.OpenForms["frmJuridico"];
+            if (cpf1 != null)
+                cpf1.Close();
+            else
+            {
+                cnpj.Close();
+            }
         }
     }
 }

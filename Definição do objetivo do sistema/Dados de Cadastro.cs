@@ -14,8 +14,11 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class FrmDadosCadastro : Form
     {
-        public FrmDadosCadastro()
+        bool pessoaFisica;
+        
+        public FrmDadosCadastro(bool isFisica)
         {
+            pessoaFisica = isFisica;
             InitializeComponent();
         }
 
@@ -42,7 +45,21 @@ namespace Definição_do_objetivo_do_sistema
 
         private void FrmDadosCadastro_Load(object sender, EventArgs e)
         {
+            Form fFisica = Application.OpenForms["CodigoFisica"];
+            Form fJuridico = Application.OpenForms["PessoaJuridica"];
 
+            if (fFisica != null)
+            {
+                fFisica.Close();
+            }
+              
+            else
+            {
+                
+                fJuridico.Close();
+            }
+                
+            
         }
 
         private void FrmDadosCadastro_Validated(object sender, EventArgs e)
@@ -76,8 +93,16 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnProximo_Click(object sender, EventArgs e)
         {
-            Form CPF = new frmCPF();
-            CPF.Show();
+            if (this.pessoaFisica)
+            {
+                Form cpf = new frFisico(false);
+                cpf.Show();
+            }
+            else
+            {
+                Form cnpj = new frmJuridico(true);
+                cnpj.Show();
+            }
         }
     }
 }

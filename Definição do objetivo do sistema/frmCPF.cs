@@ -55,14 +55,14 @@ namespace Definição_do_objetivo_do_sistema
 
             if (rbFisica.Checked)
             {
-                Form fisica = new frFisico();
+                Form fisica = new frFisico(false);
                 fisica.Show();
             }
 
             string juridico = rbJuridico.Text;
             if (rbJuridico.Checked)
             {
-                Form juridica = new frmJuridico();
+                Form juridica = new frmJuridico(true);
                 juridica.Show();
 
             }

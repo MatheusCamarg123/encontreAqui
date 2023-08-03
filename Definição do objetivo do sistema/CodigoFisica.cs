@@ -56,7 +56,7 @@ namespace Definição_do_objetivo_do_sistema
 
 
 
-            Form Email = new FrmDadosCadastro();
+            Form Email = new FrmDadosCadastro(true);
             Email.Show();
         }
 
@@ -67,7 +67,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void CodigoFisica_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

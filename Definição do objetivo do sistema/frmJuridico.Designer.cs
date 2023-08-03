@@ -101,6 +101,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.lblCNPJ);
             this.Name = "frmJuridico";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.frmJuridico_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

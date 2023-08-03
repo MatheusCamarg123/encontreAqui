@@ -127,6 +127,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.lblCPF);
             this.Name = "frFisico";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.frFisico_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

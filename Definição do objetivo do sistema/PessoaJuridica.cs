@@ -54,13 +54,13 @@ namespace Definição_do_objetivo_do_sistema
             }
            
 
-            Form Email = new FrmDadosCadastro();
+            Form Email = new FrmDadosCadastro(false);
             Email.Show();
         }
 
         private void PessoaJuridica_Load(object sender, EventArgs e)
         {
-          
+            
         }
 
         private void PessoaJuridica_Shown(object sender, EventArgs e)

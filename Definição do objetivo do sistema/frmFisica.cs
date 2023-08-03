@@ -10,10 +10,13 @@ using System.Windows.Forms;
 
 namespace Definição_do_objetivo_do_sistema
 {
+    
     public partial class frFisico : Form
     {
-        public frFisico()
+        bool cnpj;
+        public frFisico(bool isCNPJ)
         {
+            this.cnpj = isCNPJ;
             InitializeComponent();
         }
 
@@ -33,9 +36,16 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnProximo_Click(object sender, EventArgs e)
         {
-            Form tel = new FormCadastro();
+            Form tel = new FormCadastro(this.cnpj);
             tel.Show();
 
+        }
+
+        private void frFisico_Load(object sender, EventArgs e)
+        {
+            Form email = Application.OpenForms["FrmDadosCadastro"];
+            if (email != null)
+                email.Close();
         }
     }
 }

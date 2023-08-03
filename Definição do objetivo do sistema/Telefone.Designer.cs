@@ -68,9 +68,9 @@ namespace Definição_do_objetivo_do_sistema
             this.cbW.AutoSize = true;
             this.cbW.Location = new System.Drawing.Point(294, 172);
             this.cbW.Name = "cbW";
-            this.cbW.Size = new System.Drawing.Size(95, 17);
+            this.cbW.Size = new System.Drawing.Size(92, 17);
             this.cbW.TabIndex = 3;
-            this.cbW.Text = "É WhattsApp?";
+            this.cbW.Text = "É WhatsApp?";
             this.cbW.UseVisualStyleBackColor = true;
             this.cbW.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
