@@ -59,21 +59,21 @@ namespace Definição_do_objetivo_do_sistema
             this.txtLocalidade.Location = new System.Drawing.Point(284, 241);
             this.txtLocalidade.Name = "txtLocalidade";
             this.txtLocalidade.Size = new System.Drawing.Size(147, 20);
-            this.txtLocalidade.TabIndex = 25;
+            this.txtLocalidade.TabIndex = 4;
             // 
             // txtIdade
             // 
             this.txtIdade.Location = new System.Drawing.Point(284, 202);
             this.txtIdade.Name = "txtIdade";
             this.txtIdade.Size = new System.Drawing.Size(100, 20);
-            this.txtIdade.TabIndex = 24;
+            this.txtIdade.TabIndex = 3;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(284, 127);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(159, 20);
-            this.txtNome.TabIndex = 22;
+            this.txtNome.TabIndex = 1;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // label5
@@ -139,8 +139,9 @@ namespace Definição_do_objetivo_do_sistema
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(78, 20);
-            this.txtData.TabIndex = 36;
+            this.txtData.TabIndex = 2;
             this.txtData.ValidatingType = typeof(System.DateTime);
+            this.txtData.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtData_MaskInputRejected);
             // 
             // CodigoFisica
             // 

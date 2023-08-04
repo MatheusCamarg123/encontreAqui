@@ -35,7 +35,7 @@ namespace Definição_do_objetivo_do_sistema
                 email.Close();
             }
             MessageBox.Show("Dado correto:" + fisico);
-             Form tel = new FormCadastro(false);
+             Form tel = new FormCadastro(cnpj);
                 tel.Show();
             
         }

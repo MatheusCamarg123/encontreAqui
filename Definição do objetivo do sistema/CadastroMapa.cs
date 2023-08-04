@@ -63,13 +63,7 @@ namespace Definição_do_objetivo_do_sistema
 
             }
 
-            if (txtCepCobranca.Text == "")
-            {
-                MessageBox.Show("Preenchimento Obrigatório");
-               
-                return;
-
-            }
+            
 
             if (txtCidade.Text == "")
             {
@@ -79,13 +73,7 @@ namespace Definição_do_objetivo_do_sistema
 
             }
 
-            if (txtEndCobranca.Text == "")
-            {
-                MessageBox.Show("Preenchimento Obrigatório");
-               
-                return;
-
-            }
+            
 
             if (txtEstado.Text == "")
             {
@@ -111,16 +99,16 @@ namespace Definição_do_objetivo_do_sistema
             {
                 MessageBox.Show("Cadastro realizado com sucesso!");
             }
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             txtBairro.Text = "";
             txtCEP.Text = "";
-            txtCepCobranca.Text = "";
+           
             txtCidade.Text = "";
-            txtEndCobranca.Text = "";
+            
             txtEndereco.Text = "";
             txtEstado.Text = "";
             txtReferencia.Text = "";

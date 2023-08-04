@@ -73,7 +73,7 @@ namespace Definição_do_objetivo_do_sistema
             Regex regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
             if (!regex.IsMatch(email))
             {
-                MessageBox.Show("Email inválido");
+               
             }
 
         }
@@ -82,18 +82,23 @@ namespace Definição_do_objetivo_do_sistema
         {
             string batata = txtPrincipal.Text;
             string carne = txtConfirmacao.Text;
-            if (batata == carne && this.pessoaFisica) 
-            {
+            if (batata == carne)             {
                 MessageBox.Show("E-mail correto");
-                Form cpf = new frFisico(false);
-                cpf.Show();
-                return;
+                if (this.pessoaFisica)
+                {
+                    Form cpf = new frFisico(false);
+                    cpf.Show();
+                }
+                else
+                {
+                    Form cnpj = new frmJuridico(true);
+                    cnpj.Show();
+                }
             }
             else
             {
                 MessageBox.Show("Dados Incorretos");
-                Form cnpj = new frmJuridico(true);
-                cnpj.Show();
+               
             }
 
            
