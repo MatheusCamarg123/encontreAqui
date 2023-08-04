@@ -31,16 +31,14 @@ namespace Definição_do_objetivo_do_sistema
         {
             this.lblCNPJ = new System.Windows.Forms.Label();
             this.mtbCNPJ = new System.Windows.Forms.MaskedTextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.btnProximo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCNPJ
             // 
             this.lblCNPJ.AutoSize = true;
             this.lblCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNPJ.ForeColor = System.Drawing.Color.Purple;
+            this.lblCNPJ.ForeColor = System.Drawing.Color.White;
             this.lblCNPJ.Location = new System.Drawing.Point(280, 100);
             this.lblCNPJ.Name = "lblCNPJ";
             this.lblCNPJ.Size = new System.Drawing.Size(183, 29);
@@ -56,19 +54,11 @@ namespace Definição_do_objetivo_do_sistema
             this.mtbCNPJ.Size = new System.Drawing.Size(205, 31);
             this.mtbCNPJ.TabIndex = 1;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Purple;
-            this.panel1.Location = new System.Drawing.Point(-48, 280);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1911, 10);
-            this.panel1.TabIndex = 2;
-            // 
             // btnConfirmar
             // 
-            this.btnConfirmar.BackColor = System.Drawing.Color.Purple;
+            this.btnConfirmar.BackColor = System.Drawing.Color.White;
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
             this.btnConfirmar.Location = new System.Drawing.Point(300, 340);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(163, 50);
@@ -77,28 +67,16 @@ namespace Definição_do_objetivo_do_sistema
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
-            // btnProximo
-            // 
-            this.btnProximo.BackColor = System.Drawing.Color.DarkMagenta;
-            this.btnProximo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnProximo.Location = new System.Drawing.Point(622, 392);
-            this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(58, 24);
-            this.btnProximo.TabIndex = 4;
-            this.btnProximo.Text = "Próximo";
-            this.btnProximo.UseVisualStyleBackColor = false;
-            this.btnProximo.Click += new System.EventHandler(this.button1_Click);
-            // 
             // frmJuridico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 450);
-            this.Controls.Add(this.btnProximo);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(776, 450);
             this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.mtbCNPJ);
             this.Controls.Add(this.lblCNPJ);
+            this.ForeColor = System.Drawing.Color.Indigo;
             this.Name = "frmJuridico";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.frmJuridico_Load);
@@ -111,8 +89,6 @@ namespace Definição_do_objetivo_do_sistema
 
         private System.Windows.Forms.Label lblCNPJ;
         private System.Windows.Forms.MaskedTextBox mtbCNPJ;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.Button btnProximo;
     }
 }

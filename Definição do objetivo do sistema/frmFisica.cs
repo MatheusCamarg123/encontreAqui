@@ -24,21 +24,25 @@ namespace Definição_do_objetivo_do_sistema
         {
             string fisico = mtbCPF.Text;
             string documento = mtbRG.Text;
+            Form email = Application.OpenForms["FrmDadosCadastro"];
 
-            if (fisico.Length <14 || documento.Length <12)
+            if (fisico.Length <14 || documento.Length <12 && email != null) 
             {
                 MessageBox.Show("Dado incorreto");
+               
                 return;
+               
+                email.Close();
             }
             MessageBox.Show("Dado correto:" + fisico);
+             Form tel = new FormCadastro(false);
+                tel.Show();
             
         }
 
         private void btnProximo_Click(object sender, EventArgs e)
         {
-            Form tel = new FormCadastro(this.cnpj);
-            tel.Show();
-
+          
         }
 
         private void frFisico_Load(object sender, EventArgs e)

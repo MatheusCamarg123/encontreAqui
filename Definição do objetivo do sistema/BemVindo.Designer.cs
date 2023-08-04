@@ -34,14 +34,16 @@ namespace Definição_do_objetivo_do_sistema
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnJuridica
             // 
-            this.btnJuridica.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnJuridica.BackColor = System.Drawing.Color.White;
             this.btnJuridica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJuridica.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnJuridica.Location = new System.Drawing.Point(921, 303);
+            this.btnJuridica.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnJuridica.Location = new System.Drawing.Point(1335, 492);
             this.btnJuridica.Name = "btnJuridica";
             this.btnJuridica.Size = new System.Drawing.Size(162, 93);
             this.btnJuridica.TabIndex = 7;
@@ -51,10 +53,10 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnFisica
             // 
-            this.btnFisica.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnFisica.BackColor = System.Drawing.Color.White;
             this.btnFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFisica.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnFisica.Location = new System.Drawing.Point(570, 303);
+            this.btnFisica.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFisica.Location = new System.Drawing.Point(984, 492);
             this.btnFisica.Name = "btnFisica";
             this.btnFisica.Size = new System.Drawing.Size(170, 93);
             this.btnFisica.TabIndex = 6;
@@ -65,9 +67,10 @@ namespace Definição_do_objetivo_do_sistema
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.label2.Location = new System.Drawing.Point(565, 90);
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(979, 279);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(520, 150);
             this.label2.TabIndex = 5;
@@ -79,8 +82,8 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 80.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Purple;
-            this.label1.Location = new System.Drawing.Point(3, 75);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(438, 345);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(465, 240);
             this.label1.TabIndex = 4;
@@ -89,17 +92,30 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Purple;
-            this.panel2.Location = new System.Drawing.Point(570, 275);
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel2.Location = new System.Drawing.Point(984, 464);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(513, 10);
             this.panel2.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__1__removebg_preview1;
+            this.pictureBox1.Location = new System.Drawing.Point(94, 181);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(359, 384);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // frmBV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 519);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(1721, 912);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnJuridica);
             this.Controls.Add(this.btnFisica);
@@ -108,6 +124,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Name = "frmBV";
             this.Text = "Bem - Vindo";
             this.Load += new System.EventHandler(this.frmBV_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,5 +137,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

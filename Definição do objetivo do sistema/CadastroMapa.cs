@@ -109,7 +109,7 @@ namespace Definição_do_objetivo_do_sistema
             }
             else
             {
-                MessageBox.Show("cadastrado");
+                MessageBox.Show("Cadastro realizado com sucesso!");
             }
 
         }

@@ -31,7 +31,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void frmBV_Load(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Maximized;
         }
     }
 }

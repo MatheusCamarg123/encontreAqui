@@ -22,18 +22,24 @@ namespace Definição_do_objetivo_do_sistema
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
             string juridico = mtbCNPJ.Text;
-           
+            Form email = Application.OpenForms["FrmDadosCadastro"];
 
-            if (juridico.Length<18)
+            if (juridico.Length<18 && (email != null))
             {
                 MessageBox.Show("Dado incorreto");
-                return;
-                
-            }
-             MessageBox.Show("Dado correto:" + juridico);
 
-            
+
+                return;
+                email.Close();
+            }
            
+            
+                MessageBox.Show("Dado correto:" + juridico);
+                Form tel = new FormCadastro(true);
+                tel.Show();
+               
+            
+
 
 
 
@@ -45,8 +51,8 @@ namespace Definição_do_objetivo_do_sistema
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form tel = new FormCadastro(this.cnpj);
-            tel.Show();
+            /*Form tel = new FormCadastro(this.cnpj);
+            tel.Show();*/
         }
 
         private void frmJuridico_Load(object sender, EventArgs e)

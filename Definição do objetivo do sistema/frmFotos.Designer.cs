@@ -39,9 +39,9 @@ namespace Definição_do_objetivo_do_sistema
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkMagenta;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(185, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 29);
@@ -51,10 +51,10 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnAbrir
             // 
-            this.btnAbrir.BackColor = System.Drawing.Color.DarkMagenta;
+            this.btnAbrir.BackColor = System.Drawing.Color.White;
             this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbrir.ForeColor = System.Drawing.Color.White;
+            this.btnAbrir.ForeColor = System.Drawing.Color.Black;
             this.btnAbrir.Location = new System.Drawing.Point(203, 216);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(168, 35);
@@ -84,7 +84,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1472, 649);
             this.Controls.Add(this.Link);
             this.Controls.Add(this.pictureBox);

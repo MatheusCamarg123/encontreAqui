@@ -33,7 +33,6 @@ namespace Definição_do_objetivo_do_sistema
             this.rbJuridico = new System.Windows.Forms.RadioButton();
             this.rbFisica = new System.Windows.Forms.RadioButton();
             this.btnConfirma = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.gbTipo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +41,7 @@ namespace Definição_do_objetivo_do_sistema
             this.gbTipo.Controls.Add(this.rbJuridico);
             this.gbTipo.Controls.Add(this.rbFisica);
             this.gbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbTipo.ForeColor = System.Drawing.Color.Purple;
+            this.gbTipo.ForeColor = System.Drawing.Color.White;
             this.gbTipo.Location = new System.Drawing.Point(191, 130);
             this.gbTipo.Name = "gbTipo";
             this.gbTipo.Size = new System.Drawing.Size(577, 161);
@@ -54,7 +53,7 @@ namespace Definição_do_objetivo_do_sistema
             // rbJuridico
             // 
             this.rbJuridico.AutoSize = true;
-            this.rbJuridico.ForeColor = System.Drawing.Color.Purple;
+            this.rbJuridico.ForeColor = System.Drawing.Color.White;
             this.rbJuridico.Location = new System.Drawing.Point(326, 64);
             this.rbJuridico.Name = "rbJuridico";
             this.rbJuridico.Size = new System.Drawing.Size(217, 33);
@@ -66,7 +65,7 @@ namespace Definição_do_objetivo_do_sistema
             // rbFisica
             // 
             this.rbFisica.AutoSize = true;
-            this.rbFisica.ForeColor = System.Drawing.Color.Purple;
+            this.rbFisica.ForeColor = System.Drawing.Color.White;
             this.rbFisica.Location = new System.Drawing.Point(85, 64);
             this.rbFisica.Name = "rbFisica";
             this.rbFisica.Size = new System.Drawing.Size(195, 33);
@@ -77,9 +76,9 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnConfirma
             // 
-            this.btnConfirma.BackColor = System.Drawing.Color.Purple;
+            this.btnConfirma.BackColor = System.Drawing.Color.White;
             this.btnConfirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirma.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnConfirma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnConfirma.Location = new System.Drawing.Point(361, 462);
             this.btnConfirma.Name = "btnConfirma";
             this.btnConfirma.Size = new System.Drawing.Size(163, 50);
@@ -88,20 +87,12 @@ namespace Definição_do_objetivo_do_sistema
             this.btnConfirma.UseVisualStyleBackColor = false;
             this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Purple;
-            this.panel1.Location = new System.Drawing.Point(-482, 411);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2346, 10);
-            this.panel1.TabIndex = 32;
-            // 
             // frmCPF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(947, 833);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnConfirma);
             this.Controls.Add(this.gbTipo);
             this.Name = "frmCPF";
@@ -117,6 +108,5 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.RadioButton rbFisica;
         private System.Windows.Forms.RadioButton rbJuridico;
         private System.Windows.Forms.Button btnConfirma;
-        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -36,9 +36,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtConfirmacao = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnProximo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,6 +62,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblEmail.Location = new System.Drawing.Point(62, 132);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(140, 24);
@@ -74,6 +73,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.lblcCnfirmacao.AutoSize = true;
             this.lblcCnfirmacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcCnfirmacao.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblcCnfirmacao.Location = new System.Drawing.Point(62, 183);
             this.lblcCnfirmacao.Name = "lblcCnfirmacao";
             this.lblcCnfirmacao.Size = new System.Drawing.Size(201, 24);
@@ -93,6 +93,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.checkBox1.Location = new System.Drawing.Point(65, 236);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(690, 24);
@@ -103,9 +104,9 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.BackColor = System.Drawing.Color.Purple;
+            this.btnConfirmar.BackColor = System.Drawing.Color.White;
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnConfirmar.Location = new System.Drawing.Point(301, 306);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(110, 34);
@@ -114,19 +115,11 @@ namespace Definição_do_objetivo_do_sistema
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Purple;
-            this.panel1.Location = new System.Drawing.Point(-1, 60);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1464, 14);
-            this.panel1.TabIndex = 7;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(190, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(412, 39);
@@ -134,28 +127,13 @@ namespace Definição_do_objetivo_do_sistema
             this.label2.Text = "CADASTRO DO E-MAIL";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // btnProximo
-            // 
-            this.btnProximo.BackColor = System.Drawing.Color.Purple;
-            this.btnProximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProximo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnProximo.Location = new System.Drawing.Point(681, 408);
-            this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(107, 30);
-            this.btnProximo.TabIndex = 9;
-            this.btnProximo.Text = "Próximo";
-            this.btnProximo.UseVisualStyleBackColor = false;
-            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
-            // 
             // FrmDadosCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GhostWhite;
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnProximo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblcCnfirmacao);
@@ -183,8 +161,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.TextBox txtConfirmacao;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnProximo;
     }
 }

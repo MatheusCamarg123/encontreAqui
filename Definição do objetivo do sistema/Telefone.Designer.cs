@@ -42,8 +42,8 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.BackColor = System.Drawing.Color.DarkMagenta;
-            this.btnConfirmar.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmar.BackColor = System.Drawing.Color.White;
+            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
             this.btnConfirmar.Location = new System.Drawing.Point(228, 291);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(124, 35);
@@ -55,8 +55,9 @@ namespace Definição_do_objetivo_do_sistema
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Indigo;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Purple;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(204, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 25);
@@ -66,6 +67,7 @@ namespace Definição_do_objetivo_do_sistema
             // cbW
             // 
             this.cbW.AutoSize = true;
+            this.cbW.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.cbW.Location = new System.Drawing.Point(294, 172);
             this.cbW.Name = "cbW";
             this.cbW.Size = new System.Drawing.Size(92, 17);
@@ -77,8 +79,9 @@ namespace Definição_do_objetivo_do_sistema
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Indigo;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Purple;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(56, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
@@ -88,8 +91,9 @@ namespace Definição_do_objetivo_do_sistema
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Indigo;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Purple;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(56, 168);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 20);
@@ -99,8 +103,9 @@ namespace Definição_do_objetivo_do_sistema
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Indigo;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Purple;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(56, 219);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 20);
@@ -137,6 +142,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.mtCelular2);
             this.Controls.Add(this.mtCelular1);

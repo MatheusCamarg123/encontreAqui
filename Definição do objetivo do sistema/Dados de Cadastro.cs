@@ -82,27 +82,26 @@ namespace Definição_do_objetivo_do_sistema
         {
             string batata = txtPrincipal.Text;
             string carne = txtConfirmacao.Text;
-            if (batata == carne)
+            if (batata == carne && this.pessoaFisica) 
             {
                 MessageBox.Show("E-mail correto");
+                Form cpf = new frFisico(false);
+                cpf.Show();
                 return;
             }
-            MessageBox.Show("Dados Incorretos");
+            else
+            {
+                MessageBox.Show("Dados Incorretos");
+                Form cnpj = new frmJuridico(true);
+                cnpj.Show();
+            }
 
+           
         }
 
         private void btnProximo_Click(object sender, EventArgs e)
         {
-            if (this.pessoaFisica)
-            {
-                Form cpf = new frFisico(false);
-                cpf.Show();
-            }
-            else
-            {
-                Form cnpj = new frmJuridico(true);
-                cnpj.Show();
-            }
+       
         }
     }
 }
