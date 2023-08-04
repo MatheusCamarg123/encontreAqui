@@ -62,7 +62,12 @@ namespace Definição_do_objetivo_do_sistema
 
         private void CodigoFisica_Load(object sender, EventArgs e)
         {
+            Form login = Application.OpenForms["Login"];
             
+            if (login != null)
+            {
+                login.Close();
+            }
         }
 
         private void txtData_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)

@@ -64,6 +64,12 @@
     <Compile Include="CodigoFisica.Designer.cs">
       <DependentUpon>CodigoFisica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="PessoaJuridica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CodigoFisica.resx">
       <DependentUpon>CodigoFisica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PessoaJuridica.resx">
       <DependentUpon>PessoaJuridica.cs</DependentUpon>

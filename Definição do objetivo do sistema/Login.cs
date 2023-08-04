@@ -10,38 +10,28 @@ using System.Windows.Forms;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class frmBV : Form
+    public partial class Login : Form
     {
-        public frmBV()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void btnFisica_Click(object sender, EventArgs e)
+        private void pFisica_Click(object sender, EventArgs e)
         {
-            
+            Form Fisica = new CodigoFisica();
+            Fisica.Show();
         }
 
-        private void btnJuridica_Click(object sender, EventArgs e)
+        private void pJuridica_Click(object sender, EventArgs e)
         {
             Form Juridica = new PessoaJuridica();
             Juridica.Show();
         }
 
-        private void frmBV_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cCadastrar_Click(object sender, EventArgs e)
-        {
-            Form login = new Login();
-            login.Show();
         }
     }
 }
