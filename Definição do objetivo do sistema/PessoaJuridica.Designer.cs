@@ -43,12 +43,12 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.BackColor = System.Drawing.Color.White;
-            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirmar.Location = new System.Drawing.Point(286, 336);
+            this.btnConfirmar.BackColor = System.Drawing.Color.Orange;
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmar.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmar.Location = new System.Drawing.Point(557, 416);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(157, 33);
+            this.btnConfirmar.Size = new System.Drawing.Size(228, 90);
             this.btnConfirmar.TabIndex = 35;
             this.btnConfirmar.Text = "CONFIRMAR";
             this.btnConfirmar.UseVisualStyleBackColor = false;
@@ -57,12 +57,12 @@ namespace Definição_do_objetivo_do_sistema
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Orange;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(27, 25);
+            this.label1.Location = new System.Drawing.Point(150, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(743, 48);
+            this.label1.Size = new System.Drawing.Size(1109, 66);
             this.label1.TabIndex = 34;
             this.label1.Text = "Olá, obrigado por escolher o ENCONTRE AQUI para ser o seu time captação,\r\n para d" +
     "ar início a esse relacionamento preencha as informações corretamente!";
@@ -70,42 +70,46 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // txtLocalidade
             // 
-            this.txtLocalidade.Location = new System.Drawing.Point(296, 257);
+            this.txtLocalidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocalidade.Location = new System.Drawing.Point(557, 321);
             this.txtLocalidade.Name = "txtLocalidade";
-            this.txtLocalidade.Size = new System.Drawing.Size(147, 20);
+            this.txtLocalidade.Size = new System.Drawing.Size(147, 26);
             this.txtLocalidade.TabIndex = 33;
             // 
             // txtFuncionario
             // 
-            this.txtFuncionario.Location = new System.Drawing.Point(296, 218);
+            this.txtFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFuncionario.Location = new System.Drawing.Point(557, 282);
             this.txtFuncionario.Name = "txtFuncionario";
-            this.txtFuncionario.Size = new System.Drawing.Size(100, 20);
+            this.txtFuncionario.Size = new System.Drawing.Size(100, 26);
             this.txtFuncionario.TabIndex = 32;
             this.txtFuncionario.TextChanged += new System.EventHandler(this.txtFuncionario_TextChanged);
             // 
             // txtAno
             // 
-            this.txtAno.Location = new System.Drawing.Point(296, 180);
+            this.txtAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAno.Location = new System.Drawing.Point(557, 244);
             this.txtAno.Name = "txtAno";
-            this.txtAno.Size = new System.Drawing.Size(100, 20);
+            this.txtAno.Size = new System.Drawing.Size(100, 26);
             this.txtAno.TabIndex = 31;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(296, 143);
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(557, 207);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(433, 20);
+            this.txtNome.Size = new System.Drawing.Size(433, 26);
             this.txtNome.TabIndex = 30;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(71, 257);
+            this.label5.Location = new System.Drawing.Point(204, 321);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 20);
+            this.label5.Size = new System.Drawing.Size(149, 29);
             this.label5.TabIndex = 29;
             this.label5.Text = "Localidade:";
             // 
@@ -113,11 +117,11 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(71, 218);
+            this.label4.Location = new System.Drawing.Point(204, 282);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 20);
+            this.label4.Size = new System.Drawing.Size(243, 29);
             this.label4.TabIndex = 28;
             this.label4.Text = "Nº de Funcionarios:";
             // 
@@ -125,11 +129,11 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(71, 180);
+            this.label3.Location = new System.Drawing.Point(204, 244);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 20);
+            this.label3.Size = new System.Drawing.Size(333, 29);
             this.label3.TabIndex = 27;
             this.label3.Text = "Ano em que foi Inaugurado:";
             // 
@@ -137,11 +141,11 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(71, 143);
+            this.label2.Location = new System.Drawing.Point(204, 207);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 20);
+            this.label2.Size = new System.Drawing.Size(237, 29);
             this.label2.TabIndex = 26;
             this.label2.Text = "Nome da Empresa:";
             // 
@@ -150,7 +154,7 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1358, 753);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtLocalidade);

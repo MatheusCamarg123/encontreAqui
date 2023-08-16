@@ -37,18 +37,19 @@ namespace Definição_do_objetivo_do_sistema
             // lblCNPJ
             // 
             this.lblCNPJ.AutoSize = true;
-            this.lblCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCNPJ.BackColor = System.Drawing.Color.Orange;
+            this.lblCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCNPJ.ForeColor = System.Drawing.Color.White;
-            this.lblCNPJ.Location = new System.Drawing.Point(280, 100);
+            this.lblCNPJ.Location = new System.Drawing.Point(526, 134);
             this.lblCNPJ.Name = "lblCNPJ";
-            this.lblCNPJ.Size = new System.Drawing.Size(183, 29);
+            this.lblCNPJ.Size = new System.Drawing.Size(221, 33);
             this.lblCNPJ.TabIndex = 0;
             this.lblCNPJ.Text = "Informar CNPJ";
             // 
             // mtbCNPJ
             // 
             this.mtbCNPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtbCNPJ.Location = new System.Drawing.Point(268, 180);
+            this.mtbCNPJ.Location = new System.Drawing.Point(532, 214);
             this.mtbCNPJ.Mask = "00.000.000/0000-00";
             this.mtbCNPJ.Name = "mtbCNPJ";
             this.mtbCNPJ.Size = new System.Drawing.Size(205, 31);
@@ -56,14 +57,14 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.BackColor = System.Drawing.Color.White;
-            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirmar.Location = new System.Drawing.Point(300, 340);
+            this.btnConfirmar.BackColor = System.Drawing.Color.Orange;
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmar.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmar.Location = new System.Drawing.Point(549, 357);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(163, 50);
+            this.btnConfirmar.Size = new System.Drawing.Size(189, 66);
             this.btnConfirmar.TabIndex = 3;
-            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.Text = "CONFIRMAR";
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
@@ -72,7 +73,7 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(776, 450);
+            this.ClientSize = new System.Drawing.Size(1351, 771);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.mtbCNPJ);
             this.Controls.Add(this.lblCNPJ);

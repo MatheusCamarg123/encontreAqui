@@ -76,14 +76,14 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnConfirma
             // 
-            this.btnConfirma.BackColor = System.Drawing.Color.White;
-            this.btnConfirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnConfirma.BackColor = System.Drawing.Color.Orange;
+            this.btnConfirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirma.ForeColor = System.Drawing.Color.White;
             this.btnConfirma.Location = new System.Drawing.Point(361, 462);
             this.btnConfirma.Name = "btnConfirma";
-            this.btnConfirma.Size = new System.Drawing.Size(163, 50);
+            this.btnConfirma.Size = new System.Drawing.Size(206, 67);
             this.btnConfirma.TabIndex = 4;
-            this.btnConfirma.Text = "Confirmar";
+            this.btnConfirma.Text = "CONFIRMAR";
             this.btnConfirma.UseVisualStyleBackColor = false;
             this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 

@@ -100,6 +100,12 @@
     <Compile Include="frmCPF.Designer.cs">
       <DependentUpon>frmCPF.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telefone.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmJuridico.resx">
       <DependentUpon>frmJuridico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telefone.resx">
       <DependentUpon>Telefone.cs</DependentUpon>
@@ -196,6 +205,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MicrosoftTeams-image__1_-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
