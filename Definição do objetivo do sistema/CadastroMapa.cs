@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace Definição_do_objetivo_do_sistema
 {
@@ -99,7 +102,25 @@ namespace Definição_do_objetivo_do_sistema
             {
                 MessageBox.Show("Cadastro realizado com sucesso!");
             }
-            
+
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+                string query = @"INSERT INTO CadastroMapa (endereco, bairro, cidade, estado, cep) VALUES (@endereco, @bairro, @cidade, @estado, @cep)";
+                var parameters = new[]
+
+                {
+
+                    new MySqlParameter("@endereco", txtEndereco),
+                    new MySqlParameter("@bairro", txtBairro),
+                    new MySqlParameter("@cidade", txtCidade),
+                    new MySqlParameter("@estado", txtEstado),
+                    new MySqlParameter("@cep", txtCEP),
+                };
+
+                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
