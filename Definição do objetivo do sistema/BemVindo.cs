@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
+
 
 namespace Definição_do_objetivo_do_sistema
 {
@@ -42,6 +46,25 @@ namespace Definição_do_objetivo_do_sistema
         {
             Form login = new Login();
             login.Show();
+        }
+
+        private void btnAcessar_Click(object sender, EventArgs e)
+        {
+            using (MyDbContext db = new MyDbContext())
+
+            {
+                string query = @"INSERT INTO BemVindo (cpf, senha) VALUES (@cpf, @senha)";
+                var parameters = new[]
+
+                {
+                  new MySqlParameter("@cpf", txtCpfcpnj),
+                  new MySqlParameter("@senha", txtSenha)
+                  
+                };
+
+                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+            }
+        
         }
     }
 }

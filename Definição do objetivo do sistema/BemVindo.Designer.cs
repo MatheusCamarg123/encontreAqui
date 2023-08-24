@@ -52,6 +52,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnAcessar.TabIndex = 5;
             this.btnAcessar.Text = "ACESSAR";
             this.btnAcessar.UseVisualStyleBackColor = false;
+            this.btnAcessar.Click += new System.EventHandler(this.btnAcessar_Click);
             // 
             // label5
             // 
