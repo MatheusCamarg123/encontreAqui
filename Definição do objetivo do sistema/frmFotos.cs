@@ -8,6 +8,9 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace Definição_do_objetivo_do_sistema
 {
@@ -44,6 +47,28 @@ namespace Definição_do_objetivo_do_sistema
             {
                 // Trata possíveis erros ao carregar a imagem
                 MessageBox.Show("Ocorreu um erro ao carregar a imagem: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+
+                string query = @"INSERT INTO Users (name, birth_date) VALUES (@name, @birth_date)";
+
+                var parameters = new[]
+
+                {
+
+                    new MySqlParameter("@foto", ),
+
+                    new MySqlParameter("@birth_date", dataNascimento)
+
+                };
+
+
+
+                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+
             }
         }
 
