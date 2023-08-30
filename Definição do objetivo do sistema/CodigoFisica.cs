@@ -47,12 +47,7 @@ namespace Definição_do_objetivo_do_sistema
             }
 
 
-            
-
-
-
-            Form Email = new FrmDadosCadastro(true);
-            Email.Show();
+  
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)

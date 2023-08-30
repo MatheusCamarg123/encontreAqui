@@ -69,6 +69,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnIniciar.TabIndex = 2;
             this.btnIniciar.Text = "INICIAR";
             this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // TelaInicial
             // 

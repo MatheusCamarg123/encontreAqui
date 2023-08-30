@@ -40,8 +40,13 @@ namespace Definição_do_objetivo_do_sistema
 
         private void cCadastrar_Click(object sender, EventArgs e)
         {
-            Form login = new Login();
-            login.Show();
+            Form LOGIN = new frmFotos();
+            LOGIN.Show();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

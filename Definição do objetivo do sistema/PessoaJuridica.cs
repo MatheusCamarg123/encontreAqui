@@ -54,8 +54,7 @@ namespace Definição_do_objetivo_do_sistema
             }
            
 
-            Form Email = new FrmDadosCadastro(false);
-            Email.Show();
+         
         }
 
         private void PessoaJuridica_Load(object sender, EventArgs e)

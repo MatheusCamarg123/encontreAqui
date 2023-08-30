@@ -27,7 +27,7 @@ namespace Definição_do_objetivo_do_sistema
 
            try
             {
-                // Faz o download da imagem a partir da URL
+                
                 WebClient client = new WebClient();
                 byte[] imageData = client.DownloadData(Link.Text);
 
@@ -45,7 +45,7 @@ namespace Definição_do_objetivo_do_sistema
             }
             catch (Exception ex)
             {
-                // Trata possíveis erros ao carregar a imagem
+                
                 MessageBox.Show("Ocorreu um erro ao carregar a imagem: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
@@ -53,15 +53,15 @@ namespace Definição_do_objetivo_do_sistema
 
             {
 
-                string query = @"INSERT INTO Users (name, birth_date) VALUES (@name, @birth_date)";
+                string query = @"INSERT INTO fotos (foto,id_imovel ) VALUES (@pfoto, @pid_imovel)";
 
                 var parameters = new[]
 
                 {
 
-                    new MySqlParameter("@foto", ),
+                    new MySqlParameter("@foto", Link.Text ),
 
-                    new MySqlParameter("@birth_date", dataNascimento)
+                    new MySqlParameter("@id_imovel", 1 )
 
                 };
 
