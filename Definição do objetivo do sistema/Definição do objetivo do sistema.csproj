@@ -130,11 +130,11 @@
     <Compile Include="CodigoFisica.Designer.cs">
       <DependentUpon>CodigoFisica.cs</DependentUpon>
     </Compile>
-    <Compile Include="Detalhes.cs">
+    <Compile Include="Cadastro_detalhes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Detalhes.Designer.cs">
-      <DependentUpon>Detalhes.cs</DependentUpon>
+    <Compile Include="Cadastro_detalhes.Designer.cs">
+      <DependentUpon>Cadastro_detalhes.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -203,8 +203,8 @@
     <EmbeddedResource Include="CodigoFisica.resx">
       <DependentUpon>CodigoFisica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Detalhes.resx">
-      <DependentUpon>Detalhes.cs</DependentUpon>
+    <EmbeddedResource Include="Cadastro_detalhes.resx">
+      <DependentUpon>Cadastro_detalhes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
