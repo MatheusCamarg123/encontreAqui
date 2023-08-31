@@ -60,7 +60,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnIniciar
             // 
-            this.btnIniciar.BackColor = System.Drawing.Color.Orange;
+            this.btnIniciar.BackColor = System.Drawing.Color.DarkOrange;
             this.btnIniciar.FlatAppearance.BorderSize = 0;
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.Location = new System.Drawing.Point(997, 563);
@@ -69,6 +69,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnIniciar.TabIndex = 2;
             this.btnIniciar.Text = "INICIAR";
             this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // TelaInicial
             // 

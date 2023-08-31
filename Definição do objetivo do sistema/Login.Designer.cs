@@ -1,7 +1,7 @@
 ﻿
 namespace Definição_do_objetivo_do_sistema
 {
-    partial class Login
+    partial class frmBV
     {
         /// <summary>
         /// Required designer variable.
@@ -29,101 +29,173 @@ namespace Definição_do_objetivo_do_sistema
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBV));
+            this.btnAcessar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCpfcnpj = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.cCadastrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pFisica = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pJuridica = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.versenha = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cbPFPJ = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.versenha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnAcessar
+            // 
+            this.btnAcessar.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnAcessar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcessar.ForeColor = System.Drawing.Color.White;
+            this.btnAcessar.Location = new System.Drawing.Point(552, 318);
+            this.btnAcessar.Name = "btnAcessar";
+            this.btnAcessar.Size = new System.Drawing.Size(194, 76);
+            this.btnAcessar.TabIndex = 5;
+            this.btnAcessar.Text = "ACESSAR";
+            this.btnAcessar.UseVisualStyleBackColor = false;
+            this.btnAcessar.Click += new System.EventHandler(this.btnAcessar_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(395, 204);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(151, 25);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "CPF / CNPJ :";
+            // 
+            // txtCpfcnpj
+            // 
+            this.txtCpfcnpj.Location = new System.Drawing.Point(552, 209);
+            this.txtCpfcnpj.Name = "txtCpfcnpj";
+            this.txtCpfcnpj.Size = new System.Drawing.Size(279, 20);
+            this.txtCpfcnpj.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(443, 270);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 25);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "SENHA :";
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(552, 270);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(194, 20);
+            this.txtSenha.TabIndex = 9;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+            // 
+            // cCadastrar
+            // 
+            this.cCadastrar.BackColor = System.Drawing.Color.DarkOrange;
+            this.cCadastrar.FlatAppearance.BorderSize = 0;
+            this.cCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.cCadastrar.Location = new System.Drawing.Point(465, 531);
+            this.cCadastrar.Name = "cCadastrar";
+            this.cCadastrar.Size = new System.Drawing.Size(383, 35);
+            this.cCadastrar.TabIndex = 11;
+            this.cCadastrar.Text = "NÃO POSSUO CADASTRO";
+            this.cCadastrar.UseVisualStyleBackColor = false;
+            this.cCadastrar.Click += new System.EventHandler(this.cCadastrar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 9);
+            this.label1.BackColor = System.Drawing.Color.DarkOrange;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(174, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(430, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nós conte mas sobre você!";
+            this.label1.Size = new System.Drawing.Size(885, 146);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Para que possamos continuar\r\nefetue seu login!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // versenha
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 172);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(361, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Estou querendo anunciar meu Imóvel";
+            this.versenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.hide;
+            this.versenha.Location = new System.Drawing.Point(768, 270);
+            this.versenha.Name = "versenha";
+            this.versenha.Size = new System.Drawing.Size(23, 20);
+            this.versenha.TabIndex = 14;
+            this.versenha.TabStop = false;
+            this.versenha.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pFisica
+            // pictureBox1
             // 
-            this.pFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pFisica.Location = new System.Drawing.Point(82, 231);
-            this.pFisica.Name = "pFisica";
-            this.pFisica.Size = new System.Drawing.Size(166, 73);
-            this.pFisica.TabIndex = 2;
-            this.pFisica.Text = "Pessoa Fisíca";
-            this.pFisica.UseVisualStyleBackColor = true;
-            this.pFisica.Click += new System.EventHandler(this.pFisica_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 402);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(216, 228);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
-            // panel1
+            // cbPFPJ
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(395, 80);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 428);
-            this.panel1.TabIndex = 3;
+            this.cbPFPJ.AutoCompleteCustomSource.AddRange(new string[] {
+            "PF",
+            "PJ"});
+            this.cbPFPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPFPJ.FormattingEnabled = true;
+            this.cbPFPJ.Items.AddRange(new object[] {
+            "PJ",
+            "PF"});
+            this.cbPFPJ.Location = new System.Drawing.Point(600, 572);
+            this.cbPFPJ.Name = "cbPFPJ";
+            this.cbPFPJ.Size = new System.Drawing.Size(124, 24);
+            this.cbPFPJ.TabIndex = 15;
+            this.cbPFPJ.SelectedIndexChanged += new System.EventHandler(this.cbPFPJ_SelectedIndexChanged);
             // 
-            // pJuridica
-            // 
-            this.pJuridica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pJuridica.Location = new System.Drawing.Point(527, 231);
-            this.pJuridica.Name = "pJuridica";
-            this.pJuridica.Size = new System.Drawing.Size(171, 73);
-            this.pJuridica.TabIndex = 4;
-            this.pJuridica.Text = "Pessoa Jurídica";
-            this.pJuridica.UseVisualStyleBackColor = true;
-            this.pJuridica.Click += new System.EventHandler(this.pJuridica_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(439, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(338, 24);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Estou querendo encontrar Imóveis ";
-            // 
-            // Login
+            // frmBV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(1349, 750);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pJuridica);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pFisica);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1216, 631);
+            this.Controls.Add(this.cbPFPJ);
+            this.Controls.Add(this.versenha);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Login";
-            this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
+            this.Controls.Add(this.cCadastrar);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtCpfcnpj);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnAcessar);
+            this.Name = "frmBV";
+            this.Text = "Bem - Vindo";
+            this.Load += new System.EventHandler(this.frmBV_Load);
+            this.Validated += new System.EventHandler(this.frmBV_Validated);
+            ((System.ComponentModel.ISupportInitialize)(this.versenha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
+        private System.Windows.Forms.Button btnAcessar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCpfcnpj;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Button cCadastrar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button pFisica;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button pJuridica;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox versenha;
+        private System.Windows.Forms.ComboBox cbPFPJ;
     }
 }
