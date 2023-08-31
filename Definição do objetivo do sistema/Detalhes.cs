@@ -24,46 +24,34 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnEncontrar_Click(object sender, EventArgs e)
         {
-            using (MyDbContext db = new MyDbContext())
+         
 
-            {
-
-
-
-                string query = @"INSERT INTO Users (name, birth_date) VALUES (@name, @birth_date)";
+           
 
 
-
-                var parameters = new[]
-
-
-
-                {
-
-
-
-                    new MySqlParameter("@celular1", mtCelular1),
-
-
-
-                    new MySqlParameter("@calcular", btnEncontrar)
-
-
-
-                };
-
-
-
-
-
-                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
-
-
-
-            }
         }
 
         private void Detalhes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cMobiliado_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
