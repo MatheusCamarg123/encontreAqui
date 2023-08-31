@@ -114,6 +114,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Detalhes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalhes.Designer.cs">
+      <DependentUpon>Detalhes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,14 +144,17 @@
     <Compile Include="CadastroFisica.Designer.cs">
       <DependentUpon>CadastroFisica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Dados_Imoveis.cs" />
+    <Compile Include="Models\Detalhes.cs" />
     <Compile Include="Models\Foto.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="Pagamentos.cs">
-		<SubType>Form</SubType>
-	</Compile>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CadastroJuridica.cs">
-		<SubType>Form</SubType>
-	</Compile>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pacotes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +181,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Detalhes.resx">
+      <DependentUpon>Detalhes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
