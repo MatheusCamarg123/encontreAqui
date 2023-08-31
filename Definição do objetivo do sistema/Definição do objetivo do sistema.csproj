@@ -120,6 +120,15 @@
     <Compile Include="BemVindo.Designer.cs">
       <DependentUpon>BemVindo.cs</DependentUpon>
     </Compile>
+    <Compile Include="cadastrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastrada.Designer.cs">
+      <DependentUpon>cadastrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroJuridica.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CadastroMapa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,13 +141,29 @@
     <Compile Include="CodigoFisica.Designer.cs">
       <DependentUpon>CodigoFisica.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Foto.cs" />
-    <Compile Include="MyDbContext.cs" />
-    <Compile Include="PessoaJuridica.cs">
+    <Compile Include="Dados_Imoveis.cs" />
+    <Compile Include="Detalhes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PessoaJuridica.Designer.cs">
-      <DependentUpon>PessoaJuridica.cs</DependentUpon>
+    <Compile Include="Detalhes.Designer.cs">
+      <DependentUpon>Detalhes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Foto.cs" />
+    <Compile Include="MyDbContext.cs" />
+    <Compile Include="Pacotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacotes.Designer.cs">
+      <DependentUpon>Pacotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagamentos.Designer.cs">
+      <DependentUpon>Pagamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroJuridica.Designer.cs">
+      <DependentUpon>CadastroJuridica.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
@@ -154,17 +179,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BemVindo.resx">
-      <DependentUpon>BemVindo.cs</DependentUpon>
+    <EmbeddedResource Include="cadastrada.resx">
+      <DependentUpon>cadastrada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroMapa.resx">
       <DependentUpon>CadastroMapa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CodigoFisica.resx">
-      <DependentUpon>CodigoFisica.cs</DependentUpon>
+    <EmbeddedResource Include="Detalhes.resx">
+      <DependentUpon>Detalhes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PessoaJuridica.resx">
-      <DependentUpon>PessoaJuridica.cs</DependentUpon>
+    <EmbeddedResource Include="Pacotes.resx">
+      <DependentUpon>Pacotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamentos.resx">
+      <DependentUpon>Pagamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroJuridica.resx">
+      <DependentUpon>CadastroJuridica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
