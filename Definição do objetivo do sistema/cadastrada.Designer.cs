@@ -73,7 +73,6 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Definição_do_objetivo_do_sistema.Properties.Resources.SSSSS;
             this.pictureBox1.Location = new System.Drawing.Point(26, 192);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(205, 211);
