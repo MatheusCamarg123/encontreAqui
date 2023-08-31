@@ -32,14 +32,15 @@ namespace Definição_do_objetivo_do_sistema
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBV));
             this.btnAcessar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCpfcpnj = new System.Windows.Forms.TextBox();
+            this.txtCpfcnpj = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.cCadastrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.versenha = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbPFPJ = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.versenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnAcessar.TabIndex = 5;
             this.btnAcessar.Text = "ACESSAR";
             this.btnAcessar.UseVisualStyleBackColor = false;
+            this.btnAcessar.Click += new System.EventHandler(this.btnAcessar_Click);
             // 
             // label5
             // 
@@ -66,12 +68,12 @@ namespace Definição_do_objetivo_do_sistema
             this.label5.TabIndex = 6;
             this.label5.Text = "CPF / CNPJ :";
             // 
-            // txtCpfcpnj
+            // txtCpfcnpj
             // 
-            this.txtCpfcpnj.Location = new System.Drawing.Point(552, 209);
-            this.txtCpfcpnj.Name = "txtCpfcpnj";
-            this.txtCpfcpnj.Size = new System.Drawing.Size(279, 20);
-            this.txtCpfcpnj.TabIndex = 7;
+            this.txtCpfcnpj.Location = new System.Drawing.Point(552, 209);
+            this.txtCpfcnpj.Name = "txtCpfcnpj";
+            this.txtCpfcnpj.Size = new System.Drawing.Size(279, 20);
+            this.txtCpfcnpj.TabIndex = 7;
             // 
             // label6
             // 
@@ -88,8 +90,10 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.txtSenha.Location = new System.Drawing.Point(552, 270);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(194, 20);
             this.txtSenha.TabIndex = 9;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // cCadastrar
             // 
@@ -119,6 +123,16 @@ namespace Definição_do_objetivo_do_sistema
             this.label1.Text = "Para que possamos continuar\r\nefetue seu login!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // versenha
+            // 
+            this.versenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.hide;
+            this.versenha.Location = new System.Drawing.Point(768, 270);
+            this.versenha.Name = "versenha";
+            this.versenha.Size = new System.Drawing.Size(23, 20);
+            this.versenha.TabIndex = 14;
+            this.versenha.TabStop = false;
+            this.versenha.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -129,25 +143,21 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // comboBox1
+            // cbPFPJ
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(0, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbPFPJ.AutoCompleteCustomSource.AddRange(new string[] {
             "PF",
             "PJ"});
-            this.comboBox2.Location = new System.Drawing.Point(566, 581);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 15;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cbPFPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPFPJ.FormattingEnabled = true;
+            this.cbPFPJ.Items.AddRange(new object[] {
+            "PJ",
+            "PF"});
+            this.cbPFPJ.Location = new System.Drawing.Point(600, 572);
+            this.cbPFPJ.Name = "cbPFPJ";
+            this.cbPFPJ.Size = new System.Drawing.Size(124, 24);
+            this.cbPFPJ.TabIndex = 15;
+            this.cbPFPJ.SelectedIndexChanged += new System.EventHandler(this.cbPFPJ_SelectedIndexChanged);
             // 
             // frmBV
             // 
@@ -155,19 +165,21 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1216, 631);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbPFPJ);
+            this.Controls.Add(this.versenha);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cCadastrar);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtCpfcpnj);
+            this.Controls.Add(this.txtCpfcnpj);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnAcessar);
             this.Name = "frmBV";
             this.Text = "Bem - Vindo";
             this.Load += new System.EventHandler(this.frmBV_Load);
+            this.Validated += new System.EventHandler(this.frmBV_Validated);
+            ((System.ComponentModel.ISupportInitialize)(this.versenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -177,13 +189,13 @@ namespace Definição_do_objetivo_do_sistema
         #endregion
         private System.Windows.Forms.Button btnAcessar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCpfcpnj;
+        private System.Windows.Forms.TextBox txtCpfcnpj;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button cCadastrar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.PictureBox versenha;
+        private System.Windows.Forms.ComboBox cbPFPJ;
     }
 }

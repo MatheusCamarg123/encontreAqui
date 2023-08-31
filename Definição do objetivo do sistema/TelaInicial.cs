@@ -30,7 +30,7 @@ namespace Definição_do_objetivo_do_sistema
         private void btnIniciar_Click(object sender, EventArgs e)
         {
             Form login = new frmBV();
-                login.Show();
+            login.Show();
         }
     }
 }
