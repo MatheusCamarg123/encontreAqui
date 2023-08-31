@@ -137,47 +137,23 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MyDbContext.cs" />
+    <Compile Include="Pagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagamentos.Designer.cs">
+      <DependentUpon>Pagamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="PessoaJuridica.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PessoaJuridica.Designer.cs">
       <DependentUpon>PessoaJuridica.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dados de Cadastro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dados de Cadastro.Designer.cs">
-      <DependentUpon>Dados de Cadastro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmJuridico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmJuridico.Designer.cs">
-      <DependentUpon>frmJuridico.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmFisica.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmFisica.Designer.cs">
-      <DependentUpon>frmFisica.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCPF.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCPF.Designer.cs">
-      <DependentUpon>frmCPF.cs</DependentUpon>
-    </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telefone.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telefone.Designer.cs">
-      <DependentUpon>Telefone.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFotos.cs">
       <SubType>Form</SubType>
@@ -199,26 +175,14 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pagamentos.resx">
+      <DependentUpon>Pagamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PessoaJuridica.resx">
       <DependentUpon>PessoaJuridica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dados de Cadastro.resx">
-      <DependentUpon>Dados de Cadastro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmFisica.resx">
-      <DependentUpon>frmFisica.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCPF.resx">
-      <DependentUpon>frmCPF.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmJuridico.resx">
-      <DependentUpon>frmJuridico.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telefone.resx">
-      <DependentUpon>Telefone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFotos.resx">
       <DependentUpon>frmFotos.cs</DependentUpon>
