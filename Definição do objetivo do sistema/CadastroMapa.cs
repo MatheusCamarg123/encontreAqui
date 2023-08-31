@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
+
 
 namespace Definição_do_objetivo_do_sistema
 {
@@ -38,7 +42,13 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
-          
+            string endereco = txtEndereco.Text;
+            string bairro = txtBairro.Text;
+            string cidade = txtCidade.Text;
+            string estado = txtEstado.Text;
+            string cep = txtCEP.Text;
+
+
             if (txtEndereco.Text == "") 
             {
                 MessageBox.Show("Preenchimento Obrigatório");
@@ -99,16 +109,32 @@ namespace Definição_do_objetivo_do_sistema
             {
                 MessageBox.Show("Cadastro realizado com sucesso!");
             }
-            
+
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+                string query = @"INSERT INTO endereco_pf_pj (endereco, bairro, cidade, estado, cep) VALUES (@endereco, @bairro, @cidade, @estado, @cep)";
+                var parameters = new[]
+
+                {
+
+                    new MySqlParameter("@endereco", endereco),
+                    new MySqlParameter("@bairro", bairro),
+                    new MySqlParameter("@cidade", cidade),
+                    new MySqlParameter("@estado", estado),
+                    new MySqlParameter("@cep", cep),
+                };
+
+                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             txtBairro.Text = "";
             txtCEP.Text = "";
-           
             txtCidade.Text = "";
-            
             txtEndereco.Text = "";
             txtEstado.Text = "";
             txtReferencia.Text = "";
