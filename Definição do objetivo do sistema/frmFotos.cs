@@ -53,15 +53,15 @@ namespace Definição_do_objetivo_do_sistema
 
             {
 
-                string query = @"INSERT INTO fotos (foto,id_imovel ) VALUES (@pfotos, @pid_imovel)";
+                string query = @"INSERT INTO fotos (foto,id_imovel ) VALUES (@pfoto, @pid_imovel)";
 
                 var parameters = new[]
 
                 {
 
-                    new MySqlParameter("@pfotos", Link.Text ),
+                    new MySqlParameter("@foto", Link.Text ),
 
-                    new MySqlParameter("@pid_imovel", 1 )
+                    new MySqlParameter("@id_imovel", 1 )
 
                 };
 
