@@ -11,6 +11,7 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using MySql.Data.MySqlClient;
 
+
 namespace Definição_do_objetivo_do_sistema
 {
     public partial class CadastroMapa : Form
@@ -41,7 +42,13 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
-          
+            string endereco = txtEndereco.Text;
+            string bairro = txtBairro.Text;
+            string cidade = txtCidade.Text;
+            string estado = txtEstado.Text;
+            string cep = txtCEP.Text;
+
+
             if (txtEndereco.Text == "") 
             {
                 MessageBox.Show("Preenchimento Obrigatório");
@@ -107,16 +114,16 @@ namespace Definição_do_objetivo_do_sistema
             using (MyDbContext db = new MyDbContext())
 
             {
-                string query = @"INSERT INTO CadastroMapa (endereco, bairro, cidade, estado, cep) VALUES (@endereco, @bairro, @cidade, @estado, @cep)";
+                string query = @"INSERT INTO endereco_pf_pj (endereco, bairro, cidade, estado, cep) VALUES (@endereco, @bairro, @cidade, @estado, @cep)";
                 var parameters = new[]
 
                 {
 
-                    new MySqlParameter("@endereco", txtEndereco),
-                    new MySqlParameter("@bairro", txtBairro),
-                    new MySqlParameter("@cidade", txtCidade),
-                    new MySqlParameter("@estado", txtEstado),
-                    new MySqlParameter("@cep", txtCEP),
+                    new MySqlParameter("@endereco", endereco),
+                    new MySqlParameter("@bairro", bairro),
+                    new MySqlParameter("@cidade", cidade),
+                    new MySqlParameter("@estado", estado),
+                    new MySqlParameter("@cep", cep),
                 };
 
                 int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
@@ -127,9 +134,7 @@ namespace Definição_do_objetivo_do_sistema
         {
             txtBairro.Text = "";
             txtCEP.Text = "";
-           
             txtCidade.Text = "";
-            
             txtEndereco.Text = "";
             txtEstado.Text = "";
             txtReferencia.Text = "";
