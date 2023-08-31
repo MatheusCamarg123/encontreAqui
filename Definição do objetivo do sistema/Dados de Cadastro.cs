@@ -80,26 +80,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            string batata = txtPrincipal.Text;
-            string carne = txtConfirmacao.Text;
-            if (batata == carne)             {
-                MessageBox.Show("E-mail correto");
-                if (this.pessoaFisica)
-                {
-                    Form cpf = new frFisico(false);
-                    cpf.Show();
-                }
-                else
-                {
-                    Form cnpj = new frmJuridico(true);
-                    cnpj.Show();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Dados Incorretos");
-               
-            }
+            
 
            
         }
@@ -107,6 +88,11 @@ namespace Definição_do_objetivo_do_sistema
         private void btnProximo_Click(object sender, EventArgs e)
         {
        
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

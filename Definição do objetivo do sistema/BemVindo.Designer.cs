@@ -121,9 +121,9 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 402);
+            this.pictureBox1.Location = new System.Drawing.Point(26, 380);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(216, 228);
+            this.pictureBox1.Size = new System.Drawing.Size(214, 239);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 

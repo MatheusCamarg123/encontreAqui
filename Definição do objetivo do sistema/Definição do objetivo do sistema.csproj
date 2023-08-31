@@ -66,7 +66,9 @@
     <Reference Include="MySql.Data.EntityFramework, Version=8.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.EntityFramework.8.1.0\lib\net462\MySql.Data.EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -118,6 +120,12 @@
     <Compile Include="BemVindo.Designer.cs">
       <DependentUpon>BemVindo.cs</DependentUpon>
     </Compile>
+    <Compile Include="cadastrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastrada.Designer.cs">
+      <DependentUpon>cadastrada.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroMapa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,13 +138,20 @@
     <Compile Include="CodigoFisica.Designer.cs">
       <DependentUpon>CodigoFisica.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Detalhes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Detalhes.Designer.cs">
+      <DependentUpon>Detalhes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Dados_Imoveis.cs" />
     <Compile Include="MyDbContext.cs" />
+    <Compile Include="Pacotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacotes.Designer.cs">
+      <DependentUpon>Pacotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="PessoaJuridica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,35 +164,11 @@
     <Compile Include="Dados de Cadastro.Designer.cs">
       <DependentUpon>Dados de Cadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmJuridico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmJuridico.Designer.cs">
-      <DependentUpon>frmJuridico.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmFisica.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmFisica.Designer.cs">
-      <DependentUpon>frmFisica.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCPF.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCPF.Designer.cs">
-      <DependentUpon>frmCPF.cs</DependentUpon>
-    </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telefone.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telefone.Designer.cs">
-      <DependentUpon>Telefone.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFotos.cs">
       <SubType>Form</SubType>
@@ -190,14 +181,20 @@
     <EmbeddedResource Include="BemVindo.resx">
       <DependentUpon>BemVindo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cadastrada.resx">
+      <DependentUpon>cadastrada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroMapa.resx">
       <DependentUpon>CadastroMapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CodigoFisica.resx">
       <DependentUpon>CodigoFisica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Detalhes.resx">
+      <DependentUpon>Detalhes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacotes.resx">
+      <DependentUpon>Pacotes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PessoaJuridica.resx">
       <DependentUpon>PessoaJuridica.cs</DependentUpon>
@@ -205,20 +202,8 @@
     <EmbeddedResource Include="Dados de Cadastro.resx">
       <DependentUpon>Dados de Cadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFisica.resx">
-      <DependentUpon>frmFisica.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCPF.resx">
-      <DependentUpon>frmCPF.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmJuridico.resx">
-      <DependentUpon>frmJuridico.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telefone.resx">
-      <DependentUpon>Telefone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFotos.resx">
       <DependentUpon>frmFotos.cs</DependentUpon>
@@ -276,6 +261,261 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MicrosoftTeams-image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design_sem_nome__4_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design_sem_nome__4_-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design_sem_nome__4_-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %285%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-25 213818.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %285%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img63826b4315a2b3.56638831.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img63826b4315a2b3.566388311.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img63826b4315a2b3.566388312.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img63826b4315a2b3.566388313.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAASASA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-28 212950.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-28 213123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-28 213506.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-28 213637.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AASASFAWS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SFADSWZNAW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SDSSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-28 214149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-28 214254.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-28 214929.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-28 2149291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSSSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 184443.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 184514.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 184537.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 184617.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASASAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASASAS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAAAAAAAAAAA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAAAAAAAAAAA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 185026.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 185305.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 185451.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 185650.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 185836.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 185908.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 190016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 190128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 1901281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 190357.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 190448.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 190520.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAAAAAAAAAAAAAAAAAA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AASASAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 190835.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 1900161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 190950.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOVA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 191136.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OVAVA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASASASSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAAAAASSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAAAAAAAAAASSSSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 200048.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 200138.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASASASSSSSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 200448.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 200555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAAA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASASAA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 200753.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 2007531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASASOO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 200955.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASASASAAA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASASQWE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-08-29 201258.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASAWRH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASAWRH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASAGYY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQQQQQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jhhhhh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %288%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poiuyf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llllllllll.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
