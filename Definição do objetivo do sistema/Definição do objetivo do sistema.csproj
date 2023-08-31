@@ -120,6 +120,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="cadastrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastrada.Designer.cs">
+      <DependentUpon>cadastrada.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroMapa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,15 @@
 		<SubType>Form</SubType>
 	</Compile>
     <Compile Include="CadastroJuridica.cs">
+		<SubType>Form</SubType>
+	</Compile>
+    <Compile Include="Pacotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacotes.Designer.cs">
+      <DependentUpon>Pacotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PessoaJuridica.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pagamentos.Designer.cs">
@@ -159,6 +174,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastrada.resx">
+      <DependentUpon>cadastrada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroMapa.resx">
       <DependentUpon>CadastroMapa.cs</DependentUpon>
