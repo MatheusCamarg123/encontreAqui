@@ -114,6 +114,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroJuridica.Designer.cs">
+      <DependentUpon>CadastroJuridica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Detalhes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,8 +142,8 @@
       <DependentUpon>Cadastro_detalhes.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
-		<SubType>Form</SubType>
-	</Compile>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CadastroMapa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,9 +172,6 @@
     </Compile>
     <Compile Include="Pacotes.Designer.cs">
       <DependentUpon>Pacotes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PessoaJuridica.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pagamentos.Designer.cs">
       <DependentUpon>Pagamentos.cs</DependentUpon>
@@ -210,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroJuridica.resx">
       <DependentUpon>CadastroJuridica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamentos.resx">
+      <DependentUpon>Pagamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
