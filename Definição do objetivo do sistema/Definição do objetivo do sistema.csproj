@@ -134,11 +134,11 @@
     </Compile>
     <Compile Include="Models\Foto.cs" />
     <Compile Include="MyDbContext.cs" />
+    <Compile Include="Pagamentos.cs">
+		<SubType>Form</SubType>
+	</Compile>
     <Compile Include="CadastroJuridica.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CadastroJuridica.Designer.cs">
-      <DependentUpon>CadastroJuridica.cs</DependentUpon>
     </Compile>
     <Compile Include="Pagamentos.Designer.cs">
       <DependentUpon>Pagamentos.cs</DependentUpon>
