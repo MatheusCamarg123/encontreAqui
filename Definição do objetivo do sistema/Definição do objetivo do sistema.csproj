@@ -114,35 +114,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastroJuridica.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Detalhes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Detalhes.Designer.cs">
-      <DependentUpon>Detalhes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="cadastrada.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cadastrada.Designer.cs">
-      <DependentUpon>cadastrada.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Cadastro_detalhes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cadastro_detalhes.Designer.cs">
-      <DependentUpon>Cadastro_detalhes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="CadastroMapa.cs">
       <SubType>Form</SubType>
@@ -158,11 +134,6 @@
     </Compile>
     <Compile Include="Models\Foto.cs" />
     <Compile Include="MyDbContext.cs" />
-    <Compile Include="Pagamentos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pacotes.cs">
-      <SubType>Form</SubType>
     <Compile Include="CadastroJuridica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroFisica.resx">
       <DependentUpon>CadastroFisica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroJuridica.resx">
+      <DependentUpon>CadastroJuridica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
