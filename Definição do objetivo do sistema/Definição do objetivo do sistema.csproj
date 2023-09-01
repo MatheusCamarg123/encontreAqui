@@ -118,21 +118,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="cadastrada.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="cadastrada.Designer.cs">
-      <DependentUpon>cadastrada.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Cadastro_detalhes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cadastro_detalhes.Designer.cs">
-      <DependentUpon>Cadastro_detalhes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-		<SubType>Form</SubType>
-	</Compile>
     <Compile Include="CadastroMapa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,14 +137,6 @@
     </Compile>
     <Compile Include="CadastroJuridica.Designer.cs">
       <DependentUpon>CadastroJuridica.cs</DependentUpon>
-    <Compile Include="Pacotes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pacotes.Designer.cs">
-      <DependentUpon>Pacotes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pagamentos.Designer.cs">
-      <DependentUpon>Pagamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
@@ -175,15 +152,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Detalhes.resx">
-      <DependentUpon>Detalhes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Cadastro_detalhes.resx">
-      <DependentUpon>Cadastro_detalhes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="cadastrada.resx">
-      <DependentUpon>cadastrada.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

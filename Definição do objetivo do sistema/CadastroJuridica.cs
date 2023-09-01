@@ -106,22 +106,5 @@ namespace Definição_do_objetivo_do_sistema
 
         }
 
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // CadastroJuridica
-            // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "CadastroJuridica";
-            this.Load += new System.EventHandler(this.CadastroJuridica_Load);
-            this.ResumeLayout(false);
-
-        }
-
-        private void CadastroJuridica_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
