@@ -211,6 +211,9 @@
     <EmbeddedResource Include="CadastroJuridica.resx">
       <DependentUpon>CadastroJuridica.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pacotes.resx">
+      <DependentUpon>Pacotes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pagamentos.resx">
       <DependentUpon>Pagamentos.cs</DependentUpon>
     </EmbeddedResource>

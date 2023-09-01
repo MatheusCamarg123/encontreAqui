@@ -101,7 +101,7 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
             this.pictureBox1.BackgroundImage = global::Definição_do_objetivo_do_sistema.Properties.Resources.Captura_de_tela_2023_08_28_214254;
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.InitialImage = global::Definição_do_objetivo_do_sistema.Properties.Resources.img63826b4315a2b32;
+            //this.pictureBox1.InitialImage = global::Definição_do_objetivo_do_sistema.Properties.Resources.img63826b4315a2b32;
             this.pictureBox1.Location = new System.Drawing.Point(334, 191);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 311);
@@ -111,7 +111,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::Definição_do_objetivo_do_sistema.Properties.Resources.SDSSS;
+            //this.pictureBox3.BackgroundImage = global::Definição_do_objetivo_do_sistema.Properties.Resources.SDSSS;//
             this.pictureBox3.Location = new System.Drawing.Point(844, 191);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(215, 311);
