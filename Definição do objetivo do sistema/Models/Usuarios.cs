@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Definição_do_objetivo_do_sistema.Models
 {
-    public class Usuario
+    public class Usuarios
     {
         [Column("id")]
         public int Id { get; set; }
