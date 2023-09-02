@@ -15,18 +15,65 @@ using Definição_do_objetivo_do_sistema.Models;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class Cadastro_detalhes : Form
+    public partial class txtBair : Form
     {
-        public Cadastro_detalhes()
+        public txtBair()
         {
             InitializeComponent();
         }
 
         private void btnEncontrar_Click(object sender, EventArgs e)
         {
-         
+            string reg = txtReg.Text;
+            string cid = txtCid.Text;
+            string est = txtEst.Text;
+            string pont = txtPont.Text;
+            string cep = mtCep.Text;
+            string met = txtMet.Text;
+            string bai = txtBai.Text;
 
-           
+
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+
+                string query = @"INSERT INTO dados_imoveis (regiao, cidade, estado, ponto de referencia, CEP, metros quarados, bairro, quartos, banheiro, vagas) VALUES (@regiao, @estado, @ponto_de_referencia, @CEP, @metros_quarados, @bairro, @quartos, @banheiro, @vagas); SELECT LAST_INSERT_ID();";
+
+                var parameters = new[]
+
+                {
+
+                    new MySqlParameter("@regiao",reg),
+
+                    new MySqlParameter("@cidade", cid),
+
+                    new MySqlParameter("@estado", est),
+
+                    new MySqlParameter("@ponto_de_referencia", pont ),
+
+                    new MySqlParameter("@CEP", cep),
+
+                    new MySqlParameter("@metros_quadrados", met),
+
+                    new MySqlParameter("@bairro", bai),
+
+                    
+
+
+
+           };
+
+                int  = db.Database.SqlQuery<int>(query, parameters).Single();
+
+            }
+
+
+
+            Form Cadastro_detalhes = new frmFotos();
+            Cadastro_detalhes.Show();
+
+
 
 
         }
@@ -52,6 +99,11 @@ namespace Definição_do_objetivo_do_sistema
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
