@@ -102,8 +102,7 @@ namespace Definição_do_objetivo_do_sistema
             }
             if (!this.cnpj)
             {
-                Form Fotos = new frmFotos();
-                Fotos.Show();
+                
             }
             else
             {

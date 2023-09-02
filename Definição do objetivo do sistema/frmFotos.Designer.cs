@@ -55,7 +55,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbrir.ForeColor = System.Drawing.Color.White;
-            this.btnAbrir.Location = new System.Drawing.Point(203, 216);
+            this.btnAbrir.Location = new System.Drawing.Point(204, 225);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(168, 35);
             this.btnAbrir.TabIndex = 2;

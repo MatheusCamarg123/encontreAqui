@@ -16,38 +16,40 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class frmFotos : Form
     {
-        public frmFotos()
+        int id_imovel;
+        public frmFotos(int id_imovel)
         {
+            this.id_imovel = id_imovel;
             InitializeComponent();
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-          
+       
+            
+                      try
+                        {
 
-           try
-            {
-                
-                WebClient client = new WebClient();
-                byte[] imageData = client.DownloadData(Link.Text);
+                            WebClient client = new WebClient();
+                            byte[] imageData = client.DownloadData(Link.Text);
 
-                // Converte os dados da imagem para um objeto Image
-                using (var ms = new System.IO.MemoryStream(imageData))
-                {
-                    pictureBox.Image = Image.FromStream(ms);
-                }
-                this.Size = new Size(500, 500);
-                this.StartPosition = FormStartPosition.CenterScreen;
+                            
+                            using (var ms = new System.IO.MemoryStream(imageData))
+                            {
+                                pictureBox.Image = Image.FromStream(ms);
+                            }
+                            this.Size = new Size(500, 500);
+                            this.StartPosition = FormStartPosition.CenterScreen;
 
-                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureBox.Dock = DockStyle.Fill;
-                this.WindowState = FormWindowState.Maximized;
-            }
-            catch (Exception ex)
-            {
-                
-                MessageBox.Show("Ocorreu um erro ao carregar a imagem: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                            pictureBox.Dock = DockStyle.Fill;
+                            this.WindowState = FormWindowState.Maximized;
+                        }
+                        catch (Exception ex)
+                        {
+
+                            MessageBox.Show("Ocorreu um erro ao carregar a imagem: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
 
             using (MyDbContext db = new MyDbContext())
 
@@ -61,7 +63,7 @@ namespace Definição_do_objetivo_do_sistema
 
                     new MySqlParameter("@pfotos", Link.Text ),
 
-                    new MySqlParameter("@pid_imovel", 1 )
+                    new MySqlParameter("@pid_imovel", id_imovel )
 
                 };
 
