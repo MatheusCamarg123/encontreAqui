@@ -123,6 +123,12 @@
     <Compile Include="Detalhes.Designer.cs">
       <DependentUpon>Detalhes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPacotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPacotes.Designer.cs">
+      <DependentUpon>FrmPacotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,12 +173,6 @@
     <Compile Include="CadastroJuridica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pacotes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pacotes.Designer.cs">
-      <DependentUpon>Pacotes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pagamentos.Designer.cs">
       <DependentUpon>Pagamentos.cs</DependentUpon>
     </Compile>
@@ -196,6 +196,9 @@
     <EmbeddedResource Include="Cadastro_detalhes.resx">
       <DependentUpon>Cadastro_detalhes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPacotes.resx">
+      <DependentUpon>FrmPacotes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,9 +213,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroJuridica.resx">
       <DependentUpon>CadastroJuridica.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pacotes.resx">
-      <DependentUpon>Pacotes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pagamentos.resx">
       <DependentUpon>Pagamentos.cs</DependentUpon>

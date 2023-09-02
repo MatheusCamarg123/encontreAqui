@@ -1,7 +1,7 @@
 ﻿
 namespace Definição_do_objetivo_do_sistema
 {
-    partial class Pacotes
+    partial class FrmPacotes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Definição_do_objetivo_do_sistema
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pacotes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPacotes));
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
