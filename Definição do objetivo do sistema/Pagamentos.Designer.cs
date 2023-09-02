@@ -121,7 +121,7 @@ namespace Definição_do_objetivo_do_sistema
             this.groupBox1.Size = new System.Drawing.Size(42, 186);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+           this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButton1
             // 
@@ -273,7 +273,6 @@ namespace Definição_do_objetivo_do_sistema
             // btnconfirmado
             // 
             this.btnconfirmado.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnconfirmado.FlatAppearance.BorderSize = 0;
             this.btnconfirmado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnconfirmado.ForeColor = System.Drawing.Color.White;
             this.btnconfirmado.Location = new System.Drawing.Point(342, 354);

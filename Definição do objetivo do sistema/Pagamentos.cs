@@ -64,9 +64,11 @@ namespace Definição_do_objetivo_do_sistema
             string cvv = txtcvv.Text;
             string parcelas = cbparcelas.Text;
             string vencimento = mtvencimento.Text.Trim();
-
-            if (radioButton3.Checked && radioButton1.Checked)
+            
+            
+            if (radioButton3.Checked || radioButton1.Checked)
             {
+              
                 if (nome == "")
                 {
                     MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
@@ -96,15 +98,24 @@ namespace Definição_do_objetivo_do_sistema
                 }
             }
 
-            if (radioButton1.Checked) {
+            if (radioButton1.Checked)
+            {
                 if (parcelas == "")
                 {
                     MessageBox.Show("SELECIONE QUANTAS PARCELAS");
                     return;
 
                 }
-            }
+
+                if (radioButton4.Checked)
+                {
+                    if (parcelas == "")
+                    {
+                        MessageBox.Show("SELECIONE QUANTAS PARCELAS");
+                        return;
+                    }
             
+
 
            
 
