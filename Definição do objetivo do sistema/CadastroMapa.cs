@@ -23,11 +23,15 @@ namespace Definição_do_objetivo_do_sistema
             InitializeComponent();
         }
 
+        public CadastroMapa()
+        {
+        }
+
         private void CadastroMapa_Load(object sender, EventArgs e)
         {
-            Form tele = Application.OpenForms["FormCadastro"];
-            if (tele != null)
-                tele.Close();
+            Form cadjud = Application.OpenForms["CaddastroJuridica"];
+            if (cadjud != null)
+                cadjud.Close();
         }
 
         private void label9_Click(object sender, EventArgs e)

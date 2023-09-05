@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class Pacotes : Form
+    public partial class FrmPacotes : Form
     {
-        public Pacotes()
+        public FrmPacotes()
         {
             InitializeComponent();
         }
