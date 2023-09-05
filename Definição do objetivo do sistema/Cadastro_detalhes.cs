@@ -39,7 +39,6 @@ namespace Definição_do_objetivo_do_sistema
             {
 
                 string query = @"INSERT INTO dados_imoveis (regiao, cidade, estado, ponto de referencia, CEP, metros quarados, bairro, quartos, banheiro, vagas) VALUES (@regiao, @estado, @ponto_de_referencia, @CEP, @metros_quarados, @bairro, @quartos, @banheiro, @vagas); SELECT LAST_INSERT_ID();";
-
                 var parameters = new[]
 
                 {
@@ -64,14 +63,17 @@ namespace Definição_do_objetivo_do_sistema
 
            };
 
+
                 int dados =  db.Database.SqlQuery<int>(query, parameters).Single();
+                
+                Form fotos = new frmFotos(dados);
+                fotos.Show();
 
             }
+             
 
 
-
-            Form Cadastro_detalhes = new frmFotos();
-            Cadastro_detalhes.Show();
+            
 
 
 
