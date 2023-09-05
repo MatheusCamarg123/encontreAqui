@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace Definição_do_objetivo_do_sistema
 {
@@ -23,14 +26,14 @@ namespace Definição_do_objetivo_do_sistema
 
             string imovel = btnConfirma.Text;
 
-            using (MyDbContext db = new MyDbContext())
+           /* using (MyDbContext db = new MyDbContext())
 
             {
 
                 string query = @"INSERT INTO usuarios (nome, senha, email, telefone, endereco) VALUES (@pnome, @psenha); SELECT LAST_INSERT_ID();";
 
                 var parameters = new[]
-
+                
                 {
 
                     new MySqlParameter("@pnome", name),
@@ -61,7 +64,7 @@ namespace Definição_do_objetivo_do_sistema
 
 
 
-            }
+            }*/
 
             if (txtNome.Text == "")
             {
@@ -81,8 +84,32 @@ namespace Definição_do_objetivo_do_sistema
                 return;
             }
 
+            if (txtTelefone.Text == "")
+            {
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
+                return;
+            }
 
-            
+            if (txtEmail.Text == "")
+            {
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
+                return;
+            }
+
+            if (txtsenha.Text == "")
+            {
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
+                return;
+            }
+
+            if (txtconfsenha.Text == "")
+            {
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
+                return;
+            }
+
+
+
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)
