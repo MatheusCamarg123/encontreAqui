@@ -95,7 +95,13 @@ namespace Definição_do_objetivo_do_sistema
                   
                 };
 
-                Usuarios user = db.Database.SqlQuery<Usuarios>(query, parameters).Single();
+                Usuarios user = db.Database.SqlQuery<Usuarios>(query, parameters).SingleOrDefault();
+
+                if (user == null)
+                {
+                    MessageBox.Show("USUARIO NAO IDENTIFICADO");
+                    return;
+                }
 
                 Form frmBv = new Cadastro_detalhes();
                 frmBv.Show();
