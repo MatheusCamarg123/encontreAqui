@@ -38,7 +38,7 @@ namespace Definição_do_objetivo_do_sistema
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.boletinho = new System.Windows.Forms.RadioButton();
             this.txtcartaonumero = new System.Windows.Forms.TextBox();
             this.lblnomecartao = new System.Windows.Forms.Label();
             this.lblnumerocartao = new System.Windows.Forms.Label();
@@ -114,14 +114,14 @@ namespace Definição_do_objetivo_do_sistema
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton4);
+            this.groupBox1.Controls.Add(this.boletinho);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Location = new System.Drawing.Point(107, 108);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(42, 186);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
-           this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButton1
             // 
@@ -156,16 +156,16 @@ namespace Definição_do_objetivo_do_sistema
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // radioButton4
+            // boletinho
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(14, 21);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 17;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            this.boletinho.AutoSize = true;
+            this.boletinho.Location = new System.Drawing.Point(14, 21);
+            this.boletinho.Name = "boletinho";
+            this.boletinho.Size = new System.Drawing.Size(14, 13);
+            this.boletinho.TabIndex = 17;
+            this.boletinho.TabStop = true;
+            this.boletinho.UseVisualStyleBackColor = true;
+            this.boletinho.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // txtcartaonumero
             // 
@@ -337,7 +337,7 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton boletinho;
         private System.Windows.Forms.TextBox txtcartaonumero;
         private System.Windows.Forms.Label lblnomecartao;
         private System.Windows.Forms.Label lblnumerocartao;
