@@ -178,6 +178,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.label1);
             this.Name = "Detalhes";
             this.Text = "Detalhes";
+            this.Load += new System.EventHandler(this.Detalhes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -38,7 +38,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void cadastrada_Load(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Maximized;
         }
 
         private void button1_Click(object sender, EventArgs e)

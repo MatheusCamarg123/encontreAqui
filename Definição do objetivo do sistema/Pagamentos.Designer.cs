@@ -50,7 +50,9 @@ namespace Definição_do_objetivo_do_sistema
             this.lblparcelas = new System.Windows.Forms.Label();
             this.btnconfirmado = new System.Windows.Forms.Button();
             this.mtvencimento = new System.Windows.Forms.MaskedTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblpagamentos
@@ -293,12 +295,24 @@ namespace Definição_do_objetivo_do_sistema
             this.mtvencimento.ValidatingType = typeof(System.DateTime);
             this.mtvencimento.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.QR_CODE;
+            this.pictureBox1.Location = new System.Drawing.Point(509, 125);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(163, 157);
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Pagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.mtvencimento);
             this.Controls.Add(this.btnconfirmado);
             this.Controls.Add(this.lblparcelas);
@@ -321,6 +335,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Load += new System.EventHandler(this.Pagamentos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,5 +364,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label lblparcelas;
         private System.Windows.Forms.Button btnconfirmado;
         private System.Windows.Forms.MaskedTextBox mtvencimento;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

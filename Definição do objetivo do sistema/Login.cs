@@ -103,8 +103,18 @@ namespace Definição_do_objetivo_do_sistema
                     return;
                 }
 
-                Form frmBv = new Cadastro_detalhes();
-                frmBv.Show();
+                if (login.Length == 14)
+                {
+                    Form detalhes = new Cadastro_detalhes();
+                    detalhes.Show();
+                }
+                else
+                {
+                    //A FAZER: selecionar qual era o plano que a pessoa escolheu
+                    Form cadastrada = new cadastrada(1);
+                    cadastrada.Show();
+                }
+                    
             }
 
             

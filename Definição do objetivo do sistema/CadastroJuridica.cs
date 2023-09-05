@@ -25,9 +25,6 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            Form login = new frmBV();
-            login.Show();
-
             if (txtNome.Text == "")
             {
                 MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
@@ -54,12 +51,15 @@ namespace Definição_do_objetivo_do_sistema
                 return;
             }
 
+            //A FAZER: salvar no banco de dados a pessoa juridica e login
 
+            Form end = new CadastroMapa(true);
+            end.Show();
         }
 
         private void PessoaJuridica_Load(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Maximized;
         }
 
         private void PessoaJuridica_Shown(object sender, EventArgs e)

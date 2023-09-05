@@ -34,24 +34,24 @@ namespace Definição_do_objetivo_do_sistema
 
         private void Pacotes_Load(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Maximized;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            Form cadastrada = new cadastrada(1);
+            Form cadastrada = new Pagamentos(1);
             cadastrada.Show();
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            Form cadastrada = new cadastrada(2);
+            Form cadastrada = new Pagamentos(2);
             cadastrada.Show();
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            Form cadastrada = new cadastrada(3);
+            Form cadastrada = new Pagamentos(3);
             cadastrada.Show();
         }
     }

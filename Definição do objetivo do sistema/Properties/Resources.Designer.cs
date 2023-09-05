@@ -183,16 +183,6 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ASASAS {
-            get {
-                object obj = ResourceManager.GetObject("ASASAS", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap ASASAS1 {
             get {
                 object obj = ResourceManager.GetObject("ASASAS1", resourceCulture);
@@ -206,26 +196,6 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         internal static System.Drawing.Bitmap ASASASAAA {
             get {
                 object obj = ResourceManager.GetObject("ASASASAAA", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ASASASSS {
-            get {
-                object obj = ResourceManager.GetObject("ASASASSS", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ASASASSSSSS {
-            get {
-                object obj = ResourceManager.GetObject("ASASASSSSSS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,16 +233,6 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ASAWRH1 {
-            get {
-                object obj = ResourceManager.GetObject("ASAWRH1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_2023_08_03_193701 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2023-08-03 193701", resourceCulture);
@@ -303,49 +263,9 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hide {
-            get {
-                object obj = ResourceManager.GetObject("hide", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap hide1 {
-            get {
-                object obj = ResourceManager.GetObject("hide1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap hide2 {
-            get {
-                object obj = ResourceManager.GetObject("hide2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_2023_08_25_213818 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2023-08-25 213818", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Captura_de_tela_2023_08_28_212950 {
-            get {
-                object obj = ResourceManager.GetObject("Captura de tela 2023-08-28 212950", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,16 +363,6 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Captura_de_tela_2023_08_29_184537 {
-            get {
-                object obj = ResourceManager.GetObject("Captura de tela 2023-08-29 184537", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_2023_08_29_184617 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2023-08-29 184617", resourceCulture);
@@ -476,16 +386,6 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         internal static System.Drawing.Bitmap Captura_de_tela_2023_08_29_185305 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2023-08-29 185305", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Captura_de_tela_2023_08_29_185451 {
-            get {
-                object obj = ResourceManager.GetObject("Captura de tela 2023-08-29 185451", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -723,16 +623,6 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Design_sem_nome__3_ {
-            get {
-                object obj = ResourceManager.GetObject("Design sem nome (3)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Design_sem_nome__4_ {
             get {
                 object obj = ResourceManager.GetObject("Design sem nome (4)", resourceCulture);
@@ -823,9 +713,29 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Design_sem_nome__8_1 {
+        internal static System.Drawing.Bitmap hide {
             get {
-                object obj = ResourceManager.GetObject("Design sem nome (8)1", resourceCulture);
+                object obj = ResourceManager.GetObject("hide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hide1 {
+            get {
+                object obj = ResourceManager.GetObject("hide1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hide2 {
+            get {
+                object obj = ResourceManager.GetObject("hide2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -853,16 +763,6 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap img63826b4315a2b32 {
-            get {
-                object obj = ResourceManager.GetObject("img63826b4315a2b32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap img63826b4315a2b33 {
             get {
                 object obj = ResourceManager.GetObject("img63826b4315a2b33", resourceCulture);
@@ -876,16 +776,6 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         internal static System.Drawing.Bitmap jhhhhh {
             get {
                 object obj = ResourceManager.GetObject("jhhhhh", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap llllllllll {
-            get {
-                object obj = ResourceManager.GetObject("llllllllll", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -976,6 +866,56 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         internal static System.Drawing.Bitmap print_residencial {
             get {
                 object obj = ResourceManager.GetObject("print residencial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QR_CODE {
+            get {
+                object obj = ResourceManager.GetObject("QR CODE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SAASASA {
+            get {
+                object obj = ResourceManager.GetObject("SAASASA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SDSSS {
+            get {
+                object obj = ResourceManager.GetObject("SDSSS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SFADSWZNAW {
+            get {
+                object obj = ResourceManager.GetObject("SFADSWZNAW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SSSSS {
+            get {
+                object obj = ResourceManager.GetObject("SSSSS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

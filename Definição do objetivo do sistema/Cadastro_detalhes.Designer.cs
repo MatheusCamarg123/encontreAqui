@@ -1,7 +1,7 @@
 ﻿
 namespace Definição_do_objetivo_do_sistema
 {
-    partial class txtBair
+    partial class Cadastro_detalhes
     {
         /// <summary>
         /// Required designer variable.

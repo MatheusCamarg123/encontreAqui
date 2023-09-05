@@ -29,9 +29,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void CadastroMapa_Load(object sender, EventArgs e)
         {
-            Form cadjud = Application.OpenForms["CaddastroJuridica"];
-            if (cadjud != null)
-                cadjud.Close();
+            WindowState = FormWindowState.Maximized;
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -130,6 +128,18 @@ namespace Definição_do_objetivo_do_sistema
                 };
 
                 int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+
+                if (this.cnpj)
+                {
+                    Form end = new FrmPacotes();
+                    end.Show();
+                }
+                else
+                {
+
+                    Form login = new frmBV();
+                    login.Show();
+                }
             }
         }
 

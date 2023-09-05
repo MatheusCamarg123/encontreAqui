@@ -15,9 +15,9 @@ using Definição_do_objetivo_do_sistema.Models;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class txtBair : Form
+    public partial class Cadastro_detalhes : Form
     {
-        public txtBair()
+        public Cadastro_detalhes()
         {
             InitializeComponent();
         }
@@ -82,7 +82,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void Detalhes_Load(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Maximized;
         }
 
         private void cMobiliado_CheckedChanged(object sender, EventArgs e)

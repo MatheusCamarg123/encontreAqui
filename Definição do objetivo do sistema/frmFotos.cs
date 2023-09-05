@@ -76,9 +76,8 @@ namespace Definição_do_objetivo_do_sistema
 
         private void frmFotos_Load(object sender, EventArgs e)
         {
-            Form maps1 = Application.OpenForms["CadastroMapa"];
-            if (maps1 != null)
-                maps1.Close();
+
+            WindowState = FormWindowState.Maximized;
 
         }
 

@@ -12,8 +12,9 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class Pagamentos : Form
     {
-        public Pagamentos()
+        public Pagamentos(int pa)
         {
+            //A FAZER receber o parametro corretamente
             InitializeComponent();
 
 
@@ -21,7 +22,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void Pagamentos_Load(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Maximized;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -36,6 +37,8 @@ namespace Definição_do_objetivo_do_sistema
             lblparcelas.Visible = true;
             lblvencimento.Visible = true;
             lblcvv.Visible = true;
+            pictureBox1.Visible = false;
+
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
@@ -50,6 +53,8 @@ namespace Definição_do_objetivo_do_sistema
             lblcvv.Visible = true;
             lblparcelas.Visible = false;
             cbparcelas.Visible = false;
+            pictureBox1.Visible = false;
+
         }
 
         private void lblnomecartao_Click(object sender, EventArgs e)
@@ -108,19 +113,20 @@ namespace Definição_do_objetivo_do_sistema
                     MessageBox.Show("SELECIONE QUANTAS PARCELAS");
                     return;
 
-                }
+                }   
+            }
 
-                if (boletinho.Checked)
+            if (boletinho.Checked)
+            {
+
+                if (boleto == "")
                 {
-                    
-                    if (boleto == "")
-                    {
-                        MessageBox.Show("BOLETO ENVIADO PARA O EMAIL CADASTRADO");
-                        return;
-                    }
-
+                    MessageBox.Show("BOLETO ENVIADO PARA O EMAIL CADASTRADO");
+                    return;
                 }
             }
+            Form login = new frmBV();
+            login.Show();
         }
             private void groupBox1_Enter(object sender, EventArgs e)
             {
@@ -144,8 +150,9 @@ namespace Definição_do_objetivo_do_sistema
                 lblcvv.Visible = false;
                 lblparcelas.Visible = false;
                 cbparcelas.Visible = false;
+            pictureBox1.Visible = false;
 
-            }
+        }
 
             private void radioButton2_CheckedChanged(object sender, EventArgs e)
             {
@@ -159,6 +166,12 @@ namespace Definição_do_objetivo_do_sistema
                 lblcvv.Visible = false;
                 lblparcelas.Visible = false;
                 cbparcelas.Visible = false;
+            pictureBox1.Visible = true;
             }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
+    }
     }
