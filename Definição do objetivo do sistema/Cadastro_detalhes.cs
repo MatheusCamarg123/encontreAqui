@@ -58,13 +58,13 @@ namespace Definição_do_objetivo_do_sistema
 
                     new MySqlParameter("@bairro", bai),
 
-                    
+
 
 
 
            };
 
-                int  = db.Database.SqlQuery<int>(query, parameters).Single();
+                int dados =  db.Database.SqlQuery<int>(query, parameters).Single();
 
             }
 
