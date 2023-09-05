@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class Pagamentos: Form
+    public partial class Pagamentos : Form
     {
         public Pagamentos()
         {
             InitializeComponent();
 
-            
+
         }
 
         private void Pagamentos_Load(object sender, EventArgs e)
@@ -64,11 +64,14 @@ namespace Definição_do_objetivo_do_sistema
             string cvv = txtcvv.Text;
             string parcelas = cbparcelas.Text;
             string vencimento = mtvencimento.Text.Trim();
-            
-            
+            string boleto = boletinho.Text;
+
+
+
+
             if (radioButton3.Checked || radioButton1.Checked)
             {
-              
+
                 if (nome == "")
                 {
                     MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
@@ -107,57 +110,55 @@ namespace Definição_do_objetivo_do_sistema
 
                 }
 
-                if (radioButton4.Checked)
+                if (boletinho.Checked)
                 {
-                    if (parcelas == "")
+                    
+                    if (boleto == "")
                     {
-                        MessageBox.Show("SELECIONE QUANTAS PARCELAS");
+                        MessageBox.Show("BOLETO ENVIADO PARA O EMAIL CADASTRADO");
                         return;
                     }
-            
 
-
-           
-
+                }
+            }
         }
+            private void groupBox1_Enter(object sender, EventArgs e)
+            {
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-            
-        }
+            }
 
-        private void txtnome_TextChanged(object sender, EventArgs e)
-        {
+            private void txtnome_TextChanged(object sender, EventArgs e)
+            {
 
-        }
+            }
 
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-            txtcartaonumero.Visible = false;
-            txtnome.Visible = false;
-            txtcvv.Visible = false;
-            mtvencimento.Visible = false;
-            lblnomecartao.Visible = false;
-            lblnumerocartao.Visible = false;
-            lblvencimento.Visible = false;
-            lblcvv.Visible = false;
-            lblparcelas.Visible = false;
-            cbparcelas.Visible = false;
+            private void radioButton4_CheckedChanged(object sender, EventArgs e)
+            {
+                txtcartaonumero.Visible = false;
+                txtnome.Visible = false;
+                txtcvv.Visible = false;
+                mtvencimento.Visible = false;
+                lblnomecartao.Visible = false;
+                lblnumerocartao.Visible = false;
+                lblvencimento.Visible = false;
+                lblcvv.Visible = false;
+                lblparcelas.Visible = false;
+                cbparcelas.Visible = false;
 
-        }
+            }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            txtcartaonumero.Visible = false;
-            txtnome.Visible = false;
-            txtcvv.Visible = false;
-            mtvencimento.Visible = false;
-            lblnomecartao.Visible = false;
-            lblnumerocartao.Visible = false;
-            lblvencimento.Visible = false;
-            lblcvv.Visible = false;
-            lblparcelas.Visible = false;
-            cbparcelas.Visible = false;
+            private void radioButton2_CheckedChanged(object sender, EventArgs e)
+            {
+                txtcartaonumero.Visible = false;
+                txtnome.Visible = false;
+                txtcvv.Visible = false;
+                mtvencimento.Visible = false;
+                lblnomecartao.Visible = false;
+                lblnumerocartao.Visible = false;
+                lblvencimento.Visible = false;
+                lblcvv.Visible = false;
+                lblparcelas.Visible = false;
+                cbparcelas.Visible = false;
+            }
         }
     }
-}
