@@ -1,7 +1,7 @@
 ﻿
 namespace Definição_do_objetivo_do_sistema
 {
-    partial class Cadastro_detalhes
+    partial class txtBair
     {
         /// <summary>
         /// Required designer variable.
@@ -31,19 +31,19 @@ namespace Definição_do_objetivo_do_sistema
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnCadastro = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbBanheiro = new System.Windows.Forms.GroupBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbQuarto = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbVagas = new System.Windows.Forms.GroupBox();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtReg = new System.Windows.Forms.TextBox();
             this.lblRegiao = new System.Windows.Forms.Label();
             this.lblBairro = new System.Windows.Forms.Label();
             this.lblMetros = new System.Windows.Forms.Label();
@@ -51,15 +51,15 @@ namespace Definição_do_objetivo_do_sistema
             this.lblPonto = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.Label();
             this.lblCidade = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.txtBai = new System.Windows.Forms.TextBox();
+            this.txtMet = new System.Windows.Forms.TextBox();
+            this.txtPont = new System.Windows.Forms.TextBox();
+            this.txtEst = new System.Windows.Forms.TextBox();
+            this.txtCid = new System.Windows.Forms.TextBox();
+            this.mtCep = new System.Windows.Forms.MaskedTextBox();
+            this.gbBanheiro.SuspendLayout();
+            this.gbQuarto.SuspendLayout();
+            this.gbVagas.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -86,20 +86,20 @@ namespace Definição_do_objetivo_do_sistema
             this.btnCadastro.UseVisualStyleBackColor = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnEncontrar_Click);
             // 
-            // groupBox2
+            // gbBanheiro
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Indigo;
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Controls.Add(this.radioButton6);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox2.Location = new System.Drawing.Point(519, 167);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(291, 74);
-            this.groupBox2.TabIndex = 35;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Número de banheiros";
+            this.gbBanheiro.BackColor = System.Drawing.Color.Indigo;
+            this.gbBanheiro.Controls.Add(this.radioButton4);
+            this.gbBanheiro.Controls.Add(this.radioButton5);
+            this.gbBanheiro.Controls.Add(this.radioButton6);
+            this.gbBanheiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbBanheiro.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbBanheiro.Location = new System.Drawing.Point(519, 167);
+            this.gbBanheiro.Name = "gbBanheiro";
+            this.gbBanheiro.Size = new System.Drawing.Size(291, 74);
+            this.gbBanheiro.TabIndex = 35;
+            this.gbBanheiro.TabStop = false;
+            this.gbBanheiro.Text = "Número de banheiros";
             // 
             // radioButton4
             // 
@@ -134,20 +134,20 @@ namespace Definição_do_objetivo_do_sistema
             this.radioButton6.Text = "1";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // gbQuarto
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Indigo;
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Location = new System.Drawing.Point(162, 167);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(291, 74);
-            this.groupBox1.TabIndex = 34;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Número de quartos";
+            this.gbQuarto.BackColor = System.Drawing.Color.Indigo;
+            this.gbQuarto.Controls.Add(this.radioButton3);
+            this.gbQuarto.Controls.Add(this.radioButton2);
+            this.gbQuarto.Controls.Add(this.radioButton1);
+            this.gbQuarto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbQuarto.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbQuarto.Location = new System.Drawing.Point(162, 167);
+            this.gbQuarto.Name = "gbQuarto";
+            this.gbQuarto.Size = new System.Drawing.Size(291, 74);
+            this.gbQuarto.TabIndex = 34;
+            this.gbQuarto.TabStop = false;
+            this.gbQuarto.Text = "Número de quartos";
             // 
             // radioButton3
             // 
@@ -182,20 +182,20 @@ namespace Definição_do_objetivo_do_sistema
             this.radioButton1.Text = "1";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
+            // gbVagas
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Indigo;
-            this.groupBox3.Controls.Add(this.radioButton7);
-            this.groupBox3.Controls.Add(this.radioButton8);
-            this.groupBox3.Controls.Add(this.radioButton9);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox3.Location = new System.Drawing.Point(863, 167);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(291, 74);
-            this.groupBox3.TabIndex = 36;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Vagas de carro";
+            this.gbVagas.BackColor = System.Drawing.Color.Indigo;
+            this.gbVagas.Controls.Add(this.radioButton7);
+            this.gbVagas.Controls.Add(this.radioButton8);
+            this.gbVagas.Controls.Add(this.radioButton9);
+            this.gbVagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbVagas.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbVagas.Location = new System.Drawing.Point(863, 167);
+            this.gbVagas.Name = "gbVagas";
+            this.gbVagas.Size = new System.Drawing.Size(291, 74);
+            this.gbVagas.TabIndex = 36;
+            this.gbVagas.TabStop = false;
+            this.gbVagas.Text = "Vagas de carro";
             // 
             // radioButton7
             // 
@@ -230,15 +230,15 @@ namespace Definição_do_objetivo_do_sistema
             this.radioButton9.Text = "1";
             this.radioButton9.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtReg
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Orange;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(593, 267);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(141, 26);
-            this.textBox2.TabIndex = 62;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtReg.BackColor = System.Drawing.Color.Orange;
+            this.txtReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReg.Location = new System.Drawing.Point(593, 267);
+            this.txtReg.Name = "txtReg";
+            this.txtReg.Size = new System.Drawing.Size(141, 26);
+            this.txtReg.TabIndex = 62;
+            this.txtReg.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lblRegiao
             // 
@@ -317,73 +317,75 @@ namespace Definição_do_objetivo_do_sistema
             this.lblCidade.TabIndex = 69;
             this.lblCidade.Text = "Cidade";
             // 
-            // textBox3
+            // txtBai
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Orange;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(593, 423);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(141, 26);
-            this.textBox3.TabIndex = 70;
+            this.txtBai.BackColor = System.Drawing.Color.Orange;
+            this.txtBai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBai.Location = new System.Drawing.Point(593, 423);
+            this.txtBai.Name = "txtBai";
+            this.txtBai.Size = new System.Drawing.Size(141, 26);
+            this.txtBai.TabIndex = 70;
             // 
-            // textBox4
+            // txtMet
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Orange;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(593, 397);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(141, 26);
-            this.textBox4.TabIndex = 71;
+            this.txtMet.BackColor = System.Drawing.Color.Orange;
+            this.txtMet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMet.Location = new System.Drawing.Point(593, 397);
+            this.txtMet.Name = "txtMet";
+            this.txtMet.Size = new System.Drawing.Size(141, 26);
+            this.txtMet.TabIndex = 71;
             // 
-            // textBox5
+            // txtPont
             // 
-            this.textBox5.BackColor = System.Drawing.Color.Orange;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(593, 371);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(141, 26);
-            this.textBox5.TabIndex = 72;
+            this.txtPont.BackColor = System.Drawing.Color.Orange;
+            this.txtPont.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPont.Location = new System.Drawing.Point(593, 345);
+            this.txtPont.Name = "txtPont";
+            this.txtPont.Size = new System.Drawing.Size(141, 26);
+            this.txtPont.TabIndex = 73;
             // 
-            // textBox6
+            // txtEst
             // 
-            this.textBox6.BackColor = System.Drawing.Color.Orange;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(593, 345);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(141, 26);
-            this.textBox6.TabIndex = 73;
+            this.txtEst.BackColor = System.Drawing.Color.Orange;
+            this.txtEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEst.Location = new System.Drawing.Point(593, 318);
+            this.txtEst.Name = "txtEst";
+            this.txtEst.Size = new System.Drawing.Size(141, 26);
+            this.txtEst.TabIndex = 74;
+            this.txtEst.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
-            // textBox7
+            // txtCid
             // 
-            this.textBox7.BackColor = System.Drawing.Color.Orange;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(593, 318);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(141, 26);
-            this.textBox7.TabIndex = 74;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.txtCid.BackColor = System.Drawing.Color.Orange;
+            this.txtCid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCid.Location = new System.Drawing.Point(593, 292);
+            this.txtCid.Name = "txtCid";
+            this.txtCid.Size = new System.Drawing.Size(141, 26);
+            this.txtCid.TabIndex = 75;
             // 
-            // textBox8
+            // mtCep
             // 
-            this.textBox8.BackColor = System.Drawing.Color.Orange;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(593, 292);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(141, 26);
-            this.textBox8.TabIndex = 75;
+            this.mtCep.BackColor = System.Drawing.Color.Orange;
+            this.mtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtCep.Location = new System.Drawing.Point(593, 374);
+            this.mtCep.Mask = "000-0000";
+            this.mtCep.Name = "mtCep";
+            this.mtCep.Size = new System.Drawing.Size(141, 26);
+            this.mtCep.TabIndex = 76;
+            this.mtCep.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // Detalhes
+            // txtBair
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1365, 625);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.mtCep);
+            this.Controls.Add(this.txtCid);
+            this.Controls.Add(this.txtEst);
+            this.Controls.Add(this.txtPont);
+            this.Controls.Add(this.txtMet);
+            this.Controls.Add(this.txtBai);
             this.Controls.Add(this.lblCidade);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.lblPonto);
@@ -391,21 +393,21 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.lblMetros);
             this.Controls.Add(this.lblBairro);
             this.Controls.Add(this.lblRegiao);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.txtReg);
+            this.Controls.Add(this.gbVagas);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCadastro);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "Detalhes";
+            this.Controls.Add(this.gbBanheiro);
+            this.Controls.Add(this.gbQuarto);
+            this.Name = "txtBair";
             this.Text = "Detalhes";
             this.Load += new System.EventHandler(this.Detalhes_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbBanheiro.ResumeLayout(false);
+            this.gbBanheiro.PerformLayout();
+            this.gbQuarto.ResumeLayout(false);
+            this.gbQuarto.PerformLayout();
+            this.gbVagas.ResumeLayout(false);
+            this.gbVagas.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,19 +416,19 @@ namespace Definição_do_objetivo_do_sistema
         #endregion
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnCadastro;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbBanheiro;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbQuarto;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbVagas;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtReg;
         private System.Windows.Forms.Label lblRegiao;
         private System.Windows.Forms.Label lblBairro;
         private System.Windows.Forms.Label lblMetros;
@@ -434,11 +436,11 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label lblPonto;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Label lblCidade;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtBai;
+        private System.Windows.Forms.TextBox txtMet;
+        private System.Windows.Forms.TextBox txtPont;
+        private System.Windows.Forms.TextBox txtEst;
+        private System.Windows.Forms.TextBox txtCid;
+        private System.Windows.Forms.MaskedTextBox mtCep;
     }
 }
