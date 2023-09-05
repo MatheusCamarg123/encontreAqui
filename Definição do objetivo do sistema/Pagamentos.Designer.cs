@@ -273,7 +273,6 @@ namespace Definição_do_objetivo_do_sistema
             // btnconfirmado
             // 
             this.btnconfirmado.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnconfirmado.FlatAppearance.BorderSize = 0;
             this.btnconfirmado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnconfirmado.ForeColor = System.Drawing.Color.White;
             this.btnconfirmado.Location = new System.Drawing.Point(342, 354);

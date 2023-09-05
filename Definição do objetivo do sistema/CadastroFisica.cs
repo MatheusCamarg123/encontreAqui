@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace Definição_do_objetivo_do_sistema
 {
@@ -19,11 +22,49 @@ namespace Definição_do_objetivo_do_sistema
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form login = new frmBV();
-            login.Show();
+            
 
             string imovel = btnConfirma.Text;
 
+           /* using (MyDbContext db = new MyDbContext())
+
+            {
+
+                string query = @"INSERT INTO usuarios (nome, senha, email, telefone, endereco) VALUES (@pnome, @psenha); SELECT LAST_INSERT_ID();";
+
+                var parameters = new[]
+                
+                {
+
+                    new MySqlParameter("@pnome", name),
+
+                    new MySqlParameter("@psenha", senha)
+
+                };
+
+                int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
+
+
+
+                query = @"INSERT INTO Pessoa_Fisica (cpf, user_id) VALUES (@pcpf, @puser_id);";
+
+                parameters = new[]
+
+                {
+
+                    new MySqlParameter("@pcpf", cpf),
+
+                    new MySqlParameter("@puser_id", batatinha)
+
+                };
+
+
+
+                int nRowAfetted = db.Database.ExecuteSqlCommand(query, parameters);
+
+
+
+            }*/
 
             if (txtNome.Text == "")
             {
@@ -43,8 +84,32 @@ namespace Definição_do_objetivo_do_sistema
                 return;
             }
 
+            if (txtTelefone.Text == "")
+            {
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
+                return;
+            }
 
-            
+            if (txtEmail.Text == "")
+            {
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
+                return;
+            }
+
+            if (txtsenha.Text == "")
+            {
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
+                return;
+            }
+
+            if (txtconfsenha.Text == "")
+            {
+                MessageBox.Show("PREENCHIMENTO OBRIGATÓRIO");
+                return;
+            }
+
+
+
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)

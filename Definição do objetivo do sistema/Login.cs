@@ -71,10 +71,22 @@ namespace Definição_do_objetivo_do_sistema
             string login = txtCpfcnpj.Text;
             string senha = txtSenha.Text;
 
+            
+
+
             using (MyDbContext db = new MyDbContext())
 
             {
-                string query = @"SELECT * from Usuario where cpf = @cpf AND senha = @senha;";
+                string query = null;
+                if (login.Length == 14)
+                {
+                    query = @"SELECT * from usuarios AS u JOIN pessoa_fisica AS pf ON u.id = pf.user_id where pf.cpf = @cpf AND u.senha = @senha LIMIT 1;";
+                }
+                else
+                {
+                    query = @"SELECT * from usuarios AS u JOIN pessoa_juridica AS pj ON  u.id = pj.user_id where pj.cnpj AND u.senha = @senha LIMIT 1;";
+                }
+                
                 var parameters = new[]
 
                 {
@@ -83,8 +95,12 @@ namespace Definição_do_objetivo_do_sistema
                   
                 };
 
-                Usuario user = db.Database.SqlQuery<Usuario>(query).Single();
+                Usuarios user = db.Database.SqlQuery<Usuarios>(query, parameters).Single();
+
+                Form frmBv = new Cadastro_detalhes();
+                frmBv.Show();
             }
+
             
         }
 
