@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
-
 using System.Data.Entity;
-
 using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Definição_do_objetivo_do_sistema.Models
