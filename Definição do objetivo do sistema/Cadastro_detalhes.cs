@@ -15,9 +15,9 @@ using Definição_do_objetivo_do_sistema.Models;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class txtBair : Form
+    public partial class Cadastro_Detalhes : Form
     {
-        public txtBair()
+        public Cadastro_Detalhes()
         {
             InitializeComponent();
         }
@@ -28,21 +28,62 @@ namespace Definição_do_objetivo_do_sistema
             string cid = txtCid.Text;
             string est = txtEst.Text;
             string pont = txtPont.Text;
-            string cep = mtCep.Text;
+            string cep = txtCep.Text;
             string met = txtMet.Text;
             string bai = txtBai.Text;
+          
 
-
-
-            using (MyDbContext db = new MyDbContext())
-
+            if(reg =="" || cid =="" || est =="" || pont=="" || cep=="" || met=="" || bai=="" )
             {
+                if (reg == "")
+                {
+                    txtReg.BackColor = Color.Tomato;
+                }
+                if (cid == "")
+                {
 
-                string query = @"INSERT INTO dados_imoveis (regiao, cidade, estado, ponto de referencia, CEP, metros quarados, bairro, quartos, banheiro, vagas) VALUES (@regiao, @estado, @ponto_de_referencia, @CEP, @metros_quarados, @bairro, @quartos, @banheiro, @vagas); SELECT LAST_INSERT_ID();";
+                    txtCid.BackColor = Color.Tomato;
+                }
 
-                var parameters = new[]
+                if (est == "")
+                {
+
+                    txtEst.BackColor = Color.Tomato;
+                }
+                if (pont == "")
+                {
+
+                    txtPont.BackColor = Color.Tomato;
+                }
+                if (cep == "")
+                {
+
+                    txtCep.BackColor = Color.Tomato;
+                }
+                if (met == "")
+                {
+
+                    txtMet.BackColor = Color.Tomato;
+                }
+                if (bai == "")
+                {
+
+                    txtBai.BackColor = Color.Tomato;
+                }
+                //depois de todos os ifs
+                MessageBox.Show("Preencha todos os campos!");
+            }
+            else
+            {
+                using (MyDbContext db = new MyDbContext())
 
                 {
+
+                    string query = @"INSERT INTO cadastro_detalhes (regiao, cidade, estado, ponto_referencia, cep, metros_quadrados, bairro) VALUES (@regiao,@cidade, @estado, @ponto_referencia, @cep, @metros_quadrados, @bairro); SELECT LAST_INSERT_ID();";
+
+                    var parameters = new[]
+
+                    {
 
                     new MySqlParameter("@regiao",reg),
 
@@ -50,28 +91,35 @@ namespace Definição_do_objetivo_do_sistema
 
                     new MySqlParameter("@estado", est),
 
-                    new MySqlParameter("@ponto_de_referencia", pont ),
+                    new MySqlParameter("@ponto_referencia", pont ),
 
-                    new MySqlParameter("@CEP", cep),
+                    new MySqlParameter("@cep", cep),
 
                     new MySqlParameter("@metros_quadrados", met),
 
-                    new MySqlParameter("@bairro", bai),
+                    new MySqlParameter("@bairro", bai)
 
 
 
 
 
-           };
+                };
 
-                int dados =  db.Database.SqlQuery<int>(query, parameters).Single();
+                    Dados_Imoveis detalhes = db.Database.SqlQuery<Dados_Imoveis>(query, parameters).SingleOrDefault();
+                    MessageBox.Show("Detalhes do imóvel cadastrados com suscesso :)");
+                    Form Cadastro_detalhes = new frmFotos();
+                    Cadastro_detalhes.Show();
+                    this.Hide();
 
+
+                }
             }
 
+            
 
 
-            Form Cadastro_detalhes = new frmFotos();
-            Cadastro_detalhes.Show();
+
+            
 
 
 
@@ -104,6 +152,11 @@ namespace Definição_do_objetivo_do_sistema
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void gbQuarto_Enter(object sender, EventArgs e)
         {
 
         }

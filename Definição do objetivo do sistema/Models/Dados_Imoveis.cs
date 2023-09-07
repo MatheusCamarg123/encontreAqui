@@ -46,17 +46,7 @@ namespace Definição_do_objetivo_do_sistema.Models
 
         public string bairro { get; set; }
 
-        [Column("banheiro")]
-
-        public string banheiro { get; set; }
-
-        [Column("quarto")]
-
-        public string quarto { get; set; }
-
-        [Column("garagem")]
-
-        public string garagem { get; set; }
+       
 
 
 
