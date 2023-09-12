@@ -115,17 +115,18 @@ namespace Definição_do_objetivo_do_sistema
                     return;
 
                 }
+           
+               
+            }
+            if (boletinho.Checked)
+            {
 
-                if (boletinho.Checked)
+                if (boleto == "")
                 {
-                    
-                    if (boleto == "")
-                    {
-                        MessageBox.Show("BOLETO ENVIADO PARA O EMAIL CADASTRADO");
-                        return;
-                    }
-
+                    MessageBox.Show("BOLETO ENVIADO PARA O EMAIL CADASTRADO");
+                    return;
                 }
+
             }
         }
             private void groupBox1_Enter(object sender, EventArgs e)
