@@ -31,9 +31,12 @@ namespace Definição_do_objetivo_do_sistema
             string cep = txtCep.Text;
             string met = txtMet.Text;
             string bai = txtBai.Text;
-          
+            string quarto = txtQuarto.Text;
+            string banheiro = txtBanheiro.Text;
+            string vaga = txtVaga.Text;
+            
 
-            if(reg =="" || cid =="" || est =="" || pont=="" || cep=="" || met=="" || bai=="" )
+            if (reg =="" || cid =="" || est =="" || pont=="" || cep=="" || met=="" || bai=="" || quarto == "" || banheiro == "" || vaga == "" )
             {
                 if (reg == "")
                 {
@@ -70,16 +73,40 @@ namespace Definição_do_objetivo_do_sistema
 
                     txtBai.BackColor = Color.Tomato;
                 }
-                //depois de todos os ifs
+                if (quarto == "")
+                {
+
+                    txtQuarto.BackColor = Color.Tomato;
+                }
+                if (banheiro == "")
+                {
+
+                    txtBanheiro.BackColor = Color.Tomato;
+                }
+                if (vaga == "")
+                {
+                    txtVaga.BackColor = Color.Tomato;
+
+                }
+
+
+               
                 MessageBox.Show("Preencha todos os campos!");
+               
+
+
             }
             else
             {
+                int quart = Convert.ToInt32(txtQuarto.Text);
+                int banheir = Convert.ToInt32(txtBanheiro.Text);
+                int vag = Convert.ToInt32(txtVaga.Text);
+
                 using (MyDbContext db = new MyDbContext())
 
                 {
 
-                    string query = @"INSERT INTO cadastro_detalhes (regiao, cidade, estado, ponto_referencia, cep, metros_quadrados, bairro) VALUES (@regiao,@cidade, @estado, @ponto_referencia, @cep, @metros_quadrados, @bairro); SELECT LAST_INSERT_ID();";
+                    string query = @"INSERT INTO cadastro_detalhes (regiao, cidade, estado, ponto_referencia, cep, metros_quadrados, bairro, banheir, quart, vag) VALUES (@regiao,@cidade, @estado, @ponto_referencia, @cep, @metros_quadrados, @bairro, @banheiro, @quarto, @vaga); SELECT LAST_INSERT_ID();";
 
                     var parameters = new[]
 
@@ -97,7 +124,13 @@ namespace Definição_do_objetivo_do_sistema
 
                     new MySqlParameter("@metros_quadrados", met),
 
-                    new MySqlParameter("@bairro", bai)
+                    new MySqlParameter("@bairro", bai),
+
+                    new MySqlParameter("@banheiro", banheiro),
+
+                    new MySqlParameter("@quarto", quarto),
+
+                    new MySqlParameter("@vaga", vag)
 
 
 
@@ -159,6 +192,16 @@ namespace Definição_do_objetivo_do_sistema
         private void gbQuarto_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbQuartos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
