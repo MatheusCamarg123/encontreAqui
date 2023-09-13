@@ -39,7 +39,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtData = new System.Windows.Forms.MaskedTextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -162,13 +162,13 @@ namespace Definição_do_objetivo_do_sistema
             this.label6.Text = "E - mail:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // textBox2
+            // txtCpf
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(686, 276);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 26);
-            this.textBox2.TabIndex = 31;
+            this.txtCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.Location = new System.Drawing.Point(686, 276);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(147, 26);
+            this.txtCpf.TabIndex = 31;
             // 
             // label7
             // 
@@ -275,7 +275,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label6);
@@ -308,7 +308,7 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.MaskedTextBox txtData;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label8;

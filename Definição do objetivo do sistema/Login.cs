@@ -105,7 +105,7 @@ namespace Definição_do_objetivo_do_sistema
 
                 if (login.Length == 14)
                 {
-                    Form detalhes = new Cadastro_detalhes();
+                    Form detalhes = new Cadastro_Detalhes();
                     detalhes.Show();
                 }
                 else

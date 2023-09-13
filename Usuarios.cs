@@ -15,6 +15,8 @@ namespace Definição_do_objetivo_do_sistema.Models
         [Column("nome")]
         public string Nome { get; set; }
 
+        [Column("login")]
+        public string Login { get; set; }
 
         [Column("endereco")]
         public string Endereco { get; set; }

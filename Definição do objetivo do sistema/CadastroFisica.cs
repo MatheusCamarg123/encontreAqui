@@ -22,9 +22,18 @@ namespace Definição_do_objetivo_do_sistema
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
 
-            string imovel = btnConfirma.Text;
+
+            string nome = txtNome.Text;
+            string cpf = txtCpf.Text;
+            string data = txtData.Text;
+            string loc = txtLocalidade.Text;
+            string tel = txtTelefone.Text;
+            string email = txtEmail.Text;
+            string senha = txtsenha.Text;
+            string confsenha = txtconfsenha.Text;
+
+
 
             if (txtNome.Text == "")
             {
@@ -68,19 +77,25 @@ namespace Definição_do_objetivo_do_sistema
                 return;
             }
 
-            /*A FAZER using (MyDbContext db = new MyDbContext())
+            using (MyDbContext db = new MyDbContext())
 
              {
 
-                 string query = @"INSERT INTO usuarios (nome, senha, email, telefone, endereco) VALUES (@pnome, @psenha); SELECT LAST_INSERT_ID();";
+                 string query = @"INSERT INTO usuarios (nome, senha, email, telefone, endereco) VALUES (@pnome, @psenha, @email, @telefone, @endereco); SELECT LAST_INSERT_ID();";
 
                  var parameters = new[]
 
                  {
 
-                     new MySqlParameter("@pnome", name),
+                     new MySqlParameter("@pnome", nome),
 
-                     new MySqlParameter("@psenha", senha)
+                     new MySqlParameter("@psenha", senha),
+
+                     new MySqlParameter("@email", email),
+
+                     new MySqlParameter("@telefone", tel),
+
+                     new MySqlParameter("@endereco", loc)
 
                  };
 
@@ -106,7 +121,7 @@ namespace Definição_do_objetivo_do_sistema
 
 
 
-             }*/
+             }
             Form end = new CadastroMapa(false);
             end.Show();
 

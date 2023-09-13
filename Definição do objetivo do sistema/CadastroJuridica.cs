@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace Definição_do_objetivo_do_sistema
 {
@@ -25,6 +28,20 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+
+            string nomeemp = txtNome.Text;
+            string cnpj = textBox1.Text;
+            string anofund = txtAno.Text;
+            string numfunc = txtFuncionario.Text;
+            string loc = txtLocalidade.Text;
+            string email = textBox2.Text;
+            string senha = txtsenha.Text;
+            string confsenha = txtconfsenha.Text;
+
+
+
+
+
             if (txtNome.Text == "")
             {
                 MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
@@ -51,7 +68,51 @@ namespace Definição_do_objetivo_do_sistema
                 return;
             }
 
-            //A FAZER: salvar no banco de dados a pessoa juridica e login
+            using (MyDbContext db = new MyDbContext())
+
+            {
+
+                string query = @"INSERT INTO usuarios (nome, cnpj, numero_funcionarios, ano_fundacao, endereco) VALUES (@pnome, @psenha, @email, @telefone, @endereco); SELECT LAST_INSERT_ID();";
+
+                var parameters = new[]
+
+                {
+
+                     new MySqlParameter("@pnome", nomeemp),
+
+                     new MySqlParameter("@psenha", senha),
+
+                     new MySqlParameter("@email", email),
+
+                 
+
+                     
+
+                 };
+
+                int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
+
+
+
+                query = @"INSERT INTO Pessoa_Fisica (cpf, user_id) VALUES (@pcpf, @puser_id);";
+
+                parameters = new[]
+
+                {
+
+                     new MySqlParameter("@pcpf", cpf),
+
+                     new MySqlParameter("@puser_id", batatinha)
+
+                 };
+
+
+
+                int nRowAfetted = db.Database.ExecuteSqlCommand(query, parameters);
+
+
+
+            }
 
             Form end = new CadastroMapa(true);
             end.Show();

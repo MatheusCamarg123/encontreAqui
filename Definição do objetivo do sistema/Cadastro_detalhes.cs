@@ -140,7 +140,7 @@ namespace Definição_do_objetivo_do_sistema
 
                     Dados_Imoveis detalhes = db.Database.SqlQuery<Dados_Imoveis>(query, parameters).SingleOrDefault();
                     MessageBox.Show("Detalhes do imóvel cadastrados com suscesso :)");
-                    Form Cadastro_detalhes = new frmFotos();
+                    Form Cadastro_detalhes = new frmFotos(1);
                     Cadastro_detalhes.Show();
                     this.Hide();
 
