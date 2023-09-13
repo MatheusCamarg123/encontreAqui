@@ -28,6 +28,7 @@ namespace Definição_do_objetivo_do_sistema
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             txtcartaonumero.Visible = true;
+            txtcpf.Visible = true;
             txtnome.Visible = true;
             txtcvv.Visible = true;
             mtvencimento.Visible = true;
@@ -37,13 +38,14 @@ namespace Definição_do_objetivo_do_sistema
             lblparcelas.Visible = true;
             lblvencimento.Visible = true;
             lblcvv.Visible = true;
+            lblcpf.Visible = true;
             pictureBox1.Visible = false;
-
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             txtcartaonumero.Visible = true;
+            txtcpf.Visible = true;
             txtnome.Visible = true;
             txtcvv.Visible = true;
             mtvencimento.Visible = true;
@@ -53,8 +55,8 @@ namespace Definição_do_objetivo_do_sistema
             lblcvv.Visible = true;
             lblparcelas.Visible = false;
             cbparcelas.Visible = false;
+            lblcpf.Visible = true;
             pictureBox1.Visible = false;
-
         }
 
         private void lblnomecartao_Click(object sender, EventArgs e)
@@ -113,9 +115,10 @@ namespace Definição_do_objetivo_do_sistema
                     MessageBox.Show("SELECIONE QUANTAS PARCELAS");
                     return;
 
-                }   
+                }
+           
+               
             }
-
             if (boletinho.Checked)
             {
 
@@ -124,9 +127,8 @@ namespace Definição_do_objetivo_do_sistema
                     MessageBox.Show("BOLETO ENVIADO PARA O EMAIL CADASTRADO");
                     return;
                 }
+
             }
-            Form login = new frmBV();
-            login.Show();
         }
             private void groupBox1_Enter(object sender, EventArgs e)
             {
@@ -141,6 +143,7 @@ namespace Definição_do_objetivo_do_sistema
             private void radioButton4_CheckedChanged(object sender, EventArgs e)
             {
                 txtcartaonumero.Visible = false;
+                txtcpf.Visible = false;
                 txtnome.Visible = false;
                 txtcvv.Visible = false;
                 mtvencimento.Visible = false;
@@ -150,6 +153,7 @@ namespace Definição_do_objetivo_do_sistema
                 lblcvv.Visible = false;
                 lblparcelas.Visible = false;
                 cbparcelas.Visible = false;
+                lblcpf.Visible = false;
             pictureBox1.Visible = false;
 
         }
@@ -157,6 +161,7 @@ namespace Definição_do_objetivo_do_sistema
             private void radioButton2_CheckedChanged(object sender, EventArgs e)
             {
                 txtcartaonumero.Visible = false;
+                txtcpf.Visible = false;
                 txtnome.Visible = false;
                 txtcvv.Visible = false;
                 mtvencimento.Visible = false;
@@ -166,12 +171,13 @@ namespace Definição_do_objetivo_do_sistema
                 lblcvv.Visible = false;
                 lblparcelas.Visible = false;
                 cbparcelas.Visible = false;
-            pictureBox1.Visible = true;
-            }
+                lblcpf.Visible = false;
+                pictureBox1.Visible = true;
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
     }

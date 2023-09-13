@@ -29,6 +29,7 @@ namespace Definição_do_objetivo_do_sistema
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pagamentos));
             this.lblpagamentos = new System.Windows.Forms.Label();
             this.lblpix = new System.Windows.Forms.Label();
             this.lblcc = new System.Windows.Forms.Label();
@@ -50,6 +51,8 @@ namespace Definição_do_objetivo_do_sistema
             this.lblparcelas = new System.Windows.Forms.Label();
             this.btnconfirmado = new System.Windows.Forms.Button();
             this.mtvencimento = new System.Windows.Forms.MaskedTextBox();
+            this.lblcpf = new System.Windows.Forms.Label();
+            this.txtcpf = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -196,7 +199,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblnumerocartao.AutoSize = true;
             this.lblnumerocartao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnumerocartao.ForeColor = System.Drawing.Color.White;
-            this.lblnumerocartao.Location = new System.Drawing.Point(335, 153);
+            this.lblnumerocartao.Location = new System.Drawing.Point(339, 153);
             this.lblnumerocartao.Name = "lblnumerocartao";
             this.lblnumerocartao.Size = new System.Drawing.Size(95, 18);
             this.lblnumerocartao.TabIndex = 22;
@@ -208,7 +211,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblcvv.AutoSize = true;
             this.lblcvv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcvv.ForeColor = System.Drawing.Color.White;
-            this.lblcvv.Location = new System.Drawing.Point(335, 185);
+            this.lblcvv.Location = new System.Drawing.Point(335, 220);
             this.lblcvv.Name = "lblcvv";
             this.lblcvv.Size = new System.Drawing.Size(151, 18);
             this.lblcvv.TabIndex = 23;
@@ -220,7 +223,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblvencimento.AutoSize = true;
             this.lblvencimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvencimento.ForeColor = System.Drawing.Color.White;
-            this.lblvencimento.Location = new System.Drawing.Point(586, 188);
+            this.lblvencimento.Location = new System.Drawing.Point(585, 216);
             this.lblvencimento.Name = "lblvencimento";
             this.lblvencimento.Size = new System.Drawing.Size(86, 18);
             this.lblvencimento.TabIndex = 24;
@@ -229,7 +232,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // txtcvv
             // 
-            this.txtcvv.Location = new System.Drawing.Point(492, 186);
+            this.txtcvv.Location = new System.Drawing.Point(492, 218);
             this.txtcvv.Name = "txtcvv";
             this.txtcvv.Size = new System.Drawing.Size(56, 20);
             this.txtcvv.TabIndex = 25;
@@ -254,7 +257,7 @@ namespace Definição_do_objetivo_do_sistema
             "2x",
             "3x",
             "4x"});
-            this.cbparcelas.Location = new System.Drawing.Point(492, 218);
+            this.cbparcelas.Location = new System.Drawing.Point(492, 254);
             this.cbparcelas.Name = "cbparcelas";
             this.cbparcelas.Size = new System.Drawing.Size(121, 21);
             this.cbparcelas.TabIndex = 28;
@@ -265,7 +268,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblparcelas.AutoSize = true;
             this.lblparcelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblparcelas.ForeColor = System.Drawing.Color.White;
-            this.lblparcelas.Location = new System.Drawing.Point(339, 217);
+            this.lblparcelas.Location = new System.Drawing.Point(339, 253);
             this.lblparcelas.Name = "lblparcelas";
             this.lblparcelas.Size = new System.Drawing.Size(66, 18);
             this.lblparcelas.TabIndex = 29;
@@ -287,7 +290,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // mtvencimento
             // 
-            this.mtvencimento.Location = new System.Drawing.Point(678, 188);
+            this.mtvencimento.Location = new System.Drawing.Point(677, 218);
             this.mtvencimento.Mask = "00/00";
             this.mtvencimento.Name = "mtvencimento";
             this.mtvencimento.Size = new System.Drawing.Size(55, 20);
@@ -295,13 +298,34 @@ namespace Definição_do_objetivo_do_sistema
             this.mtvencimento.ValidatingType = typeof(System.DateTime);
             this.mtvencimento.Visible = false;
             // 
+            // lblcpf
+            // 
+            this.lblcpf.AutoSize = true;
+            this.lblcpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcpf.ForeColor = System.Drawing.Color.White;
+            this.lblcpf.Location = new System.Drawing.Point(339, 188);
+            this.lblcpf.Name = "lblcpf";
+            this.lblcpf.Size = new System.Drawing.Size(38, 18);
+            this.lblcpf.TabIndex = 32;
+            this.lblcpf.Text = "CPF";
+            this.lblcpf.Visible = false;
+            // 
+            // txtcpf
+            // 
+            this.txtcpf.Location = new System.Drawing.Point(492, 186);
+            this.txtcpf.Name = "txtcpf";
+            this.txtcpf.Size = new System.Drawing.Size(274, 20);
+            this.txtcpf.TabIndex = 33;
+            this.txtcpf.UseWaitCursor = true;
+            this.txtcpf.Visible = false;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.QR_CODE;
-            this.pictureBox1.Location = new System.Drawing.Point(509, 125);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(533, 120);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 157);
-            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.Size = new System.Drawing.Size(160, 162);
+            this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -313,6 +337,8 @@ namespace Definição_do_objetivo_do_sistema
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtcpf);
+            this.Controls.Add(this.lblcpf);
             this.Controls.Add(this.mtvencimento);
             this.Controls.Add(this.btnconfirmado);
             this.Controls.Add(this.lblparcelas);
@@ -364,6 +390,8 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label lblparcelas;
         private System.Windows.Forms.Button btnconfirmado;
         private System.Windows.Forms.MaskedTextBox mtvencimento;
+        private System.Windows.Forms.Label lblcpf;
+        private System.Windows.Forms.TextBox txtcpf;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
