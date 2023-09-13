@@ -15,9 +15,9 @@ using Definição_do_objetivo_do_sistema.Models;
 
 namespace Definição_do_objetivo_do_sistema
 {
-    public partial class Cadastro_detalhes : Form
+    public partial class Cadastro_Detalhes : Form
     {
-        public Cadastro_detalhes()
+        public Cadastro_Detalhes()
         {
             InitializeComponent();
         }
@@ -28,20 +28,89 @@ namespace Definição_do_objetivo_do_sistema
             string cid = txtCid.Text;
             string est = txtEst.Text;
             string pont = txtPont.Text;
-            string cep = mtCep.Text;
+            string cep = txtCep.Text;
             string met = txtMet.Text;
             string bai = txtBai.Text;
+            string quarto = txtQuarto.Text;
+            string banheiro = txtBanheiro.Text;
+            string vaga = txtVaga.Text;
+            
 
-
-
-            using (MyDbContext db = new MyDbContext())
-
+            if (reg =="" || cid =="" || est =="" || pont=="" || cep=="" || met=="" || bai=="" || quarto == "" || banheiro == "" || vaga == "" )
             {
+                if (reg == "")
+                {
+                    txtReg.BackColor = Color.Tomato;
+                }
+                if (cid == "")
+                {
 
-                string query = @"INSERT INTO dados_imoveis (regiao, cidade, estado, ponto de referencia, CEP, metros quarados, bairro, quartos, banheiro, vagas) VALUES (@regiao, @estado, @ponto_de_referencia, @CEP, @metros_quarados, @bairro, @quartos, @banheiro, @vagas); SELECT LAST_INSERT_ID();";
-                var parameters = new[]
+                    txtCid.BackColor = Color.Tomato;
+                }
+
+                if (est == "")
+                {
+
+                    txtEst.BackColor = Color.Tomato;
+                }
+                if (pont == "")
+                {
+
+                    txtPont.BackColor = Color.Tomato;
+                }
+                if (cep == "")
+                {
+
+                    txtCep.BackColor = Color.Tomato;
+                }
+                if (met == "")
+                {
+
+                    txtMet.BackColor = Color.Tomato;
+                }
+                if (bai == "")
+                {
+
+                    txtBai.BackColor = Color.Tomato;
+                }
+                if (quarto == "")
+                {
+
+                    txtQuarto.BackColor = Color.Tomato;
+                }
+                if (banheiro == "")
+                {
+
+                    txtBanheiro.BackColor = Color.Tomato;
+                }
+                if (vaga == "")
+                {
+                    txtVaga.BackColor = Color.Tomato;
+
+                }
+
+
+               
+                MessageBox.Show("Preencha todos os campos!");
+               
+
+
+            }
+            else
+            {
+                int quart = Convert.ToInt32(txtQuarto.Text);
+                int banheir = Convert.ToInt32(txtBanheiro.Text);
+                int vag = Convert.ToInt32(txtVaga.Text);
+
+                using (MyDbContext db = new MyDbContext())
 
                 {
+
+                    string query = @"INSERT INTO cadastro_detalhes (regiao, cidade, estado, ponto_referencia, cep, metros_quadrados, bairro, banheir, quart, vag) VALUES (@regiao,@cidade, @estado, @ponto_referencia, @cep, @metros_quadrados, @bairro, @banheiro, @quarto, @vaga); SELECT LAST_INSERT_ID();";
+
+                    var parameters = new[]
+
+                    {
 
                     new MySqlParameter("@regiao",reg),
 
@@ -49,28 +118,38 @@ namespace Definição_do_objetivo_do_sistema
 
                     new MySqlParameter("@estado", est),
 
-                    new MySqlParameter("@ponto_de_referencia", pont ),
+                    new MySqlParameter("@ponto_referencia", pont ),
 
-                    new MySqlParameter("@CEP", cep),
+                    new MySqlParameter("@cep", cep),
 
                     new MySqlParameter("@metros_quadrados", met),
 
                     new MySqlParameter("@bairro", bai),
 
+                    new MySqlParameter("@banheiro", banheiro),
+
+                    new MySqlParameter("@quarto", quarto),
+
+                    new MySqlParameter("@vaga", vag)
 
 
 
 
-           };
+
+                };
+
+                    Dados_Imoveis detalhes = db.Database.SqlQuery<Dados_Imoveis>(query, parameters).SingleOrDefault();
+                    MessageBox.Show("Detalhes do imóvel cadastrados com suscesso :)");
+                    Form Cadastro_detalhes = new frmFotos();
+                    Cadastro_detalhes.Show();
+                    this.Hide();
 
 
-                int dados =  db.Database.SqlQuery<int>(query, parameters).Single();
-                
-                Form fotos = new frmFotos(dados);
-                fotos.Show();
-
+                }
             }
-             
+
+            
+
 
 
             
@@ -82,7 +161,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void Detalhes_Load(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
+
         }
 
         private void cMobiliado_CheckedChanged(object sender, EventArgs e)
@@ -108,6 +187,21 @@ namespace Definição_do_objetivo_do_sistema
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
+        }
+
+        private void gbQuarto_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbQuartos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
