@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace Definição_do_objetivo_do_sistema
 {
@@ -39,7 +42,7 @@ namespace Definição_do_objetivo_do_sistema
             lblvencimento.Visible = true;
             lblcvv.Visible = true;
             lblcpf.Visible = true;
-            pictureBox1.Visible = false;
+            pixx.Visible = false;
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
@@ -56,7 +59,7 @@ namespace Definição_do_objetivo_do_sistema
             lblparcelas.Visible = false;
             cbparcelas.Visible = false;
             lblcpf.Visible = true;
-            pictureBox1.Visible = false;
+            pixx.Visible = false;
         }
 
         private void lblnomecartao_Click(object sender, EventArgs e)
@@ -72,11 +75,13 @@ namespace Definição_do_objetivo_do_sistema
             string parcelas = cbparcelas.Text;
             string vencimento = mtvencimento.Text.Trim();
             string boleto = boletinho.Text;
+            string pix = pixx.ImageLocation;
+            string cpf = cpff.Text;
 
 
 
 
-            if (radioButton3.Checked || radioButton1.Checked)
+            if (cpff.Checked || radioButton1.Checked)
             {
 
                 if (nome == "")
@@ -116,8 +121,8 @@ namespace Definição_do_objetivo_do_sistema
                     return;
 
                 }
-           
-               
+
+
             }
             if (boletinho.Checked)
             {
@@ -128,6 +133,42 @@ namespace Definição_do_objetivo_do_sistema
                     return;
                 }
 
+            }
+        
+
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+
+                string query = @"INSERT INTO pagamento (pix, boleto,nome_cartao, numero_cartao, cpf_cartao, cvv_cartao, data_cartao, parcela_cartao , cpf, id_dadospj) VALUES (@pix, @boleto, @nome_cartao, @numero_cartao, @cpf_cartao, @cvv_cartao, @data_cartao, @parcela_cartao, id_dadospj);";
+
+                var parameters = new[]
+
+                {
+
+                     new MySqlParameter("@pix", pix),
+
+                     new MySqlParameter("@boleto", boleto),
+
+                      new MySqlParameter("@nome_cartao", nome),
+
+                     new MySqlParameter("@numero_cartao", numerocartao),
+
+                      new MySqlParameter("@cpf_cartao", cpf),
+
+                       new MySqlParameter("cvv_cartao", cvv),
+
+                     new MySqlParameter("@data_cartao", vencimento),
+
+                      new MySqlParameter("@parcela_cartao", parcelas),
+
+                     new MySqlParameter("@id_dadospj", email),
+
+
+                 };
+
+                
             }
         }
             private void groupBox1_Enter(object sender, EventArgs e)
@@ -154,7 +195,7 @@ namespace Definição_do_objetivo_do_sistema
                 lblparcelas.Visible = false;
                 cbparcelas.Visible = false;
                 lblcpf.Visible = false;
-            pictureBox1.Visible = false;
+            pixx.Visible = false;
 
         }
 
@@ -172,7 +213,7 @@ namespace Definição_do_objetivo_do_sistema
                 lblparcelas.Visible = false;
                 cbparcelas.Visible = false;
                 lblcpf.Visible = false;
-                pictureBox1.Visible = true;
+                pixx.Visible = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

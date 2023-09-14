@@ -38,7 +38,7 @@ namespace Definição_do_objetivo_do_sistema
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.cpff = new System.Windows.Forms.RadioButton();
             this.boletinho = new System.Windows.Forms.RadioButton();
             this.txtcartaonumero = new System.Windows.Forms.TextBox();
             this.lblnomecartao = new System.Windows.Forms.Label();
@@ -53,9 +53,9 @@ namespace Definição_do_objetivo_do_sistema
             this.mtvencimento = new System.Windows.Forms.MaskedTextBox();
             this.lblcpf = new System.Windows.Forms.Label();
             this.txtcpf = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pixx = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pixx)).BeginInit();
             this.SuspendLayout();
             // 
             // lblpagamentos
@@ -118,7 +118,7 @@ namespace Definição_do_objetivo_do_sistema
             this.groupBox1.BackColor = System.Drawing.Color.DarkOrange;
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.cpff);
             this.groupBox1.Controls.Add(this.boletinho);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Location = new System.Drawing.Point(107, 108);
@@ -150,16 +150,16 @@ namespace Definição_do_objetivo_do_sistema
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioButton3
+            // cpff
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(14, 63);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 18;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.cpff.AutoSize = true;
+            this.cpff.Location = new System.Drawing.Point(14, 63);
+            this.cpff.Name = "cpff";
+            this.cpff.Size = new System.Drawing.Size(14, 13);
+            this.cpff.TabIndex = 18;
+            this.cpff.TabStop = true;
+            this.cpff.UseVisualStyleBackColor = true;
+            this.cpff.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // boletinho
             // 
@@ -319,16 +319,16 @@ namespace Definição_do_objetivo_do_sistema
             this.txtcpf.UseWaitCursor = true;
             this.txtcpf.Visible = false;
             // 
-            // pictureBox1
+            // pixx
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(533, 120);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 162);
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pixx.Image = ((System.Drawing.Image)(resources.GetObject("pixx.Image")));
+            this.pixx.Location = new System.Drawing.Point(528, 124);
+            this.pixx.Name = "pixx";
+            this.pixx.Size = new System.Drawing.Size(160, 162);
+            this.pixx.TabIndex = 34;
+            this.pixx.TabStop = false;
+            this.pixx.Visible = false;
+            this.pixx.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Pagamentos
             // 
@@ -336,7 +336,7 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pixx);
             this.Controls.Add(this.txtcpf);
             this.Controls.Add(this.lblcpf);
             this.Controls.Add(this.mtvencimento);
@@ -361,7 +361,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Load += new System.EventHandler(this.Pagamentos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pixx)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,7 +377,7 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton cpff;
         private System.Windows.Forms.RadioButton boletinho;
         private System.Windows.Forms.TextBox txtcartaonumero;
         private System.Windows.Forms.Label lblnomecartao;
@@ -392,6 +392,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.MaskedTextBox mtvencimento;
         private System.Windows.Forms.Label lblcpf;
         private System.Windows.Forms.TextBox txtcpf;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pixx;
     }
 }
