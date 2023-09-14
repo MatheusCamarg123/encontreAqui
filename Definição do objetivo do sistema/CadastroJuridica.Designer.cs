@@ -49,6 +49,8 @@ namespace Definição_do_objetivo_do_sistema
             this.label9 = new System.Windows.Forms.Label();
             this.txtsenha = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.lbltelef = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ocultarsenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).BeginInit();
             this.SuspendLayout();
@@ -108,7 +110,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(557, 214);
+            this.txtNome.Location = new System.Drawing.Point(557, 180);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(433, 26);
             this.txtNome.TabIndex = 30;
@@ -155,7 +157,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(204, 214);
+            this.label2.Location = new System.Drawing.Point(204, 180);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(237, 29);
             this.label2.TabIndex = 26;
@@ -164,7 +166,7 @@ namespace Definição_do_objetivo_do_sistema
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(557, 246);
+            this.textBox1.Location = new System.Drawing.Point(557, 212);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(147, 26);
             this.textBox1.TabIndex = 37;
@@ -175,7 +177,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(204, 246);
+            this.label6.Location = new System.Drawing.Point(204, 212);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 29);
             this.label6.TabIndex = 36;
@@ -263,12 +265,34 @@ namespace Definição_do_objetivo_do_sistema
             this.label8.TabIndex = 42;
             this.label8.Text = "Senha:";
             // 
+            // txtTel
+            // 
+            this.txtTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTel.Location = new System.Drawing.Point(557, 244);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(169, 26);
+            this.txtTel.TabIndex = 47;
+            // 
+            // lbltelef
+            // 
+            this.lbltelef.AutoSize = true;
+            this.lbltelef.BackColor = System.Drawing.Color.Transparent;
+            this.lbltelef.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltelef.ForeColor = System.Drawing.Color.White;
+            this.lbltelef.Location = new System.Drawing.Point(204, 246);
+            this.lbltelef.Name = "lbltelef";
+            this.lbltelef.Size = new System.Drawing.Size(118, 29);
+            this.lbltelef.TabIndex = 48;
+            this.lbltelef.Text = "Telefone";
+            // 
             // CadastroJuridica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1358, 753);
+            this.Controls.Add(this.lbltelef);
+            this.Controls.Add(this.txtTel);
             this.Controls.Add(this.ocultarsenha);
             this.Controls.Add(this.versenha);
             this.Controls.Add(this.txtconfsenha);
@@ -321,5 +345,7 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtsenha;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.Label lbltelef;
     }
 }
