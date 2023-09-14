@@ -37,6 +37,7 @@ namespace Definição_do_objetivo_do_sistema
             string email = textBox2.Text;
             string senha = txtsenha.Text;
             string confsenha = txtconfsenha.Text;
+            string tele = txtTel.Text;
 
 
 
@@ -67,12 +68,16 @@ namespace Definição_do_objetivo_do_sistema
                 MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
                 return;
             }
+            if (lbltelef.Text == "")
+            {
+                MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
+            }
 
             using (MyDbContext db = new MyDbContext())
 
             {
 
-                string query = @"INSERT INTO usuarios (nome, cnpj, numero_funcionarios, ano_fundacao, endereco) VALUES (@pnome, @psenha, @email, @telefone, @endereco); SELECT LAST_INSERT_ID();";
+                string query = @"INSERT INTO usuarios (nome, senha, email, telefone,  endereco) VALUES (@pnome, @psenha, @email, @telefone, @endereco); SELECT LAST_INSERT_ID();";
 
                 var parameters = new[]
 
@@ -84,9 +89,13 @@ namespace Definição_do_objetivo_do_sistema
 
                      new MySqlParameter("@email", email),
 
-                 
+                     new MySqlParameter("@telefone", tele),
 
-                     
+                     new MySqlParameter("@endereco", loc),
+
+
+
+
 
                  };
 
@@ -94,15 +103,21 @@ namespace Definição_do_objetivo_do_sistema
 
 
 
-                query = @"INSERT INTO Pessoa_Fisica (cpf, user_id) VALUES (@pcpf, @puser_id);";
+                query = @"INSERT INTO Pessoa_Juridica (cnpj, numero_funcionarios, ano_fundacao, nome_empresa, user_id) VALUES (@cnpj, @ano_fundacao, @nome_empresa, @user_id);";
 
                 parameters = new[]
 
                 {
 
-                     new MySqlParameter("@pcpf", cpf),
+                     new MySqlParameter("@cnpj", cnpj),
 
-                     new MySqlParameter("@puser_id", batatinha)
+                     new MySqlParameter("@numero_funcionarios", numfunc),
+
+                     new MySqlParameter("@ano_fundacao", anofund),
+
+                     new MySqlParameter("@nome_empresa", nomeemp),
+
+                     new MySqlParameter("@user_id", batatinha)
 
                  };
 
