@@ -32,9 +32,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dGImoveisCadastrados = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dGImoveisCadastrados)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,15 +69,6 @@ namespace Definição_do_objetivo_do_sistema
             this.dGImoveisCadastrados.TabIndex = 10;
             this.dGImoveisCadastrados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGImoveisCadastrados_CellContentClick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(26, 192);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 211);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // cadastrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -88,13 +77,11 @@ namespace Definição_do_objetivo_do_sistema
             this.ClientSize = new System.Drawing.Size(1489, 855);
             this.Controls.Add(this.dGImoveisCadastrados);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "cadastrada";
             this.Text = "cadastrada";
             this.Load += new System.EventHandler(this.cadastrada_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGImoveisCadastrados)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,7 +90,6 @@ namespace Definição_do_objetivo_do_sistema
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dGImoveisCadastrados;
     }

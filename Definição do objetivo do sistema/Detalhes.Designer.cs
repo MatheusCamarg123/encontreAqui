@@ -81,7 +81,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(235, 139);
+            this.pictureBox1.Location = new System.Drawing.Point(234, 139);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(483, 374);
             this.pictureBox1.TabIndex = 1;
