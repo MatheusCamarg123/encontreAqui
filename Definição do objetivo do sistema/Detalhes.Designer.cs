@@ -30,18 +30,13 @@ namespace Definição_do_objetivo_do_sistema
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.btnProximo = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnOutra = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.fotomovel = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotomovel)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,108 +50,52 @@ namespace Definição_do_objetivo_do_sistema
             this.label1.TabIndex = 0;
             this.label1.Text = "Detalhes do imóvel";
             // 
+            // btnProximo
+            // 
+            this.btnProximo.Location = new System.Drawing.Point(509, 536);
+            this.btnProximo.Name = "btnProximo";
+            this.btnProximo.Size = new System.Drawing.Size(95, 30);
+            this.btnProximo.TabIndex = 2;
+            this.btnProximo.Text = "Próximo";
+            this.btnProximo.UseVisualStyleBackColor = true;
+            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.Location = new System.Drawing.Point(358, 536);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(95, 30);
+            this.btnAnterior.TabIndex = 3;
+            this.btnAnterior.Text = "Anterior";
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            // 
+            // btnOutra
+            // 
+            this.btnOutra.Location = new System.Drawing.Point(397, 587);
+            this.btnOutra.Name = "btnOutra";
+            this.btnOutra.Size = new System.Drawing.Size(170, 29);
+            this.btnOutra.TabIndex = 4;
+            this.btnOutra.Text = "Outra casa";
+            this.btnOutra.UseVisualStyleBackColor = true;
+            this.btnOutra.Click += new System.EventHandler(this.btnOutra_Click);
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(25, 150);
+            this.pictureBox1.Location = new System.Drawing.Point(235, 139);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(341, 291);
+            this.pictureBox1.Size = new System.Drawing.Size(483, 374);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label2
+            // fotomovel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Orange;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(450, 169);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "QUARTO:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Orange;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(450, 220);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 25);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "BANHEIRO:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Orange;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(450, 272);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(238, 25);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "VAGAS DE GARAGEM:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Orange;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(450, 321);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 25);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "MOBILIADO:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(575, 169);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
-            this.textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(582, 220);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 20);
-            this.textBox2.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(694, 277);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(178, 20);
-            this.textBox3.TabIndex = 8;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(589, 321);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(178, 20);
-            this.textBox4.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Orange;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Window;
-            this.label6.Location = new System.Drawing.Point(450, 370);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 25);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "REGIÃO:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(589, 370);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(178, 20);
-            this.textBox5.TabIndex = 11;
+            this.fotomovel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.fotomovel.Location = new System.Drawing.Point(27, 11);
+            this.fotomovel.Name = "fotomovel";
+            this.fotomovel.Size = new System.Drawing.Size(262, 122);
+            this.fotomovel.TabIndex = 5;
+            this.fotomovel.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.fotomovel_CellContentClick);
             // 
             // Detalhes
             // 
@@ -164,22 +103,17 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(860, 652);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.fotomovel);
+            this.Controls.Add(this.btnOutra);
+            this.Controls.Add(this.btnAnterior);
+            this.Controls.Add(this.btnProximo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "Detalhes";
             this.Text = "Detalhes";
             this.Load += new System.EventHandler(this.Detalhes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotomovel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,15 +123,9 @@ namespace Definição_do_objetivo_do_sistema
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button btnProximo;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnOutra;
+        private System.Windows.Forms.DataGridView fotomovel;
     }
 }

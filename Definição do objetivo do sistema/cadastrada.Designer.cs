@@ -78,6 +78,7 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1.Size = new System.Drawing.Size(205, 211);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // cadastrada
             // 

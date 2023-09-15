@@ -51,5 +51,10 @@ namespace Definição_do_objetivo_do_sistema
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

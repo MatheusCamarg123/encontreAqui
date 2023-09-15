@@ -173,6 +173,16 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ASAGYY1 {
+            get {
+                object obj = ResourceManager.GetObject("ASAGYY1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ASASAA {
             get {
                 object obj = ResourceManager.GetObject("ASASAA", resourceCulture);
