@@ -96,7 +96,7 @@ namespace Definição_do_objetivo_do_sistema
                     return;
                 }
 
-                if (cvv.Length <= 3)
+                if (cvv.Length < 3)
                 {
                     MessageBox.Show("NUMERO INCOMPLETO");
                     return;
@@ -137,7 +137,7 @@ namespace Definição_do_objetivo_do_sistema
         
 
 
-            using (MyDbContext db = new MyDbContext())
+           /* using (MyDbContext db = new MyDbContext())
 
             {
 
@@ -169,7 +169,7 @@ namespace Definição_do_objetivo_do_sistema
                  };
 
                 
-            }
+            }*/
         }
             private void groupBox1_Enter(object sender, EventArgs e)
             {

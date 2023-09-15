@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using MySql.Data.MySqlClient;
+using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
 
 namespace Definição_do_objetivo_do_sistema
 {
@@ -23,33 +25,67 @@ namespace Definição_do_objetivo_do_sistema
             InitializeComponent();
         }
 
-        private void btnAdicionar_Click(object sender, EventArgs e)
+        private async void btnAdicionar_Click(object sender, EventArgs e)
         {
-       
-            
-                      try
-                        {
+            String url = null;
+            Account cloudinaryAccount = new Account(
+                "dxcza5hfy",
+                "491239265868345",
+                "e5blkG_wmq_F7-QYC2G5mVR4FnQ"
+            );
 
-                            WebClient client = new WebClient();
-                            byte[] imageData = client.DownloadData(Link.Text);
+            Cloudinary cloudinary = new Cloudinary(cloudinaryAccount);
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Arquivos de imagem|*.jpg;*.jpeg;*.png;*.gif";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string imagePath = openFileDialog.FileName;
+
+                    var uploadParams = new ImageUploadParams()
+                    {
+                        File = new FileDescription(imagePath),
+                    };
+
+                    var uploadResult = await cloudinary.UploadAsync(uploadParams);
+
+                    if (uploadResult.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        url = ""+uploadResult.SecureUri;
+                        MessageBox.Show("A imagem foi enviada com sucesso. Link da imagem no Cloudinary: "+uploadResult.SecureUri);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocorreu um erro ao enviar a imagem para o Cloudinary: "+ uploadResult.Error.Message);
+                        return;
+                    }
+                }
+            }
+
+            try
+            {
+
+                WebClient client = new WebClient();
+                byte[] imageData = client.DownloadData(url);
 
                             
-                            using (var ms = new System.IO.MemoryStream(imageData))
-                            {
-                                pictureBox.Image = Image.FromStream(ms);
-                            }
-                            this.Size = new Size(500, 500);
-                            this.StartPosition = FormStartPosition.CenterScreen;
+                using (var ms = new System.IO.MemoryStream(imageData))
+                {
+                    pictureBox.Image = Image.FromStream(ms);
+                }
+                this.Size = new System.Drawing.Size(500, 500);
+                this.StartPosition = FormStartPosition.CenterScreen;
 
-                            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-                            pictureBox.Dock = DockStyle.Fill;
-                            this.WindowState = FormWindowState.Maximized;
-                        }
-                        catch (Exception ex)
-                        {
+                //pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                //pictureBox.Dock = DockStyle.Fill;
+                this.WindowState = FormWindowState.Maximized;
+            }
+            catch (Exception ex)
+            {
 
-                            MessageBox.Show("Ocorreu um erro ao carregar a imagem: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
+                MessageBox.Show("Ocorreu um erro ao carregar a imagem: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             using (MyDbContext db = new MyDbContext())
 
@@ -61,7 +97,7 @@ namespace Definição_do_objetivo_do_sistema
 
                 {
 
-                    new MySqlParameter("@pfotos", Link.Text ),
+                    new MySqlParameter("@pfotos", url ),
 
                     new MySqlParameter("@pid_imovel", id_imovel )
 
@@ -83,6 +119,11 @@ namespace Definição_do_objetivo_do_sistema
 
         private void pictureBox_Click(object sender, EventArgs e)
         {
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

@@ -32,7 +32,6 @@ namespace Definição_do_objetivo_do_sistema
             this.label1 = new System.Windows.Forms.Label();
             this.btnAbrir = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.Link = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,11 +54,11 @@ namespace Definição_do_objetivo_do_sistema
             this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbrir.ForeColor = System.Drawing.Color.White;
-            this.btnAbrir.Location = new System.Drawing.Point(204, 225);
+            this.btnAbrir.Location = new System.Drawing.Point(208, 134);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(168, 35);
             this.btnAbrir.TabIndex = 2;
-            this.btnAbrir.Text = "ABRIR";
+            this.btnAbrir.Text = "ADICIONAR";
             this.btnAbrir.UseVisualStyleBackColor = false;
             this.btnAbrir.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
@@ -72,21 +71,12 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox.TabStop = false;
             this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
             // 
-            // Link
-            // 
-            this.Link.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Link.Location = new System.Drawing.Point(149, 138);
-            this.Link.Name = "Link";
-            this.Link.Size = new System.Drawing.Size(290, 26);
-            this.Link.TabIndex = 4;
-            // 
             // frmFotos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1472, 649);
-            this.Controls.Add(this.Link);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.label1);
@@ -103,6 +93,5 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAbrir;
         private System.Windows.Forms.PictureBox pictureBox;
-        private System.Windows.Forms.TextBox Link;
     }
 }
