@@ -34,9 +34,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnOutra = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.fotomovel = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fotomovel)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,22 +86,12 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // fotomovel
-            // 
-            this.fotomovel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.fotomovel.Location = new System.Drawing.Point(27, 11);
-            this.fotomovel.Name = "fotomovel";
-            this.fotomovel.Size = new System.Drawing.Size(262, 122);
-            this.fotomovel.TabIndex = 5;
-            this.fotomovel.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.fotomovel_CellContentClick);
-            // 
             // Detalhes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(860, 652);
-            this.Controls.Add(this.fotomovel);
             this.Controls.Add(this.btnOutra);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnProximo);
@@ -113,7 +101,6 @@ namespace Definição_do_objetivo_do_sistema
             this.Text = "Detalhes";
             this.Load += new System.EventHandler(this.Detalhes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fotomovel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,6 +113,5 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Button btnProximo;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnOutra;
-        private System.Windows.Forms.DataGridView fotomovel;
     }
 }
