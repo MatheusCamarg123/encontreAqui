@@ -15,9 +15,13 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class Pagamentos : Form
     {
-        public Pagamentos(int pa)
+
+        int id_pj;
+        int pacote;
+        public Pagamentos(int id_pj, int pacote)
         {
-            //A FAZER receber o parametro corretamente
+            this.id_pj = id_pj;
+            this.pacote = pacote;
             InitializeComponent();
 
 
@@ -141,31 +145,20 @@ namespace Definição_do_objetivo_do_sistema
 
             {
 
-                string query = @"INSERT INTO pagamento (pix, boleto,nome_cartao, numero_cartao, cpf_cartao, cvv_cartao, data_cartao, parcela_cartao , cpf, id_dadospj) VALUES (@pix, @boleto, @nome_cartao, @numero_cartao, @cpf_cartao, @cvv_cartao, @data_cartao, @parcela_cartao, id_dadospj);";
+                string query = @"INSERT INTO pagamento (pix, boleto,nome_cartao, numero_cartao, cpf_cartao, cvv_cartao, data_cartao, parcela_cartao , cpf, id_dadospj, pacote) VALUES (@pix, @boleto, @nome_cartao, @numero_cartao, @cpf_cartao, @cvv_cartao, @data_cartao, @parcela_cartao, @id_dadospj, @pacote);";
 
                 var parameters = new[]
-
                 {
-
                      new MySqlParameter("@pix", pix),
-
                      new MySqlParameter("@boleto", boleto),
-
                       new MySqlParameter("@nome_cartao", nome),
-
                      new MySqlParameter("@numero_cartao", numerocartao),
-
                       new MySqlParameter("@cpf_cartao", cpf),
-
                        new MySqlParameter("cvv_cartao", cvv),
-
                      new MySqlParameter("@data_cartao", vencimento),
-
                       new MySqlParameter("@parcela_cartao", parcelas),
-
-                     new MySqlParameter("@id_dadospj", email),
-
-
+                     new MySqlParameter("@id_dadospj", this.id_pj),
+                     new MySqlParameter("@pacote", this.pacote),
                  };
 
                 
