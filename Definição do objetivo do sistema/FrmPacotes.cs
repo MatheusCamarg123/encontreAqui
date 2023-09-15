@@ -12,8 +12,10 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class FrmPacotes : Form
     {
-        public FrmPacotes()
+        int id_pj;
+        public FrmPacotes(int id_pj)
         {
+            this.id_pj = id_pj;
             InitializeComponent();
         }
 
@@ -39,19 +41,19 @@ namespace Definição_do_objetivo_do_sistema
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            Form cadastrada = new Pagamentos(1);
+            Form cadastrada = new Pagamentos(this.id_pj, 1);
             cadastrada.Show();
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            Form cadastrada = new Pagamentos(2);
+            Form cadastrada = new Pagamentos(this.id_pj, 2);
             cadastrada.Show();
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            Form cadastrada = new Pagamentos(3);
+            Form cadastrada = new Pagamentos(this.id_pj, 3);
             cadastrada.Show();
         }
     }

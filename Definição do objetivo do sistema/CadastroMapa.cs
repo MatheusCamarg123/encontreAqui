@@ -17,9 +17,11 @@ namespace Definição_do_objetivo_do_sistema
     public partial class CadastroMapa : Form
     {
         bool cnpj;
-        public CadastroMapa(bool isCNPJ)
+        int id_usuario;
+        public CadastroMapa(bool isCNPJ, int id_usuario)
         {
             this.cnpj = isCNPJ;
+            this.id_usuario = id_usuario;
             InitializeComponent();
         }
 
@@ -115,7 +117,15 @@ namespace Definição_do_objetivo_do_sistema
             using (MyDbContext db = new MyDbContext())
 
             {
-                string query = @"INSERT INTO endereco_pf_pj (endereco, bairro, cidade, estado, cep) VALUES (@endereco, @bairro, @cidade, @estado, @cep)";
+                string query;
+                if (this.cnpj)
+                {
+                    query = @"INSERT INTO endereco_pf_pj (endereco, bairro, cidade, estado, cep, id_pessoajuridica) VALUES (@endereco, @bairro, @cidade, @estado, @cep, @id_pessoa )";
+                }
+                else{
+                    query = @"INSERT INTO endereco_pf_pj (endereco, bairro, cidade, estado, cep, id_pessoafisica) VALUES (@endereco, @bairro, @cidade, @estado, @cep, @id_pessoa)";
+                }
+                
                 var parameters = new[]
 
                 {
@@ -125,13 +135,15 @@ namespace Definição_do_objetivo_do_sistema
                     new MySqlParameter("@cidade", cidade),
                     new MySqlParameter("@estado", estado),
                     new MySqlParameter("@cep", cep),
+                    new MySqlParameter("@id_pessoa", this.id_usuario),
                 };
+                //falta a chave estrangeira ser passado na query
 
                 int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
 
                 if (this.cnpj)
                 {
-                    Form end = new FrmPacotes();
+                    Form end = new FrmPacotes(this.id_usuario);
                     end.Show();
                 }
                 else
