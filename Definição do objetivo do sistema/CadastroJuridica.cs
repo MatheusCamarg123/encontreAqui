@@ -15,10 +15,10 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class CadastroJuridica : Form
     {
+        
         public CadastroJuridica()
-        {
+        { 
             InitializeComponent();
-
         }
 
         private void txtFuncionario_TextChanged(object sender, EventArgs e)
@@ -103,7 +103,7 @@ namespace Definição_do_objetivo_do_sistema
 
 
 
-                query = @"INSERT INTO Pessoa_Juridica (cnpj, numero_funcionarios, ano_fundacao, nome_empresa, user_id) VALUES (@cnpj, @ano_fundacao, @nome_empresa, @user_id);";
+                query = @"INSERT INTO Pessoa_Juridica (cnpj, numero_funcionarios, ano_fundacao, nome_empresa, user_id) VALUES (@cnpj, @numero_funcionarios, @ano_fundacao, @nome_empresa, @user_id); SELECT LAST_INSERT_ID();";
 
                 parameters = new[]
 
@@ -123,14 +123,14 @@ namespace Definição_do_objetivo_do_sistema
 
 
 
-                int nRowAfetted = db.Database.ExecuteSqlCommand(query, parameters);
+                int id_juridica = db.Database.SqlQuery<int>(query, parameters).Single();
 
-
+                Form end = new CadastroMapa(true, id_juridica);
+                end.Show();
 
             }
 
-            Form end = new CadastroMapa(true);
-            end.Show();
+            
         }
 
         private void PessoaJuridica_Load(object sender, EventArgs e)

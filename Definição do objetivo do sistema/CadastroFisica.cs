@@ -103,7 +103,7 @@ namespace Definição_do_objetivo_do_sistema
 
 
 
-                 query = @"INSERT INTO Pessoa_Fisica (cpf, user_id) VALUES (@pcpf, @puser_id);";
+                 query = @"INSERT INTO Pessoa_Fisica (cpf, user_id) VALUES (@pcpf, @puser_id);  SELECT LAST_INSERT_ID();";
 
                  parameters = new[]
 
@@ -117,15 +117,16 @@ namespace Definição_do_objetivo_do_sistema
 
 
 
-                 int nRowAfetted = db.Database.ExecuteSqlCommand(query, parameters);
+                 int id_fisica = db.Database.SqlQuery<int>(query, parameters).Single();
 
+                Form end = new CadastroMapa(false, id_fisica);
+                end.Show();
 
+                
 
-             }
-            Form end = new CadastroMapa(false);
-            end.Show();
+            }
 
-
+            ;
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)
@@ -135,8 +136,11 @@ namespace Definição_do_objetivo_do_sistema
 
         private void CodigoFisica_Load(object sender, EventArgs e)
         {
+            Form login = Application.OpenForms["CadastroFisica"];
+            if (login != null)
+                login.Close();
             WindowState = FormWindowState.Maximized;
-           
+            
         }
 
         private void txtData_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)

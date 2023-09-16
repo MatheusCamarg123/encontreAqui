@@ -18,13 +18,22 @@ namespace Definição_do_objetivo_do_sistema
 
         int id_pj;
         int pacote;
+        private int v;
+        int id_usuarios;
+      
         public Pagamentos(int id_pj, int pacote)
         {
             this.id_pj = id_pj;
             this.pacote = pacote;
+            
             InitializeComponent();
 
 
+        }
+
+        public Pagamentos(int v)
+        {
+            this.v = v;
         }
 
         private void Pagamentos_Load(object sender, EventArgs e)
@@ -110,11 +119,6 @@ namespace Definição_do_objetivo_do_sistema
                     MessageBox.Show("VENCIMENTO INCOMPLETO");
                     return;
                 }
-                else
-                {
-                    MessageBox.Show("PAGAMENTO CONCLUIDO");
-                    return;
-                }
             }
 
             if (radioButton1.Checked)
@@ -141,7 +145,7 @@ namespace Definição_do_objetivo_do_sistema
         
 
 
-           /* using (MyDbContext db = new MyDbContext())
+             using (MyDbContext db = new MyDbContext())
 
             {
 
@@ -160,9 +164,11 @@ namespace Definição_do_objetivo_do_sistema
                      new MySqlParameter("@id_dadospj", this.id_pj),
                      new MySqlParameter("@pacote", this.pacote),
                  };
+                MessageBox.Show("PAGAMENTO CONCLUIDO");
+                Form login = new frmBV();
+                login.Show();
 
-                
-            }*/
+            }
         }
             private void groupBox1_Enter(object sender, EventArgs e)
             {

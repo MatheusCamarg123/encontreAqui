@@ -18,15 +18,12 @@ namespace Definição_do_objetivo_do_sistema
     {
         bool cnpj;
         int id_usuario;
+
         public CadastroMapa(bool isCNPJ, int id_usuario)
         {
             this.cnpj = isCNPJ;
             this.id_usuario = id_usuario;
             InitializeComponent();
-        }
-
-        public CadastroMapa()
-        {
         }
 
         private void CadastroMapa_Load(object sender, EventArgs e)
@@ -137,7 +134,7 @@ namespace Definição_do_objetivo_do_sistema
                     new MySqlParameter("@cep", cep),
                     new MySqlParameter("@id_pessoa", this.id_usuario),
                 };
-                //falta a chave estrangeira ser passado na query
+                
 
                 int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
 

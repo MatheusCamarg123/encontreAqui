@@ -67,6 +67,7 @@ namespace Definição_do_objetivo_do_sistema
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "08 EMPREEDIMENTOS";
             this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // checkBox2
             // 

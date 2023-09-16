@@ -18,8 +18,10 @@ namespace Definição_do_objetivo_do_sistema
 {
     public partial class frmBV : Form
     {
+        
         public frmBV()
         {
+            
             InitializeComponent();
         }
 
@@ -30,8 +32,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void btnJuridica_Click(object sender, EventArgs e)
         {
-            Form Juridica = new CadastroJuridica();
-            Juridica.Show();
+            
         }
 
         private void frmBV_Load(object sender, EventArgs e)
@@ -54,16 +55,22 @@ namespace Definição_do_objetivo_do_sistema
                 {
                     Form pf = new CadastroFisica();
                     pf.Show();
+                    pf.WindowState = FormWindowState.Maximized;
+                    this.Hide();
                 }
                 else if (combo == "PJ")
                 {
                     Form pj = new CadastroJuridica();
                     pj.Show();
+                    pj.WindowState = FormWindowState.Maximized;
+                    this.Hide();
                 }
             }else 
             {
                 MessageBox.Show("Selecione para continuar");
             }
+
+           
         }
 
         private void btnAcessar_Click(object sender, EventArgs e)
