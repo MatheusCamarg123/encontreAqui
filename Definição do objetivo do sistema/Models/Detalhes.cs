@@ -13,16 +13,35 @@ namespace Definição_do_objetivo_do_sistema.Models
         [Column("id")]
         public int id { get; set; }
 
-        [Column("cnpj")]
-        public string cnpj { get; set; }
+        [Column("regiao")]
+        public string regiao { get; set; }
 
-        [Column("numero_funcionarios")]
-        public int numero_funcionarios { get; set; }
+        [Column("cidade")]
+        public string cidade { get; set; }
 
-        [Column("ano_fundacao")]
-        public int ano_fundacao { get; set; }
+        [Column("estado")]
+        public string estado { get; set; }
 
-        [Column("user_id")]
-        public int user_id { get; set; }
+        [Column("ponto_referencia")]
+        public string ponto_referencia { get; set; }
+
+        [Column("cep")]
+        public string cep { get; set; }
+
+        [Column("metros_quadrados")]
+        public string metros_quadrados { get; set; }
+
+        [Column("bairro")]
+        public string bairro { get; set; }
+
+        [Column("banheir")]
+        public int banheir { get; set; }
+
+        [Column("quart")]
+        public int quart { get; set; }
+
+        [Column("vag")]
+        public int vag { get; set; }
+
     }
 }

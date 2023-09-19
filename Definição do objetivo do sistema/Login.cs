@@ -21,7 +21,6 @@ namespace Definição_do_objetivo_do_sistema
         
         public frmBV()
         {
-            
             InitializeComponent();
         }
 
@@ -91,7 +90,7 @@ namespace Definição_do_objetivo_do_sistema
                 }
                 else
                 {
-                    query = @"SELECT * from usuarios AS u JOIN pessoa_juridica AS pj ON  u.id = pj.user_id where pj.cnpj AND u.senha = @senha LIMIT 1;";
+                    query = @"SELECT pj.id, pj.cnpj from usuarios AS u JOIN pessoa_juridica AS pj ON  u.id = pj.user_id where pj.cnpj AND u.senha = @senha LIMIT 1;";
                 }
                 
                 var parameters = new[]
@@ -102,9 +101,20 @@ namespace Definição_do_objetivo_do_sistema
                   
                 };
 
-                Usuarios user = db.Database.SqlQuery<Usuarios>(query, parameters).SingleOrDefault();
+                Usuarios user = null;
+                Pessoa_Juridica pj = null;
+                if (login.Length == 14)
+                {
+                    user = db.Database.SqlQuery<Usuarios>(query, parameters).SingleOrDefault();
+                }
+                else
+                {
+                    pj = db.Database.SqlQuery<Pessoa_Juridica>(query, parameters).SingleOrDefault();
+                }
 
-                if (user == null)
+                
+
+                if (user == null && pj == null)
                 {
                     MessageBox.Show("USUARIO NAO IDENTIFICADO");
                     return;
@@ -117,8 +127,19 @@ namespace Definição_do_objetivo_do_sistema
                 }
                 else
                 {
-                    //A FAZER: selecionar qual era o plano que a pessoa escolheu
-                    Form cadastrada = new cadastrada(1);
+                    query = @"SELECT * from pagamento where id_dadospj = @idp LIMIT 1;";
+                
+
+                    parameters = new[]
+
+                    {
+                      new MySqlParameter("@idp", pj.id)
+
+                    };
+
+                    Definição_do_objetivo_do_sistema.Models.Pagamentos p = db.Database.SqlQuery<Definição_do_objetivo_do_sistema.Models.Pagamentos>(query, parameters).SingleOrDefault();
+
+                    Form cadastrada = new cadastrada(p.pacote);
                     cadastrada.Show();
                 }
                     

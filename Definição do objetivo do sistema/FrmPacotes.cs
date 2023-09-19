@@ -53,13 +53,13 @@ namespace Definição_do_objetivo_do_sistema
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            Form cadastrada = new Pagamentos(this.id_pj, 2);
+            Form cadastrada = new Pagamentos(this.id_pj, 16);
             cadastrada.Show();
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            Form cadastrada = new Pagamentos(this.id_pj, 3);
+            Form cadastrada = new Pagamentos(this.id_pj, 24);
             cadastrada.Show();
         }
 
@@ -70,7 +70,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
-            Form cadastrada = new Pagamentos(this.id_pj, 1);
+            Form cadastrada = new Pagamentos(this.id_pj, 8);
             cadastrada.Show();
         }
     }

@@ -41,11 +41,11 @@ namespace Definição_do_objetivo_do_sistema
             this.label1.BackColor = System.Drawing.Color.Orange;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(185, 77);
+            this.label1.Location = new System.Drawing.Point(129, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 29);
+            this.label1.Size = new System.Drawing.Size(324, 29);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Carregue seu Link";
+            this.label1.Text = "Adicione fotos da sua casa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnAbrir

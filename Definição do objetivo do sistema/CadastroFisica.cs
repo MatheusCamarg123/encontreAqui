@@ -136,10 +136,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void CodigoFisica_Load(object sender, EventArgs e)
         {
-            Form login = Application.OpenForms["CadastroFisica"];
-            if (login != null)
-                login.Close();
-            WindowState = FormWindowState.Maximized;
+           
             
         }
 

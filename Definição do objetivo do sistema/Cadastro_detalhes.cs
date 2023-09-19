@@ -138,9 +138,9 @@ namespace Definição_do_objetivo_do_sistema
 
                 };
 
-                    Dados_Imoveis detalhes = db.Database.SqlQuery<Dados_Imoveis>(query, parameters).SingleOrDefault();
-                    MessageBox.Show("Detalhes do imóvel cadastrados com suscesso :)");
-                    Form Cadastro_detalhes = new frmFotos(1);
+                    int imov_id = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
+                    MessageBox.Show("Detalhes do imóvel cadastrados com sucesso :)");
+                    Form Cadastro_detalhes = new frmFotos(imov_id);
                     Cadastro_detalhes.Show();
                     this.Hide();
 

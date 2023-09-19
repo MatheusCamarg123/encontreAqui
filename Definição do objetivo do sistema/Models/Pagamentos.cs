@@ -33,6 +33,10 @@ namespace Definição_do_objetivo_do_sistema.Models
 
         [Column("cpf")]
 
-        public string cpf { get; set; } 
+        public string cpf { get; set; }
+
+        [Column("pacote")]
+
+        public int pacote { get; set; }
     }
 }

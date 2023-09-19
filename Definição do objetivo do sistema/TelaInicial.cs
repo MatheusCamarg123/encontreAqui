@@ -34,6 +34,8 @@ namespace Definição_do_objetivo_do_sistema
         {
             Form login = new frmBV();
             login.Show();
+       
+            this.Hide();
         }
     }
 }

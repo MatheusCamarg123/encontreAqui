@@ -32,7 +32,7 @@ namespace Definição_do_objetivo_do_sistema
             string nomeemp = txtNome.Text;
             string cnpj = textBox1.Text;
             string anofund = txtAno.Text;
-            string numfunc = txtFuncionario.Text;
+            int numfunc = Convert.ToInt32 (txtFuncionario.Text);
             string loc = txtLocalidade.Text;
             string email = textBox2.Text;
             string senha = txtsenha.Text;
@@ -72,6 +72,13 @@ namespace Definição_do_objetivo_do_sistema
             {
                 MessageBox.Show("PREENCHIMENTO OBRIGATORIO");
             }
+            if (numfunc > 50)
+            {
+                MessageBox.Show("Limite de Funcionários excedido");
+                return;
+            }
+
+          
 
             using (MyDbContext db = new MyDbContext())
 
