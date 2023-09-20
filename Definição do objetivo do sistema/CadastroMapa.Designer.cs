@@ -44,6 +44,8 @@ namespace Definição_do_objetivo_do_sistema
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.BtnLimpar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -207,12 +209,23 @@ namespace Definição_do_objetivo_do_sistema
             this.BtnLimpar.UseVisualStyleBackColor = false;
             this.BtnLimpar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
+            this.pictureBox1.Location = new System.Drawing.Point(-58, -26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 94);
+            this.pictureBox1.TabIndex = 50;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // CadastroMapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1341, 768);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnLimpar);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.label9);
@@ -231,6 +244,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Name = "CadastroMapa";
             this.Text = "Cadastro Mapa";
             this.Load += new System.EventHandler(this.CadastroMapa_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +267,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button BtnLimpar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

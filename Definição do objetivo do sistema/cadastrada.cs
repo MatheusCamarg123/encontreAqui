@@ -66,5 +66,13 @@ namespace Definição_do_objetivo_do_sistema
         {
 
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            Form login = new frmBV();
+            login.WindowState = FormWindowState.Maximized;
+            login.Show();
+            this.Hide();
+        }
     }
 }

@@ -54,8 +54,10 @@ namespace Definição_do_objetivo_do_sistema
             this.lblcpf = new System.Windows.Forms.Label();
             this.txtcpf = new System.Windows.Forms.TextBox();
             this.pixx = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pixx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblpagamentos
@@ -328,7 +330,17 @@ namespace Definição_do_objetivo_do_sistema
             this.pixx.TabIndex = 34;
             this.pixx.TabStop = false;
             this.pixx.Visible = false;
-            this.pixx.Click += new System.EventHandler(this.pictureBox1_Click);
+            
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
+            this.pictureBox1.Location = new System.Drawing.Point(-58, -26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 94);
+            this.pictureBox1.TabIndex = 50;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // Pagamentos
             // 
@@ -336,6 +348,7 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pixx);
             this.Controls.Add(this.txtcpf);
             this.Controls.Add(this.lblcpf);
@@ -357,11 +370,12 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.lblpix);
             this.Controls.Add(this.lblpagamentos);
             this.Name = "Pagamentos";
-            this.Text = ",";
+            this.Text = "Formas de Pagamentos";
             this.Load += new System.EventHandler(this.Pagamentos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pixx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,5 +407,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label lblcpf;
         private System.Windows.Forms.TextBox txtcpf;
         private System.Windows.Forms.PictureBox pixx;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

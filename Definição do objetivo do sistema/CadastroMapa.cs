@@ -18,12 +18,18 @@ namespace Definição_do_objetivo_do_sistema
     {
         bool cnpj;
         int id_usuario;
+        private bool isCNPJ;
 
         public CadastroMapa(bool isCNPJ, int id_usuario)
         {
             this.cnpj = isCNPJ;
             this.id_usuario = id_usuario;
             InitializeComponent();
+        }
+
+        public CadastroMapa(bool isCNPJ)
+        {
+            this.isCNPJ = isCNPJ;
         }
 
         private void CadastroMapa_Load(object sender, EventArgs e)
@@ -170,6 +176,25 @@ namespace Definição_do_objetivo_do_sistema
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (this.cnpj)
+            {
+                Form pj = new CadastroJuridica();
+                pj.WindowState = FormWindowState.Maximized;
+                pj.Show();
+                this.Hide();
+            }
+            else
+            {
+                Form pf = new CadastroFisica();
+                pf.WindowState = FormWindowState.Maximized;
+                pf.Show();
+                this.Hide();
+            }
+                
         }
     }
 }

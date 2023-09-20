@@ -833,6 +833,16 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MicrosoftTeams_image__3_ {
+            get {
+                object obj = ResourceManager.GetObject("MicrosoftTeams-image (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MicrosoftTeams_image1 {
             get {
                 object obj = ResourceManager.GetObject("MicrosoftTeams-image1", resourceCulture);

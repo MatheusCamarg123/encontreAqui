@@ -43,14 +43,16 @@ namespace Definição_do_objetivo_do_sistema
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.ocultarsenha = new System.Windows.Forms.PictureBox();
-            this.versenha = new System.Windows.Forms.PictureBox();
             this.txtconfsenha = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtsenha = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.lbltelef = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ocultarsenha = new System.Windows.Forms.PictureBox();
+            this.versenha = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ocultarsenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).BeginInit();
             this.SuspendLayout();
@@ -205,26 +207,6 @@ namespace Definição_do_objetivo_do_sistema
             this.label7.Text = "E - mail:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // ocultarsenha
-            // 
-            this.ocultarsenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.view;
-            this.ocultarsenha.Location = new System.Drawing.Point(719, 435);
-            this.ocultarsenha.Name = "ocultarsenha";
-            this.ocultarsenha.Size = new System.Drawing.Size(22, 26);
-            this.ocultarsenha.TabIndex = 46;
-            this.ocultarsenha.TabStop = false;
-            this.ocultarsenha.Click += new System.EventHandler(this.ocultarsenha_Click);
-            // 
-            // versenha
-            // 
-            this.versenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.view;
-            this.versenha.Location = new System.Drawing.Point(719, 403);
-            this.versenha.Name = "versenha";
-            this.versenha.Size = new System.Drawing.Size(22, 26);
-            this.versenha.TabIndex = 45;
-            this.versenha.TabStop = false;
-            this.versenha.Click += new System.EventHandler(this.versenha_Click);
-            // 
             // txtconfsenha
             // 
             this.txtconfsenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -285,12 +267,43 @@ namespace Definição_do_objetivo_do_sistema
             this.lbltelef.TabIndex = 48;
             this.lbltelef.Text = "Telefone";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
+            this.pictureBox1.Location = new System.Drawing.Point(-58, -26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 94);
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // ocultarsenha
+            // 
+            this.ocultarsenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.view;
+            this.ocultarsenha.Location = new System.Drawing.Point(719, 435);
+            this.ocultarsenha.Name = "ocultarsenha";
+            this.ocultarsenha.Size = new System.Drawing.Size(22, 26);
+            this.ocultarsenha.TabIndex = 46;
+            this.ocultarsenha.TabStop = false;
+            this.ocultarsenha.Click += new System.EventHandler(this.ocultarsenha_Click);
+            // 
+            // versenha
+            // 
+            this.versenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.view;
+            this.versenha.Location = new System.Drawing.Point(719, 403);
+            this.versenha.Name = "versenha";
+            this.versenha.Size = new System.Drawing.Size(22, 26);
+            this.versenha.TabIndex = 45;
+            this.versenha.TabStop = false;
+            this.versenha.Click += new System.EventHandler(this.versenha_Click);
+            // 
             // CadastroJuridica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1358, 753);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbltelef);
             this.Controls.Add(this.txtTel);
             this.Controls.Add(this.ocultarsenha);
@@ -317,6 +330,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Text = "Pessoa Juridica";
             this.Load += new System.EventHandler(this.PessoaJuridica_Load);
             this.Shown += new System.EventHandler(this.PessoaJuridica_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ocultarsenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).EndInit();
             this.ResumeLayout(false);
@@ -347,5 +361,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Label lbltelef;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

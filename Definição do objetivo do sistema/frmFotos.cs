@@ -125,5 +125,13 @@ namespace Definição_do_objetivo_do_sistema
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form CD = new Cadastro_Detalhes();
+            CD.WindowState = FormWindowState.Maximized;
+            CD.Show();
+            this.Hide();
+        }
     }
 }

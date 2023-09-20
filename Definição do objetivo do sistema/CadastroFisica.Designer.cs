@@ -49,8 +49,10 @@ namespace Definição_do_objetivo_do_sistema
             this.label9 = new System.Windows.Forms.Label();
             this.versenha = new System.Windows.Forms.PictureBox();
             this.ocultarsenha = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ocultarsenha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConfirma
@@ -261,12 +263,23 @@ namespace Definição_do_objetivo_do_sistema
             this.ocultarsenha.TabStop = false;
             this.ocultarsenha.Click += new System.EventHandler(this.ocultarsenha_Click_1);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
+            this.pictureBox1.Location = new System.Drawing.Point(-58, -26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 94);
+            this.pictureBox1.TabIndex = 50;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
             // CadastroFisica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1353, 750);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ocultarsenha);
             this.Controls.Add(this.versenha);
             this.Controls.Add(this.txtconfsenha);
@@ -290,8 +303,10 @@ namespace Definição_do_objetivo_do_sistema
             this.Name = "CadastroFisica";
             this.Text = "Pessoa Fisica";
             this.Load += new System.EventHandler(this.CodigoFisica_Load);
+            this.Click += new System.EventHandler(this.CadastroFisica_Click);
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ocultarsenha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,5 +333,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox versenha;
         private System.Windows.Forms.PictureBox ocultarsenha;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -51,6 +51,8 @@ namespace Definição_do_objetivo_do_sistema
             this.txtQuarto = new System.Windows.Forms.TextBox();
             this.txtBanheiro = new System.Windows.Forms.TextBox();
             this.txtVaga = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCadastro
@@ -292,12 +294,23 @@ namespace Definição_do_objetivo_do_sistema
             this.txtVaga.Size = new System.Drawing.Size(141, 29);
             this.txtVaga.TabIndex = 97;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
+            this.pictureBox1.Location = new System.Drawing.Point(-58, -26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 94);
+            this.pictureBox1.TabIndex = 98;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Cadastro_Detalhes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1365, 625);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtVaga);
             this.Controls.Add(this.txtBanheiro);
             this.Controls.Add(this.txtQuarto);
@@ -323,6 +336,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Name = "Cadastro_Detalhes";
             this.Text = "Detalhes";
             this.Load += new System.EventHandler(this.Detalhes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,5 +365,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.TextBox txtQuarto;
         private System.Windows.Forms.TextBox txtBanheiro;
         private System.Windows.Forms.TextBox txtVaga;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

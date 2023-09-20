@@ -13,9 +13,12 @@ namespace Definição_do_objetivo_do_sistema
     public partial class FrmPacotes : Form
     {
         int id_pj;
+        
+
         public FrmPacotes(int id_pj)
         {
             this.id_pj = id_pj;
+            
             InitializeComponent();
         }
 
@@ -72,6 +75,14 @@ namespace Definição_do_objetivo_do_sistema
         {
             Form cadastrada = new Pagamentos(this.id_pj, 8);
             cadastrada.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form CM = new CadastroMapa();
+            CM.WindowState = FormWindowState.Maximized;
+            CM.Show();
+            this.Hide();
         }
     }
 }

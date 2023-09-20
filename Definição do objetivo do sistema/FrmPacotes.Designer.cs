@@ -37,10 +37,12 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gb = new System.Windows.Forms.GroupBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.gb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -145,12 +147,23 @@ namespace Definição_do_objetivo_do_sistema
             this.gb.TabStop = false;
             this.gb.Enter += new System.EventHandler(this.gb_Enter);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
+            this.pictureBox4.Location = new System.Drawing.Point(-58, -26);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(127, 94);
+            this.pictureBox4.TabIndex = 50;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // FrmPacotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1377, 772);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.gb);
             this.ForeColor = System.Drawing.Color.DarkBlue;
             this.Name = "FrmPacotes";
@@ -161,6 +174,7 @@ namespace Definição_do_objetivo_do_sistema
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.gb.ResumeLayout(false);
             this.gb.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -175,5 +189,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.GroupBox gb;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

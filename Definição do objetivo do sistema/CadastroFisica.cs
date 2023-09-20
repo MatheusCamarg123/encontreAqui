@@ -121,6 +121,7 @@ namespace Definição_do_objetivo_do_sistema
 
                 Form end = new CadastroMapa(false, id_fisica);
                 end.Show();
+                this.Hide();
 
                 
 
@@ -191,6 +192,19 @@ namespace Definição_do_objetivo_do_sistema
         private void textconfsenha_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void CadastroFisica_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            Form login = new frmBV();
+            login.WindowState = FormWindowState.Maximized;
+            login.Show();
+            this.Hide();
         }
     }
 }

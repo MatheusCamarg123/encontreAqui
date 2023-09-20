@@ -32,7 +32,9 @@ namespace Definição_do_objetivo_do_sistema
             this.label1 = new System.Windows.Forms.Label();
             this.btnAbrir = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,12 +73,23 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox.TabStop = false;
             this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
+            this.pictureBox1.Location = new System.Drawing.Point(-58, -26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 94);
+            this.pictureBox1.TabIndex = 50;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmFotos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1472, 649);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.label1);
@@ -84,6 +97,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Text = "Fotos";
             this.Load += new System.EventHandler(this.frmFotos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,5 +107,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAbrir;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
