@@ -65,7 +65,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnConfirmar.Location = new System.Drawing.Point(557, 512);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(228, 90);
-            this.btnConfirmar.TabIndex = 35;
+            this.btnConfirmar.TabIndex = 10;
             this.btnConfirmar.Text = "CONFIRMAR";
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
@@ -90,7 +90,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtLocalidade.Location = new System.Drawing.Point(557, 339);
             this.txtLocalidade.Name = "txtLocalidade";
             this.txtLocalidade.Size = new System.Drawing.Size(147, 26);
-            this.txtLocalidade.TabIndex = 33;
+            this.txtLocalidade.TabIndex = 6;
             // 
             // txtFuncionario
             // 
@@ -98,7 +98,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtFuncionario.Location = new System.Drawing.Point(557, 307);
             this.txtFuncionario.Name = "txtFuncionario";
             this.txtFuncionario.Size = new System.Drawing.Size(100, 26);
-            this.txtFuncionario.TabIndex = 32;
+            this.txtFuncionario.TabIndex = 5;
             this.txtFuncionario.TextChanged += new System.EventHandler(this.txtFuncionario_TextChanged);
             // 
             // txtAno
@@ -107,7 +107,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtAno.Location = new System.Drawing.Point(557, 275);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(100, 26);
-            this.txtAno.TabIndex = 31;
+            this.txtAno.TabIndex = 4;
             // 
             // txtNome
             // 
@@ -115,7 +115,8 @@ namespace Definição_do_objetivo_do_sistema
             this.txtNome.Location = new System.Drawing.Point(557, 180);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(433, 26);
-            this.txtNome.TabIndex = 30;
+            this.txtNome.TabIndex = 1;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // label5
             // 
@@ -171,7 +172,7 @@ namespace Definição_do_objetivo_do_sistema
             this.textBox1.Location = new System.Drawing.Point(557, 212);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(147, 26);
-            this.textBox1.TabIndex = 37;
+            this.textBox1.TabIndex = 2;
             // 
             // label6
             // 
@@ -191,7 +192,7 @@ namespace Definição_do_objetivo_do_sistema
             this.textBox2.Location = new System.Drawing.Point(557, 371);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(147, 26);
-            this.textBox2.TabIndex = 39;
+            this.textBox2.TabIndex = 7;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label7
@@ -214,7 +215,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtconfsenha.Name = "txtconfsenha";
             this.txtconfsenha.PasswordChar = '*';
             this.txtconfsenha.Size = new System.Drawing.Size(147, 26);
-            this.txtconfsenha.TabIndex = 43;
+            this.txtconfsenha.TabIndex = 9;
             // 
             // label9
             // 
@@ -234,7 +235,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.PasswordChar = '*';
             this.txtsenha.Size = new System.Drawing.Size(147, 26);
-            this.txtsenha.TabIndex = 41;
+            this.txtsenha.TabIndex = 8;
             // 
             // label8
             // 
@@ -253,7 +254,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtTel.Location = new System.Drawing.Point(557, 244);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(169, 26);
-            this.txtTel.TabIndex = 47;
+            this.txtTel.TabIndex = 3;
             // 
             // lbltelef
             // 

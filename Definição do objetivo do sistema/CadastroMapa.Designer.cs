@@ -127,7 +127,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtEndereco.Location = new System.Drawing.Point(399, 184);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(551, 26);
-            this.txtEndereco.TabIndex = 8;
+            this.txtEndereco.TabIndex = 1;
             // 
             // txtBairro
             // 
@@ -135,7 +135,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtBairro.Location = new System.Drawing.Point(372, 244);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(331, 26);
-            this.txtBairro.TabIndex = 9;
+            this.txtBairro.TabIndex = 2;
             // 
             // txtReferencia
             // 
@@ -143,7 +143,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtReferencia.Location = new System.Drawing.Point(624, 378);
             this.txtReferencia.Name = "txtReferencia";
             this.txtReferencia.Size = new System.Drawing.Size(308, 26);
-            this.txtReferencia.TabIndex = 10;
+            this.txtReferencia.TabIndex = 6;
             // 
             // txtCEP
             // 
@@ -151,7 +151,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtCEP.Location = new System.Drawing.Point(348, 376);
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(117, 26);
-            this.txtCEP.TabIndex = 11;
+            this.txtCEP.TabIndex = 5;
             // 
             // txtCidade
             // 
@@ -159,7 +159,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtCidade.Location = new System.Drawing.Point(380, 304);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(292, 26);
-            this.txtCidade.TabIndex = 14;
+            this.txtCidade.TabIndex = 3;
             // 
             // btnContinuar
             // 
@@ -169,7 +169,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnContinuar.Location = new System.Drawing.Point(530, 527);
             this.btnContinuar.Name = "btnContinuar";
             this.btnContinuar.Size = new System.Drawing.Size(211, 52);
-            this.btnContinuar.TabIndex = 15;
+            this.btnContinuar.TabIndex = 7;
             this.btnContinuar.Text = "CONTINUAR";
             this.btnContinuar.UseVisualStyleBackColor = false;
             this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
@@ -180,7 +180,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtEstado.Location = new System.Drawing.Point(807, 306);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(125, 26);
-            this.txtEstado.TabIndex = 17;
+            this.txtEstado.TabIndex = 4;
             this.txtEstado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label9
@@ -204,7 +204,7 @@ namespace Definição_do_objetivo_do_sistema
             this.BtnLimpar.Location = new System.Drawing.Point(295, 461);
             this.BtnLimpar.Name = "BtnLimpar";
             this.BtnLimpar.Size = new System.Drawing.Size(92, 33);
-            this.BtnLimpar.TabIndex = 18;
+            this.BtnLimpar.TabIndex = 8;
             this.BtnLimpar.Text = "Limpar";
             this.BtnLimpar.UseVisualStyleBackColor = false;
             this.BtnLimpar.Click += new System.EventHandler(this.button1_Click);

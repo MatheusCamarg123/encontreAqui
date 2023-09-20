@@ -65,7 +65,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnCadastro.Location = new System.Drawing.Point(526, 555);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(272, 41);
-            this.btnCadastro.TabIndex = 60;
+            this.btnCadastro.TabIndex = 11;
             this.btnCadastro.Text = "Cadastrar ";
             this.btnCadastro.UseVisualStyleBackColor = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnEncontrar_Click);
@@ -78,7 +78,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtReg.Location = new System.Drawing.Point(615, 164);
             this.txtReg.Name = "txtReg";
             this.txtReg.Size = new System.Drawing.Size(141, 29);
-            this.txtReg.TabIndex = 62;
+            this.txtReg.TabIndex = 4;
             this.txtReg.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lblRegiao
@@ -166,7 +166,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtBai.Location = new System.Drawing.Point(612, 469);
             this.txtBai.Name = "txtBai";
             this.txtBai.Size = new System.Drawing.Size(141, 29);
-            this.txtBai.TabIndex = 70;
+            this.txtBai.TabIndex = 10;
             // 
             // txtMet
             // 
@@ -176,7 +176,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtMet.Location = new System.Drawing.Point(615, 416);
             this.txtMet.Name = "txtMet";
             this.txtMet.Size = new System.Drawing.Size(141, 29);
-            this.txtMet.TabIndex = 71;
+            this.txtMet.TabIndex = 9;
             // 
             // txtPont
             // 
@@ -186,7 +186,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtPont.Location = new System.Drawing.Point(615, 312);
             this.txtPont.Name = "txtPont";
             this.txtPont.Size = new System.Drawing.Size(141, 29);
-            this.txtPont.TabIndex = 73;
+            this.txtPont.TabIndex = 7;
             // 
             // txtEst
             // 
@@ -196,7 +196,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtEst.Location = new System.Drawing.Point(615, 261);
             this.txtEst.Name = "txtEst";
             this.txtEst.Size = new System.Drawing.Size(141, 29);
-            this.txtEst.TabIndex = 74;
+            this.txtEst.TabIndex = 6;
             this.txtEst.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // txtCid
@@ -207,7 +207,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtCid.Location = new System.Drawing.Point(615, 214);
             this.txtCid.Name = "txtCid";
             this.txtCid.Size = new System.Drawing.Size(141, 29);
-            this.txtCid.TabIndex = 75;
+            this.txtCid.TabIndex = 5;
             // 
             // txtCep
             // 
@@ -217,7 +217,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtCep.Location = new System.Drawing.Point(615, 366);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(141, 29);
-            this.txtCep.TabIndex = 77;
+            this.txtCep.TabIndex = 8;
             // 
             // label4
             // 
@@ -272,7 +272,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtQuarto.Location = new System.Drawing.Point(307, 90);
             this.txtQuarto.Name = "txtQuarto";
             this.txtQuarto.Size = new System.Drawing.Size(141, 29);
-            this.txtQuarto.TabIndex = 95;
+            this.txtQuarto.TabIndex = 1;
             // 
             // txtBanheiro
             // 
@@ -282,7 +282,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtBanheiro.Location = new System.Drawing.Point(596, 90);
             this.txtBanheiro.Name = "txtBanheiro";
             this.txtBanheiro.Size = new System.Drawing.Size(141, 29);
-            this.txtBanheiro.TabIndex = 96;
+            this.txtBanheiro.TabIndex = 2;
             // 
             // txtVaga
             // 
@@ -292,7 +292,8 @@ namespace Definição_do_objetivo_do_sistema
             this.txtVaga.Location = new System.Drawing.Point(888, 90);
             this.txtVaga.Name = "txtVaga";
             this.txtVaga.Size = new System.Drawing.Size(141, 29);
-            this.txtVaga.TabIndex = 97;
+            this.txtVaga.TabIndex = 3;
+            this.txtVaga.TextChanged += new System.EventHandler(this.txtVaga_TextChanged);
             // 
             // pictureBox1
             // 

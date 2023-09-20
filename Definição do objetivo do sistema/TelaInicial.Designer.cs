@@ -53,7 +53,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label1.Location = new System.Drawing.Point(701, 226);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(854, 292);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 6;
             this.label1.Text = "Bem -Vindos\r\nAqui você encontra o imóvel \r\nperfeito para anunciar ou \r\nanunciar o" +
     " seu!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,7 +66,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnIniciar.Location = new System.Drawing.Point(997, 563);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(252, 140);
-            this.btnIniciar.TabIndex = 2;
+            this.btnIniciar.TabIndex = 1;
             this.btnIniciar.Text = "INICIAR";
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);

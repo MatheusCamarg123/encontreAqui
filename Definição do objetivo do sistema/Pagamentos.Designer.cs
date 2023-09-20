@@ -179,7 +179,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtcartaonumero.Location = new System.Drawing.Point(492, 154);
             this.txtcartaonumero.Name = "txtcartaonumero";
             this.txtcartaonumero.Size = new System.Drawing.Size(274, 20);
-            this.txtcartaonumero.TabIndex = 19;
+            this.txtcartaonumero.TabIndex = 2;
             this.txtcartaonumero.UseWaitCursor = true;
             this.txtcartaonumero.Visible = false;
             // 
@@ -237,7 +237,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtcvv.Location = new System.Drawing.Point(492, 218);
             this.txtcvv.Name = "txtcvv";
             this.txtcvv.Size = new System.Drawing.Size(56, 20);
-            this.txtcvv.TabIndex = 25;
+            this.txtcvv.TabIndex = 4;
             this.txtcvv.UseWaitCursor = true;
             this.txtcvv.Visible = false;
             // 
@@ -246,7 +246,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtnome.Location = new System.Drawing.Point(492, 125);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(274, 20);
-            this.txtnome.TabIndex = 27;
+            this.txtnome.TabIndex = 1;
             this.txtnome.UseWaitCursor = true;
             this.txtnome.Visible = false;
             this.txtnome.TextChanged += new System.EventHandler(this.txtnome_TextChanged);
@@ -262,7 +262,7 @@ namespace Definição_do_objetivo_do_sistema
             this.cbparcelas.Location = new System.Drawing.Point(492, 254);
             this.cbparcelas.Name = "cbparcelas";
             this.cbparcelas.Size = new System.Drawing.Size(121, 21);
-            this.cbparcelas.TabIndex = 28;
+            this.cbparcelas.TabIndex = 6;
             this.cbparcelas.Visible = false;
             // 
             // lblparcelas
@@ -285,7 +285,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnconfirmado.Location = new System.Drawing.Point(342, 354);
             this.btnconfirmado.Name = "btnconfirmado";
             this.btnconfirmado.Size = new System.Drawing.Size(144, 41);
-            this.btnconfirmado.TabIndex = 30;
+            this.btnconfirmado.TabIndex = 7;
             this.btnconfirmado.Text = "Confirmar";
             this.btnconfirmado.UseVisualStyleBackColor = false;
             this.btnconfirmado.Click += new System.EventHandler(this.btnconfirmado_Click);
@@ -296,7 +296,7 @@ namespace Definição_do_objetivo_do_sistema
             this.mtvencimento.Mask = "00/00";
             this.mtvencimento.Name = "mtvencimento";
             this.mtvencimento.Size = new System.Drawing.Size(55, 20);
-            this.mtvencimento.TabIndex = 31;
+            this.mtvencimento.TabIndex = 5;
             this.mtvencimento.ValidatingType = typeof(System.DateTime);
             this.mtvencimento.Visible = false;
             // 
@@ -317,7 +317,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtcpf.Location = new System.Drawing.Point(492, 186);
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(274, 20);
-            this.txtcpf.TabIndex = 33;
+            this.txtcpf.TabIndex = 3;
             this.txtcpf.UseWaitCursor = true;
             this.txtcpf.Visible = false;
             // 
