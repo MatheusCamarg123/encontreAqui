@@ -61,7 +61,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnConfirma.Location = new System.Drawing.Point(576, 547);
             this.btnConfirma.Name = "btnConfirma";
             this.btnConfirma.Size = new System.Drawing.Size(210, 72);
-            this.btnConfirma.TabIndex = 28;
+            this.btnConfirma.TabIndex = 9;
             this.btnConfirma.Text = "CONFIRMAR";
             this.btnConfirma.UseVisualStyleBackColor = false;
             this.btnConfirma.Click += new System.EventHandler(this.button1_Click);
@@ -137,7 +137,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(78, 26);
-            this.txtData.TabIndex = 2;
+            this.txtData.TabIndex = 3;
             this.txtData.ValidatingType = typeof(System.DateTime);
             this.txtData.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtData_MaskInputRejected);
             // 
@@ -147,7 +147,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtEmail.Location = new System.Drawing.Point(686, 398);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(427, 26);
-            this.txtEmail.TabIndex = 29;
+            this.txtEmail.TabIndex = 6;
             this.txtEmail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label6
@@ -168,7 +168,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtCpf.Location = new System.Drawing.Point(686, 276);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(147, 26);
-            this.txtCpf.TabIndex = 31;
+            this.txtCpf.TabIndex = 2;
             // 
             // label7
             // 
@@ -187,7 +187,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtTelefone.Location = new System.Drawing.Point(686, 369);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(147, 26);
-            this.txtTelefone.TabIndex = 33;
+            this.txtTelefone.TabIndex = 5;
             // 
             // label8
             // 
@@ -207,7 +207,8 @@ namespace Definição_do_objetivo_do_sistema
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.PasswordChar = '*';
             this.txtsenha.Size = new System.Drawing.Size(147, 26);
-            this.txtsenha.TabIndex = 35;
+            this.txtsenha.TabIndex = 7;
+            this.txtsenha.TextChanged += new System.EventHandler(this.txtsenha_TextChanged);
             // 
             // label4
             // 
@@ -227,7 +228,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtconfsenha.Name = "txtconfsenha";
             this.txtconfsenha.PasswordChar = '*';
             this.txtconfsenha.Size = new System.Drawing.Size(147, 26);
-            this.txtconfsenha.TabIndex = 37;
+            this.txtconfsenha.TabIndex = 8;
             this.txtconfsenha.TextChanged += new System.EventHandler(this.textconfsenha_TextChanged);
             // 
             // label9

@@ -48,6 +48,7 @@ namespace Definição_do_objetivo_do_sistema
             string cidade = txtCidade.Text;
             string estado = txtEstado.Text;
             string cep = txtCEP.Text;
+            string refe = txtReferencia.Text;
 
 
             if (txtEndereco.Text == "") 
@@ -117,10 +118,10 @@ namespace Definição_do_objetivo_do_sistema
                 string query;
                 if (this.cnpj)
                 {
-                    query = @"INSERT INTO endereco_pf_pj (endereco, bairro, cidade, estado, cep, id_pessoajuridica) VALUES (@endereco, @bairro, @cidade, @estado, @cep, @id_pessoa )";
+                    query = @"INSERT INTO endereco_pf_pj (endereco, bairro, cidade, estado, cep, referencia, id_pessoajuridica) VALUES (@endereco, @bairro, @cidade, @estado, @cep, @referencia, @id_pessoa )";
                 }
                 else{
-                    query = @"INSERT INTO endereco_pf_pj (endereco, bairro, cidade, estado, cep, id_pessoafisica) VALUES (@endereco, @bairro, @cidade, @estado, @cep, @id_pessoa)";
+                    query = @"INSERT INTO endereco_pf_pj (endereco, bairro, cidade, estado, cep, referencia, id_pessoafisica) VALUES (@endereco, @bairro, @cidade, @estado, @cep, @referencia, @id_pessoa)";
                 }
                 
                 var parameters = new[]
@@ -132,6 +133,7 @@ namespace Definição_do_objetivo_do_sistema
                     new MySqlParameter("@cidade", cidade),
                     new MySqlParameter("@estado", estado),
                     new MySqlParameter("@cep", cep),
+                    new MySqlParameter("@referencia", refe),
                     new MySqlParameter("@id_pessoa", this.id_usuario),
                 };
                 

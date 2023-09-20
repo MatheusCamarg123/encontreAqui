@@ -64,7 +64,7 @@ namespace Definição_do_objetivo_do_sistema
             this.checkBox1.Location = new System.Drawing.Point(84, 464);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(202, 24);
-            this.checkBox1.TabIndex = 4;
+            this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "08 EMPREEDIMENTOS";
             this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
@@ -78,7 +78,7 @@ namespace Definição_do_objetivo_do_sistema
             this.checkBox2.Location = new System.Drawing.Point(325, 464);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(202, 24);
-            this.checkBox2.TabIndex = 5;
+            this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "16 EMPREEDIMENTOS";
             this.checkBox2.UseVisualStyleBackColor = false;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
@@ -92,7 +92,7 @@ namespace Definição_do_objetivo_do_sistema
             this.checkBox3.Location = new System.Drawing.Point(584, 464);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(202, 24);
-            this.checkBox3.TabIndex = 6;
+            this.checkBox3.TabIndex = 3;
             this.checkBox3.Text = "24 EMPREEDIMENTOS";
             this.checkBox3.UseVisualStyleBackColor = false;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);

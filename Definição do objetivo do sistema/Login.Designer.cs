@@ -52,7 +52,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnAcessar.Location = new System.Drawing.Point(552, 318);
             this.btnAcessar.Name = "btnAcessar";
             this.btnAcessar.Size = new System.Drawing.Size(194, 76);
-            this.btnAcessar.TabIndex = 5;
+            this.btnAcessar.TabIndex = 3;
             this.btnAcessar.Text = "ACESSAR";
             this.btnAcessar.UseVisualStyleBackColor = false;
             this.btnAcessar.Click += new System.EventHandler(this.btnAcessar_Click);
@@ -73,7 +73,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtCpfcnpj.Location = new System.Drawing.Point(552, 209);
             this.txtCpfcnpj.Name = "txtCpfcnpj";
             this.txtCpfcnpj.Size = new System.Drawing.Size(279, 20);
-            this.txtCpfcnpj.TabIndex = 7;
+            this.txtCpfcnpj.TabIndex = 1;
             // 
             // label6
             // 
@@ -92,7 +92,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(194, 20);
-            this.txtSenha.TabIndex = 9;
+            this.txtSenha.TabIndex = 2;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // cCadastrar
@@ -105,7 +105,7 @@ namespace Definição_do_objetivo_do_sistema
             this.cCadastrar.Location = new System.Drawing.Point(465, 531);
             this.cCadastrar.Name = "cCadastrar";
             this.cCadastrar.Size = new System.Drawing.Size(383, 35);
-            this.cCadastrar.TabIndex = 11;
+            this.cCadastrar.TabIndex = 4;
             this.cCadastrar.Text = "NÃO POSSUO CADASTRO";
             this.cCadastrar.UseVisualStyleBackColor = false;
             this.cCadastrar.Click += new System.EventHandler(this.cCadastrar_Click);
@@ -156,7 +156,7 @@ namespace Definição_do_objetivo_do_sistema
             this.cbPFPJ.Location = new System.Drawing.Point(600, 572);
             this.cbPFPJ.Name = "cbPFPJ";
             this.cbPFPJ.Size = new System.Drawing.Size(124, 24);
-            this.cbPFPJ.TabIndex = 15;
+            this.cbPFPJ.TabIndex = 5;
             this.cbPFPJ.SelectedIndexChanged += new System.EventHandler(this.cbPFPJ_SelectedIndexChanged);
             // 
             // frmBV
