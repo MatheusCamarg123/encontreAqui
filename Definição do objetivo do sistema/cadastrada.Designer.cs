@@ -33,6 +33,7 @@ namespace Definição_do_objetivo_do_sistema
             this.button1 = new System.Windows.Forms.Button();
             this.dGImoveisCadastrados = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gbCadastrada = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dGImoveisCadastrados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +82,15 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
+            // gbCadastrada
+            // 
+            this.gbCadastrada.Location = new System.Drawing.Point(12, 26);
+            this.gbCadastrada.Name = "gbCadastrada";
+            this.gbCadastrada.Size = new System.Drawing.Size(1464, 781);
+            this.gbCadastrada.TabIndex = 11;
+            this.gbCadastrada.TabStop = false;
+            this.gbCadastrada.Text = "groupBox1";
+            // 
             // cadastrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +101,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.dGImoveisCadastrados);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.gbCadastrada);
             this.Name = "cadastrada";
             this.Text = "cadastrada";
             this.Load += new System.EventHandler(this.cadastrada_Load);
@@ -106,6 +117,7 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dGImoveisCadastrados;
+        private System.Windows.Forms.GroupBox gbCadastrada;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

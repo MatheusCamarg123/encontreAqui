@@ -32,8 +32,11 @@ namespace Definição_do_objetivo_do_sistema
             this.label1 = new System.Windows.Forms.Label();
             this.btnAbrir = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.Link = new System.Windows.Forms.TextBox();
+            this.gbFotos = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.gbFotos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +46,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label1.BackColor = System.Drawing.Color.Orange;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(129, 68);
+            this.label1.Location = new System.Drawing.Point(75, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(324, 29);
             this.label1.TabIndex = 1;
@@ -56,7 +59,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbrir.ForeColor = System.Drawing.Color.White;
-            this.btnAbrir.Location = new System.Drawing.Point(208, 134);
+            this.btnAbrir.Location = new System.Drawing.Point(94, 214);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(168, 35);
             this.btnAbrir.TabIndex = 2;
@@ -66,7 +69,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(535, 29);
+            this.pictureBox.Location = new System.Drawing.Point(425, 18);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(853, 575);
             this.pictureBox.TabIndex = 3;
@@ -75,6 +78,11 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // pictureBox1
             // 
+            this.Link.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Link.Location = new System.Drawing.Point(39, 127);
+            this.Link.Name = "Link";
+            this.Link.Size = new System.Drawing.Size(290, 26);
+            this.Link.TabIndex = 4;
             this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
             this.pictureBox1.Location = new System.Drawing.Point(-58, -26);
             this.pictureBox1.Name = "pictureBox1";
@@ -82,6 +90,19 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // gbFotos
+            // 
+            this.gbFotos.Controls.Add(this.Link);
+            this.gbFotos.Controls.Add(this.pictureBox);
+            this.gbFotos.Controls.Add(this.btnAbrir);
+            this.gbFotos.Controls.Add(this.label1);
+            this.gbFotos.Location = new System.Drawing.Point(110, 11);
+            this.gbFotos.Name = "gbFotos";
+            this.gbFotos.Size = new System.Drawing.Size(1314, 612);
+            this.gbFotos.TabIndex = 5;
+            this.gbFotos.TabStop = false;
+            this.gbFotos.Text = "groupBox1";
             // 
             // frmFotos
             // 
@@ -93,13 +114,15 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.gbFotos);
             this.Name = "frmFotos";
             this.Text = "Fotos";
             this.Load += new System.EventHandler(this.frmFotos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.gbFotos.ResumeLayout(false);
+            this.gbFotos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -107,6 +130,8 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAbrir;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.TextBox Link;
+        private System.Windows.Forms.GroupBox gbFotos;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

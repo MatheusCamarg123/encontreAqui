@@ -144,6 +144,16 @@ namespace Definição_do_objetivo_do_sistema
         private void PessoaJuridica_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+
+            {
+                WindowState = FormWindowState.Maximized;
+
+
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbJuridica.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbJuridica.Height) / 2;
+                gbJuridica.Location = new Point(x, y);
+
+            }
         }
 
         private void PessoaJuridica_Shown(object sender, EventArgs e)

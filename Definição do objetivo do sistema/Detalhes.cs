@@ -50,7 +50,15 @@ namespace Definição_do_objetivo_do_sistema
 
         private void Detalhes_Load(object sender, EventArgs e)
         {
-            
+            {
+                WindowState = FormWindowState.Maximized;
+
+
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbDetalhess.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbDetalhess.Height) / 2;
+                gbDetalhess.Location = new Point(x, y);
+
+            }
         }
 
         private void mostrarFotos()
@@ -93,6 +101,11 @@ namespace Definição_do_objetivo_do_sistema
         }
 
         private void fotomovel_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

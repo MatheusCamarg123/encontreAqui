@@ -43,6 +43,12 @@ namespace Definição_do_objetivo_do_sistema
             this.txtPont = new System.Windows.Forms.TextBox();
             this.txtEst = new System.Windows.Forms.TextBox();
             this.txtCid = new System.Windows.Forms.TextBox();
+            this.mtCep = new System.Windows.Forms.MaskedTextBox();
+            this.gbDetalhe = new System.Windows.Forms.GroupBox();
+            this.gbBanheiro.SuspendLayout();
+            this.gbQuarto.SuspendLayout();
+            this.gbVagas.SuspendLayout();
+            this.gbDetalhe.SuspendLayout();
             this.txtCep = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,6 +61,17 @@ namespace Definição_do_objetivo_do_sistema
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Orange;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(388, 33);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(311, 38);
+            this.textBox1.TabIndex = 61;
+            this.textBox1.Text = "Características do imóvel";
+            // 
             // btnCadastro
             // 
             this.btnCadastro.BackColor = System.Drawing.Color.Orange;
@@ -62,13 +79,157 @@ namespace Definição_do_objetivo_do_sistema
             this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCadastro.Location = new System.Drawing.Point(526, 555);
+            this.btnCadastro.Location = new System.Drawing.Point(378, 455);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(272, 41);
             this.btnCadastro.TabIndex = 11;
             this.btnCadastro.Text = "Cadastrar ";
             this.btnCadastro.UseVisualStyleBackColor = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnEncontrar_Click);
+            // 
+            // gbBanheiro
+            // 
+            this.gbBanheiro.BackColor = System.Drawing.Color.Indigo;
+            this.gbBanheiro.Controls.Add(this.radioButton4);
+            this.gbBanheiro.Controls.Add(this.radioButton5);
+            this.gbBanheiro.Controls.Add(this.radioButton6);
+            this.gbBanheiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbBanheiro.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbBanheiro.Location = new System.Drawing.Point(398, 118);
+            this.gbBanheiro.Name = "gbBanheiro";
+            this.gbBanheiro.Size = new System.Drawing.Size(291, 74);
+            this.gbBanheiro.TabIndex = 35;
+            this.gbBanheiro.TabStop = false;
+            this.gbBanheiro.Text = "Número de banheiros";
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(198, 29);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(45, 22);
+            this.radioButton4.TabIndex = 2;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "3+";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(107, 29);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(35, 22);
+            this.radioButton5.TabIndex = 1;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "2";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(6, 29);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(35, 22);
+            this.radioButton6.TabIndex = 0;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "1";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // gbQuarto
+            // 
+            this.gbQuarto.BackColor = System.Drawing.Color.Indigo;
+            this.gbQuarto.Controls.Add(this.radioButton3);
+            this.gbQuarto.Controls.Add(this.radioButton2);
+            this.gbQuarto.Controls.Add(this.radioButton1);
+            this.gbQuarto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbQuarto.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbQuarto.Location = new System.Drawing.Point(41, 118);
+            this.gbQuarto.Name = "gbQuarto";
+            this.gbQuarto.Size = new System.Drawing.Size(291, 74);
+            this.gbQuarto.TabIndex = 34;
+            this.gbQuarto.TabStop = false;
+            this.gbQuarto.Text = "Número de quartos";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(198, 29);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(45, 22);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "3+";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(107, 29);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(35, 22);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 29);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(35, 22);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // gbVagas
+            // 
+            this.gbVagas.BackColor = System.Drawing.Color.Indigo;
+            this.gbVagas.Controls.Add(this.radioButton7);
+            this.gbVagas.Controls.Add(this.radioButton8);
+            this.gbVagas.Controls.Add(this.radioButton9);
+            this.gbVagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbVagas.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbVagas.Location = new System.Drawing.Point(742, 118);
+            this.gbVagas.Name = "gbVagas";
+            this.gbVagas.Size = new System.Drawing.Size(291, 74);
+            this.gbVagas.TabIndex = 36;
+            this.gbVagas.TabStop = false;
+            this.gbVagas.Text = "Vagas de carro";
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(198, 29);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(45, 22);
+            this.radioButton7.TabIndex = 2;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "3+";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(107, 29);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(35, 22);
+            this.radioButton8.TabIndex = 1;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "2";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(6, 29);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(35, 22);
+            this.radioButton9.TabIndex = 0;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "1";
+            this.radioButton9.UseVisualStyleBackColor = true;
             // 
             // txtReg
             // 
@@ -86,7 +247,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblRegiao.AutoSize = true;
             this.lblRegiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegiao.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblRegiao.Location = new System.Drawing.Point(539, 167);
+            this.lblRegiao.Location = new System.Drawing.Point(406, 221);
             this.lblRegiao.Name = "lblRegiao";
             this.lblRegiao.Size = new System.Drawing.Size(70, 24);
             this.lblRegiao.TabIndex = 63;
@@ -97,7 +258,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblBairro.AutoSize = true;
             this.lblBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBairro.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblBairro.Location = new System.Drawing.Point(547, 472);
+            this.lblBairro.Location = new System.Drawing.Point(415, 377);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(59, 24);
             this.lblBairro.TabIndex = 64;
@@ -108,7 +269,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblMetros.AutoSize = true;
             this.lblMetros.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMetros.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMetros.Location = new System.Drawing.Point(443, 419);
+            this.lblMetros.Location = new System.Drawing.Point(325, 351);
             this.lblMetros.Name = "lblMetros";
             this.lblMetros.Size = new System.Drawing.Size(166, 24);
             this.lblMetros.TabIndex = 65;
@@ -119,7 +280,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblCep.AutoSize = true;
             this.lblCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCep.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCep.Location = new System.Drawing.Point(561, 371);
+            this.lblCep.Location = new System.Drawing.Point(425, 325);
             this.lblCep.Name = "lblCep";
             this.lblCep.Size = new System.Drawing.Size(48, 24);
             this.lblCep.TabIndex = 66;
@@ -130,7 +291,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblPonto.AutoSize = true;
             this.lblPonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPonto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPonto.Location = new System.Drawing.Point(427, 317);
+            this.lblPonto.Location = new System.Drawing.Point(311, 296);
             this.lblPonto.Name = "lblPonto";
             this.lblPonto.Size = new System.Drawing.Size(182, 24);
             this.lblPonto.TabIndex = 67;
@@ -141,7 +302,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblEstado.Location = new System.Drawing.Point(541, 261);
+            this.lblEstado.Location = new System.Drawing.Point(406, 272);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(68, 24);
             this.lblEstado.TabIndex = 68;
@@ -152,7 +313,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblCidade.AutoSize = true;
             this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidade.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCidade.Location = new System.Drawing.Point(539, 214);
+            this.lblCidade.Location = new System.Drawing.Point(407, 246);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(70, 24);
             this.lblCidade.TabIndex = 69;
@@ -304,8 +465,44 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1.TabIndex = 98;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.mtCep.BackColor = System.Drawing.Color.Orange;
+            this.mtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtCep.Location = new System.Drawing.Point(472, 325);
+            this.mtCep.Mask = "000-0000";
+            this.mtCep.Name = "mtCep";
+            this.mtCep.Size = new System.Drawing.Size(141, 26);
+            this.mtCep.TabIndex = 76;
+            this.mtCep.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // Cadastro_Detalhes
+            // gbDetalhe
+            // 
+            this.gbDetalhe.Controls.Add(this.mtCep);
+            this.gbDetalhe.Controls.Add(this.txtCid);
+            this.gbDetalhe.Controls.Add(this.txtEst);
+            this.gbDetalhe.Controls.Add(this.txtPont);
+            this.gbDetalhe.Controls.Add(this.txtMet);
+            this.gbDetalhe.Controls.Add(this.txtBai);
+            this.gbDetalhe.Controls.Add(this.lblCidade);
+            this.gbDetalhe.Controls.Add(this.lblEstado);
+            this.gbDetalhe.Controls.Add(this.lblPonto);
+            this.gbDetalhe.Controls.Add(this.lblCep);
+            this.gbDetalhe.Controls.Add(this.lblMetros);
+            this.gbDetalhe.Controls.Add(this.lblBairro);
+            this.gbDetalhe.Controls.Add(this.lblRegiao);
+            this.gbDetalhe.Controls.Add(this.txtReg);
+            this.gbDetalhe.Controls.Add(this.gbVagas);
+            this.gbDetalhe.Controls.Add(this.textBox1);
+            this.gbDetalhe.Controls.Add(this.btnCadastro);
+            this.gbDetalhe.Controls.Add(this.gbBanheiro);
+            this.gbDetalhe.Controls.Add(this.gbQuarto);
+            this.gbDetalhe.Location = new System.Drawing.Point(121, 49);
+            this.gbDetalhe.Name = "gbDetalhe";
+            this.gbDetalhe.Size = new System.Drawing.Size(1118, 557);
+            this.gbDetalhe.TabIndex = 77;
+            this.gbDetalhe.TabStop = false;
+            this.gbDetalhe.Text = "groupBox1";
+            // 
+            // Cadastro_detalhes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -335,11 +532,20 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.txtReg);
             this.Controls.Add(this.btnCadastro);
             this.Name = "Cadastro_Detalhes";
+            this.Controls.Add(this.gbDetalhe);
+            this.Name = "Cadastro_detalhes";
             this.Text = "Detalhes";
             this.Load += new System.EventHandler(this.Detalhes_Load);
+            this.gbBanheiro.ResumeLayout(false);
+            this.gbBanheiro.PerformLayout();
+            this.gbQuarto.ResumeLayout(false);
+            this.gbQuarto.PerformLayout();
+            this.gbVagas.ResumeLayout(false);
+            this.gbVagas.PerformLayout();
+            this.gbDetalhe.ResumeLayout(false);
+            this.gbDetalhe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -367,5 +573,7 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.TextBox txtBanheiro;
         private System.Windows.Forms.TextBox txtVaga;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MaskedTextBox mtCep;
+        private System.Windows.Forms.GroupBox gbDetalhe;
     }
 }

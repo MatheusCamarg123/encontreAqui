@@ -33,11 +33,13 @@ namespace Definição_do_objetivo_do_sistema
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.gbPacotes = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gb = new System.Windows.Forms.GroupBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.gbPacotes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -99,6 +101,23 @@ namespace Definição_do_objetivo_do_sistema
             this.checkBox3.UseVisualStyleBackColor = false;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
+            // gbPacotes
+            // 
+            this.gbPacotes.Controls.Add(this.pictureBox1);
+            this.gbPacotes.Controls.Add(this.checkBox3);
+            this.gbPacotes.Controls.Add(this.checkBox2);
+            this.gbPacotes.Controls.Add(this.checkBox1);
+            this.gbPacotes.Controls.Add(this.label1);
+            this.gbPacotes.Controls.Add(this.pictureBox3);
+            this.gbPacotes.Controls.Add(this.pictureBox2);
+            this.gbPacotes.ForeColor = System.Drawing.Color.GhostWhite;
+            this.gbPacotes.Location = new System.Drawing.Point(264, 53);
+            this.gbPacotes.Name = "gbPacotes";
+            this.gbPacotes.Size = new System.Drawing.Size(912, 535);
+            this.gbPacotes.TabIndex = 7;
+            this.gbPacotes.TabStop = false;
+            this.gbPacotes.Enter += new System.EventHandler(this.gb_Enter);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
@@ -113,6 +132,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackgroundImage = global::Definição_do_objetivo_do_sistema.Properties.Resources.AAAA3;
             this.pictureBox3.Location = new System.Drawing.Point(580, 138);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(215, 311);
@@ -165,10 +185,13 @@ namespace Definição_do_objetivo_do_sistema
             this.ClientSize = new System.Drawing.Size(1377, 772);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.gb);
+            this.Controls.Add(this.gbPacotes);
             this.ForeColor = System.Drawing.Color.DarkBlue;
             this.Name = "FrmPacotes";
             this.Text = "Pacotes";
             this.Load += new System.EventHandler(this.Pacotes_Load);
+            this.gbPacotes.ResumeLayout(false);
+            this.gbPacotes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -190,5 +213,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.GroupBox gb;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.GroupBox gbPacotes;
     }
 }

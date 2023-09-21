@@ -28,6 +28,16 @@ namespace Definição_do_objetivo_do_sistema
         private void TelaInicial_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+
+            {
+                WindowState = FormWindowState.Maximized;
+
+
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbInicial.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbInicial.Height) / 2;
+                gbInicial.Location = new Point(x, y);
+
+            }
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)
@@ -36,6 +46,11 @@ namespace Definição_do_objetivo_do_sistema
             login.Show();
        
             this.Hide();
+        }
+
+        private void gbInicial_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
