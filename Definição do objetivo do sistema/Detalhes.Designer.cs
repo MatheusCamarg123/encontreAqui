@@ -52,32 +52,44 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // btnProximo
             // 
-            this.btnProximo.Location = new System.Drawing.Point(366, 494);
+            this.btnProximo.BackColor = System.Drawing.Color.Orange;
+            this.btnProximo.FlatAppearance.BorderSize = 0;
+            this.btnProximo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProximo.Location = new System.Drawing.Point(363, 675);
             this.btnProximo.Name = "btnProximo";
             this.btnProximo.Size = new System.Drawing.Size(95, 30);
             this.btnProximo.TabIndex = 2;
             this.btnProximo.Text = "Próximo";
-            this.btnProximo.UseVisualStyleBackColor = true;
+            this.btnProximo.UseVisualStyleBackColor = false;
             this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
             // 
             // btnAnterior
             // 
-            this.btnAnterior.Location = new System.Drawing.Point(215, 494);
+            this.btnAnterior.BackColor = System.Drawing.Color.Orange;
+            this.btnAnterior.FlatAppearance.BorderSize = 0;
+            this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnterior.Location = new System.Drawing.Point(210, 675);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(95, 30);
             this.btnAnterior.TabIndex = 3;
             this.btnAnterior.Text = "Anterior";
-            this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.UseVisualStyleBackColor = false;
             this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnOutra
             // 
-            this.btnOutra.Location = new System.Drawing.Point(254, 545);
+            this.btnOutra.BackColor = System.Drawing.Color.Orange;
+            this.btnOutra.FlatAppearance.BorderSize = 0;
+            this.btnOutra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOutra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOutra.Location = new System.Drawing.Point(258, 726);
             this.btnOutra.Name = "btnOutra";
             this.btnOutra.Size = new System.Drawing.Size(170, 29);
             this.btnOutra.TabIndex = 4;
             this.btnOutra.Text = "Outra casa";
-            this.btnOutra.UseVisualStyleBackColor = true;
+            this.btnOutra.UseVisualStyleBackColor = false;
             this.btnOutra.Click += new System.EventHandler(this.btnOutra_Click);
             // 
             // gbDetalhes
@@ -89,15 +101,15 @@ namespace Definição_do_objetivo_do_sistema
             this.gbDetalhes.Controls.Add(this.label1);
             this.gbDetalhes.Location = new System.Drawing.Point(143, 42);
             this.gbDetalhes.Name = "gbDetalhes";
-            this.gbDetalhes.Size = new System.Drawing.Size(657, 592);
+            this.gbDetalhes.Size = new System.Drawing.Size(657, 813);
             this.gbDetalhes.TabIndex = 5;
             this.gbDetalhes.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(91, 97);
+            this.pictureBox1.Location = new System.Drawing.Point(91, 66);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(483, 374);
+            this.pictureBox1.Size = new System.Drawing.Size(483, 697);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -107,7 +119,7 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(860, 652);
+            this.ClientSize = new System.Drawing.Size(1033, 867);
             this.Controls.Add(this.gbDetalhes);
             this.Name = "Detalhes";
             this.Text = "Detalhes";

@@ -34,15 +34,18 @@ namespace Definição_do_objetivo_do_sistema
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.gb = new System.Windows.Forms.GroupBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.gb.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -101,6 +104,9 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // gb
             // 
+            this.gb.Controls.Add(this.label4);
+            this.gb.Controls.Add(this.label3);
+            this.gb.Controls.Add(this.label2);
             this.gb.Controls.Add(this.pictureBox1);
             this.gb.Controls.Add(this.checkBox3);
             this.gb.Controls.Add(this.checkBox2);
@@ -115,16 +121,6 @@ namespace Definição_do_objetivo_do_sistema
             this.gb.TabIndex = 7;
             this.gb.TabStop = false;
             this.gb.Enter += new System.EventHandler(this.gb_Enter);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
-            this.pictureBox4.Location = new System.Drawing.Point(-58, -26);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(127, 94);
-            this.pictureBox4.TabIndex = 50;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox1
             // 
@@ -158,6 +154,46 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.MicrosoftTeams_image__3_;
+            this.pictureBox4.Location = new System.Drawing.Point(-58, -26);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(127, 94);
+            this.pictureBox4.TabIndex = 50;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(120, 501);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "R$ 4.000,00";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(368, 501);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 24);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "R$ 4.500,00";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(632, 501);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 24);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "R$ 5.000,00";
+            // 
             // FrmPacotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,10 +208,10 @@ namespace Definição_do_objetivo_do_sistema
             this.Load += new System.EventHandler(this.Pacotes_Load);
             this.gb.ResumeLayout(false);
             this.gb.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -191,5 +227,8 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.GroupBox gb;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
