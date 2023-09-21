@@ -37,9 +37,9 @@ namespace Definição_do_objetivo_do_sistema
             { WindowState = FormWindowState.Maximized;
 
 
-                int x = (Screen.PrimaryScreen.WorkingArea.Width - gb.Width) / 2;
-                int y = (Screen.PrimaryScreen.WorkingArea.Height - gb.Height) / 2;
-                gb.Location = new Point(x, y);
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbPacotes.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbPacotes.Height) / 2;
+                gbPacotes.Location = new Point(x, y);
 
             }
     }

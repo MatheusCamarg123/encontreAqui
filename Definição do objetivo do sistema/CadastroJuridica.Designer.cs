@@ -49,8 +49,10 @@ namespace Definição_do_objetivo_do_sistema
             this.label9 = new System.Windows.Forms.Label();
             this.txtsenha = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.gbJuridica = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.ocultarsenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).BeginInit();
+            this.gbJuridica.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnConfirmar
@@ -58,7 +60,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnConfirmar.BackColor = System.Drawing.Color.DarkOrange;
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmar.Location = new System.Drawing.Point(557, 512);
+            this.btnConfirmar.Location = new System.Drawing.Point(457, 511);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(228, 90);
             this.btnConfirmar.TabIndex = 35;
@@ -72,7 +74,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label1.BackColor = System.Drawing.Color.DarkOrange;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(150, 40);
+            this.label1.Location = new System.Drawing.Point(50, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1109, 66);
             this.label1.TabIndex = 34;
@@ -83,7 +85,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtLocalidade
             // 
             this.txtLocalidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocalidade.Location = new System.Drawing.Point(557, 339);
+            this.txtLocalidade.Location = new System.Drawing.Point(457, 338);
             this.txtLocalidade.Name = "txtLocalidade";
             this.txtLocalidade.Size = new System.Drawing.Size(147, 26);
             this.txtLocalidade.TabIndex = 33;
@@ -91,7 +93,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtFuncionario
             // 
             this.txtFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFuncionario.Location = new System.Drawing.Point(557, 307);
+            this.txtFuncionario.Location = new System.Drawing.Point(457, 306);
             this.txtFuncionario.Name = "txtFuncionario";
             this.txtFuncionario.Size = new System.Drawing.Size(100, 26);
             this.txtFuncionario.TabIndex = 32;
@@ -100,7 +102,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtAno
             // 
             this.txtAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAno.Location = new System.Drawing.Point(557, 275);
+            this.txtAno.Location = new System.Drawing.Point(457, 274);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(100, 26);
             this.txtAno.TabIndex = 31;
@@ -108,7 +110,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(557, 214);
+            this.txtNome.Location = new System.Drawing.Point(457, 213);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(433, 26);
             this.txtNome.TabIndex = 30;
@@ -119,7 +121,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(204, 339);
+            this.label5.Location = new System.Drawing.Point(104, 338);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 29);
             this.label5.TabIndex = 29;
@@ -131,7 +133,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(204, 307);
+            this.label4.Location = new System.Drawing.Point(104, 306);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(243, 29);
             this.label4.TabIndex = 28;
@@ -143,7 +145,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(204, 275);
+            this.label3.Location = new System.Drawing.Point(104, 274);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(333, 29);
             this.label3.TabIndex = 27;
@@ -155,7 +157,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(204, 214);
+            this.label2.Location = new System.Drawing.Point(104, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(237, 29);
             this.label2.TabIndex = 26;
@@ -164,7 +166,7 @@ namespace Definição_do_objetivo_do_sistema
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(557, 246);
+            this.textBox1.Location = new System.Drawing.Point(457, 245);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(147, 26);
             this.textBox1.TabIndex = 37;
@@ -175,7 +177,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(204, 246);
+            this.label6.Location = new System.Drawing.Point(104, 245);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 29);
             this.label6.TabIndex = 36;
@@ -184,7 +186,7 @@ namespace Definição_do_objetivo_do_sistema
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(557, 371);
+            this.textBox2.Location = new System.Drawing.Point(457, 370);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(147, 26);
             this.textBox2.TabIndex = 39;
@@ -196,7 +198,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(204, 371);
+            this.label7.Location = new System.Drawing.Point(104, 370);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(109, 29);
             this.label7.TabIndex = 38;
@@ -206,7 +208,7 @@ namespace Definição_do_objetivo_do_sistema
             // ocultarsenha
             // 
             this.ocultarsenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.view;
-            this.ocultarsenha.Location = new System.Drawing.Point(719, 435);
+            this.ocultarsenha.Location = new System.Drawing.Point(619, 434);
             this.ocultarsenha.Name = "ocultarsenha";
             this.ocultarsenha.Size = new System.Drawing.Size(22, 26);
             this.ocultarsenha.TabIndex = 46;
@@ -216,7 +218,7 @@ namespace Definição_do_objetivo_do_sistema
             // versenha
             // 
             this.versenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.view;
-            this.versenha.Location = new System.Drawing.Point(719, 403);
+            this.versenha.Location = new System.Drawing.Point(619, 402);
             this.versenha.Name = "versenha";
             this.versenha.Size = new System.Drawing.Size(22, 26);
             this.versenha.TabIndex = 45;
@@ -226,7 +228,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtconfsenha
             // 
             this.txtconfsenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtconfsenha.Location = new System.Drawing.Point(557, 435);
+            this.txtconfsenha.Location = new System.Drawing.Point(457, 434);
             this.txtconfsenha.Name = "txtconfsenha";
             this.txtconfsenha.PasswordChar = '*';
             this.txtconfsenha.Size = new System.Drawing.Size(147, 26);
@@ -237,7 +239,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(204, 435);
+            this.label9.Location = new System.Drawing.Point(104, 434);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(215, 29);
             this.label9.TabIndex = 44;
@@ -246,7 +248,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtsenha
             // 
             this.txtsenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsenha.Location = new System.Drawing.Point(557, 403);
+            this.txtsenha.Location = new System.Drawing.Point(457, 402);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.PasswordChar = '*';
             this.txtsenha.Size = new System.Drawing.Size(147, 26);
@@ -257,11 +259,40 @@ namespace Definição_do_objetivo_do_sistema
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(204, 403);
+            this.label8.Location = new System.Drawing.Point(104, 402);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 29);
             this.label8.TabIndex = 42;
             this.label8.Text = "Senha:";
+            // 
+            // gbJuridica
+            // 
+            this.gbJuridica.Controls.Add(this.ocultarsenha);
+            this.gbJuridica.Controls.Add(this.versenha);
+            this.gbJuridica.Controls.Add(this.txtconfsenha);
+            this.gbJuridica.Controls.Add(this.label9);
+            this.gbJuridica.Controls.Add(this.txtsenha);
+            this.gbJuridica.Controls.Add(this.label8);
+            this.gbJuridica.Controls.Add(this.textBox2);
+            this.gbJuridica.Controls.Add(this.label7);
+            this.gbJuridica.Controls.Add(this.textBox1);
+            this.gbJuridica.Controls.Add(this.label6);
+            this.gbJuridica.Controls.Add(this.btnConfirmar);
+            this.gbJuridica.Controls.Add(this.label1);
+            this.gbJuridica.Controls.Add(this.txtLocalidade);
+            this.gbJuridica.Controls.Add(this.txtFuncionario);
+            this.gbJuridica.Controls.Add(this.txtAno);
+            this.gbJuridica.Controls.Add(this.txtNome);
+            this.gbJuridica.Controls.Add(this.label5);
+            this.gbJuridica.Controls.Add(this.label4);
+            this.gbJuridica.Controls.Add(this.label3);
+            this.gbJuridica.Controls.Add(this.label2);
+            this.gbJuridica.Location = new System.Drawing.Point(100, 1);
+            this.gbJuridica.Name = "gbJuridica";
+            this.gbJuridica.Size = new System.Drawing.Size(1192, 623);
+            this.gbJuridica.TabIndex = 47;
+            this.gbJuridica.TabStop = false;
+            this.gbJuridica.Text = "groupBox1";
             // 
             // CadastroJuridica
             // 
@@ -269,34 +300,16 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1358, 753);
-            this.Controls.Add(this.ocultarsenha);
-            this.Controls.Add(this.versenha);
-            this.Controls.Add(this.txtconfsenha);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtsenha);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtLocalidade);
-            this.Controls.Add(this.txtFuncionario);
-            this.Controls.Add(this.txtAno);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.gbJuridica);
             this.Name = "CadastroJuridica";
             this.Text = "Pessoa Juridica";
             this.Load += new System.EventHandler(this.PessoaJuridica_Load);
             this.Shown += new System.EventHandler(this.PessoaJuridica_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.ocultarsenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).EndInit();
+            this.gbJuridica.ResumeLayout(false);
+            this.gbJuridica.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -321,5 +334,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtsenha;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox gbJuridica;
     }
 }

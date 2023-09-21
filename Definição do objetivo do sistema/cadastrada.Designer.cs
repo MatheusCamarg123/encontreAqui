@@ -32,6 +32,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dGImoveisCadastrados = new System.Windows.Forms.DataGridView();
+            this.gbCadastrada = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dGImoveisCadastrados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +70,15 @@ namespace Definição_do_objetivo_do_sistema
             this.dGImoveisCadastrados.TabIndex = 10;
             this.dGImoveisCadastrados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGImoveisCadastrados_CellContentClick);
             // 
+            // gbCadastrada
+            // 
+            this.gbCadastrada.Location = new System.Drawing.Point(12, 26);
+            this.gbCadastrada.Name = "gbCadastrada";
+            this.gbCadastrada.Size = new System.Drawing.Size(1464, 781);
+            this.gbCadastrada.TabIndex = 11;
+            this.gbCadastrada.TabStop = false;
+            this.gbCadastrada.Text = "groupBox1";
+            // 
             // cadastrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -78,6 +88,7 @@ namespace Definição_do_objetivo_do_sistema
             this.Controls.Add(this.dGImoveisCadastrados);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.gbCadastrada);
             this.Name = "cadastrada";
             this.Text = "cadastrada";
             this.Load += new System.EventHandler(this.cadastrada_Load);
@@ -92,5 +103,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dGImoveisCadastrados;
+        private System.Windows.Forms.GroupBox gbCadastrada;
     }
 }

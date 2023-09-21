@@ -40,8 +40,10 @@ namespace Definição_do_objetivo_do_sistema
             this.versenha = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbPFPJ = new System.Windows.Forms.ComboBox();
+            this.gbLogin = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gbLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAcessar
@@ -49,7 +51,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnAcessar.BackColor = System.Drawing.Color.DarkOrange;
             this.btnAcessar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcessar.ForeColor = System.Drawing.Color.White;
-            this.btnAcessar.Location = new System.Drawing.Point(552, 318);
+            this.btnAcessar.Location = new System.Drawing.Point(535, 318);
             this.btnAcessar.Name = "btnAcessar";
             this.btnAcessar.Size = new System.Drawing.Size(194, 76);
             this.btnAcessar.TabIndex = 5;
@@ -62,7 +64,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(395, 204);
+            this.label5.Location = new System.Drawing.Point(378, 204);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 25);
             this.label5.TabIndex = 6;
@@ -70,7 +72,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // txtCpfcnpj
             // 
-            this.txtCpfcnpj.Location = new System.Drawing.Point(552, 209);
+            this.txtCpfcnpj.Location = new System.Drawing.Point(535, 209);
             this.txtCpfcnpj.Name = "txtCpfcnpj";
             this.txtCpfcnpj.Size = new System.Drawing.Size(279, 20);
             this.txtCpfcnpj.TabIndex = 7;
@@ -80,7 +82,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(443, 270);
+            this.label6.Location = new System.Drawing.Point(426, 270);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 25);
             this.label6.TabIndex = 8;
@@ -88,7 +90,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(552, 270);
+            this.txtSenha.Location = new System.Drawing.Point(535, 270);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(194, 20);
@@ -102,7 +104,7 @@ namespace Definição_do_objetivo_do_sistema
             this.cCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.cCadastrar.Location = new System.Drawing.Point(465, 531);
+            this.cCadastrar.Location = new System.Drawing.Point(448, 531);
             this.cCadastrar.Name = "cCadastrar";
             this.cCadastrar.Size = new System.Drawing.Size(383, 35);
             this.cCadastrar.TabIndex = 11;
@@ -116,7 +118,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label1.BackColor = System.Drawing.Color.DarkOrange;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(174, 9);
+            this.label1.Location = new System.Drawing.Point(157, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(885, 146);
             this.label1.TabIndex = 12;
@@ -126,7 +128,7 @@ namespace Definição_do_objetivo_do_sistema
             // versenha
             // 
             this.versenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.hide;
-            this.versenha.Location = new System.Drawing.Point(768, 270);
+            this.versenha.Location = new System.Drawing.Point(751, 270);
             this.versenha.Name = "versenha";
             this.versenha.Size = new System.Drawing.Size(23, 20);
             this.versenha.TabIndex = 14;
@@ -137,7 +139,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 402);
+            this.pictureBox1.Location = new System.Drawing.Point(36, 368);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(216, 228);
             this.pictureBox1.TabIndex = 13;
@@ -153,11 +155,31 @@ namespace Definição_do_objetivo_do_sistema
             this.cbPFPJ.Items.AddRange(new object[] {
             "PJ",
             "PF"});
-            this.cbPFPJ.Location = new System.Drawing.Point(600, 572);
+            this.cbPFPJ.Location = new System.Drawing.Point(583, 572);
             this.cbPFPJ.Name = "cbPFPJ";
             this.cbPFPJ.Size = new System.Drawing.Size(124, 24);
             this.cbPFPJ.TabIndex = 15;
             this.cbPFPJ.SelectedIndexChanged += new System.EventHandler(this.cbPFPJ_SelectedIndexChanged);
+            // 
+            // gbLogin
+            // 
+            this.gbLogin.Controls.Add(this.pictureBox1);
+            this.gbLogin.Controls.Add(this.cbPFPJ);
+            this.gbLogin.Controls.Add(this.versenha);
+            this.gbLogin.Controls.Add(this.label1);
+            this.gbLogin.Controls.Add(this.cCadastrar);
+            this.gbLogin.Controls.Add(this.txtSenha);
+            this.gbLogin.Controls.Add(this.label6);
+            this.gbLogin.Controls.Add(this.txtCpfcnpj);
+            this.gbLogin.Controls.Add(this.label5);
+            this.gbLogin.Controls.Add(this.btnAcessar);
+            this.gbLogin.Location = new System.Drawing.Point(17, 0);
+            this.gbLogin.Name = "gbLogin";
+            this.gbLogin.Size = new System.Drawing.Size(1118, 627);
+            this.gbLogin.TabIndex = 16;
+            this.gbLogin.TabStop = false;
+            this.gbLogin.Text = "groupBox1";
+            this.gbLogin.Enter += new System.EventHandler(this.gbLogin_Enter);
             // 
             // frmBV
             // 
@@ -165,24 +187,16 @@ namespace Definição_do_objetivo_do_sistema
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1216, 631);
-            this.Controls.Add(this.cbPFPJ);
-            this.Controls.Add(this.versenha);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cCadastrar);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtCpfcnpj);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnAcessar);
+            this.Controls.Add(this.gbLogin);
             this.Name = "frmBV";
             this.Text = "Bem - Vindo";
             this.Load += new System.EventHandler(this.frmBV_Load);
             this.Validated += new System.EventHandler(this.frmBV_Validated);
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gbLogin.ResumeLayout(false);
+            this.gbLogin.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -197,5 +211,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox versenha;
         private System.Windows.Forms.ComboBox cbPFPJ;
+        private System.Windows.Forms.GroupBox gbLogin;
     }
 }

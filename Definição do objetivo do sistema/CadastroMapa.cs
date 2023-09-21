@@ -30,6 +30,16 @@ namespace Definição_do_objetivo_do_sistema
         private void CadastroMapa_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+
+            {
+                WindowState = FormWindowState.Maximized;
+
+
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbMapa.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbMapa.Height) / 2;
+                gbMapa.Location = new Point(x, y);
+
+            }
         }
 
         private void label9_Click(object sender, EventArgs e)

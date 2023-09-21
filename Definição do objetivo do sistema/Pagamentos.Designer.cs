@@ -51,8 +51,10 @@ namespace Definição_do_objetivo_do_sistema
             this.btnconfirmado = new System.Windows.Forms.Button();
             this.mtvencimento = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gbPagamentos = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gbPagamentos.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblpagamentos
@@ -60,7 +62,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblpagamentos.AutoSize = true;
             this.lblpagamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpagamentos.ForeColor = System.Drawing.Color.White;
-            this.lblpagamentos.Location = new System.Drawing.Point(275, 51);
+            this.lblpagamentos.Location = new System.Drawing.Point(220, 14);
             this.lblpagamentos.Name = "lblpagamentos";
             this.lblpagamentos.Size = new System.Drawing.Size(296, 33);
             this.lblpagamentos.TabIndex = 0;
@@ -71,7 +73,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblpix.AutoSize = true;
             this.lblpix.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpix.ForeColor = System.Drawing.Color.White;
-            this.lblpix.Location = new System.Drawing.Point(167, 216);
+            this.lblpix.Location = new System.Drawing.Point(112, 179);
             this.lblpix.Name = "lblpix";
             this.lblpix.Size = new System.Drawing.Size(35, 20);
             this.lblpix.TabIndex = 1;
@@ -82,7 +84,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblcc.AutoSize = true;
             this.lblcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcc.ForeColor = System.Drawing.Color.White;
-            this.lblcc.Location = new System.Drawing.Point(159, 262);
+            this.lblcc.Location = new System.Drawing.Point(104, 225);
             this.lblcc.Name = "lblcc";
             this.lblcc.Size = new System.Drawing.Size(138, 20);
             this.lblcc.TabIndex = 2;
@@ -93,7 +95,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblcd.AutoSize = true;
             this.lblcd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcd.ForeColor = System.Drawing.Color.White;
-            this.lblcd.Location = new System.Drawing.Point(167, 171);
+            this.lblcd.Location = new System.Drawing.Point(112, 134);
             this.lblcd.Name = "lblcd";
             this.lblcd.Size = new System.Drawing.Size(130, 20);
             this.lblcd.TabIndex = 3;
@@ -104,7 +106,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblboleto.AutoSize = true;
             this.lblboleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblboleto.ForeColor = System.Drawing.Color.White;
-            this.lblboleto.Location = new System.Drawing.Point(167, 124);
+            this.lblboleto.Location = new System.Drawing.Point(112, 87);
             this.lblboleto.Name = "lblboleto";
             this.lblboleto.Size = new System.Drawing.Size(55, 20);
             this.lblboleto.TabIndex = 4;
@@ -118,7 +120,7 @@ namespace Definição_do_objetivo_do_sistema
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.boletinho);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(107, 108);
+            this.groupBox1.Location = new System.Drawing.Point(52, 71);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(42, 186);
             this.groupBox1.TabIndex = 17;
@@ -171,7 +173,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // txtcartaonumero
             // 
-            this.txtcartaonumero.Location = new System.Drawing.Point(492, 154);
+            this.txtcartaonumero.Location = new System.Drawing.Point(437, 117);
             this.txtcartaonumero.Name = "txtcartaonumero";
             this.txtcartaonumero.Size = new System.Drawing.Size(274, 20);
             this.txtcartaonumero.TabIndex = 19;
@@ -183,7 +185,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblnomecartao.AutoSize = true;
             this.lblnomecartao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnomecartao.ForeColor = System.Drawing.Color.White;
-            this.lblnomecartao.Location = new System.Drawing.Point(335, 125);
+            this.lblnomecartao.Location = new System.Drawing.Point(280, 88);
             this.lblnomecartao.Name = "lblnomecartao";
             this.lblnomecartao.Size = new System.Drawing.Size(49, 18);
             this.lblnomecartao.TabIndex = 21;
@@ -196,7 +198,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblnumerocartao.AutoSize = true;
             this.lblnumerocartao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnumerocartao.ForeColor = System.Drawing.Color.White;
-            this.lblnumerocartao.Location = new System.Drawing.Point(335, 153);
+            this.lblnumerocartao.Location = new System.Drawing.Point(280, 116);
             this.lblnumerocartao.Name = "lblnumerocartao";
             this.lblnumerocartao.Size = new System.Drawing.Size(95, 18);
             this.lblnumerocartao.TabIndex = 22;
@@ -208,7 +210,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblcvv.AutoSize = true;
             this.lblcvv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcvv.ForeColor = System.Drawing.Color.White;
-            this.lblcvv.Location = new System.Drawing.Point(335, 185);
+            this.lblcvv.Location = new System.Drawing.Point(280, 148);
             this.lblcvv.Name = "lblcvv";
             this.lblcvv.Size = new System.Drawing.Size(151, 18);
             this.lblcvv.TabIndex = 23;
@@ -220,7 +222,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblvencimento.AutoSize = true;
             this.lblvencimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvencimento.ForeColor = System.Drawing.Color.White;
-            this.lblvencimento.Location = new System.Drawing.Point(586, 188);
+            this.lblvencimento.Location = new System.Drawing.Point(531, 151);
             this.lblvencimento.Name = "lblvencimento";
             this.lblvencimento.Size = new System.Drawing.Size(86, 18);
             this.lblvencimento.TabIndex = 24;
@@ -229,7 +231,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // txtcvv
             // 
-            this.txtcvv.Location = new System.Drawing.Point(492, 186);
+            this.txtcvv.Location = new System.Drawing.Point(437, 149);
             this.txtcvv.Name = "txtcvv";
             this.txtcvv.Size = new System.Drawing.Size(56, 20);
             this.txtcvv.TabIndex = 25;
@@ -238,7 +240,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(492, 125);
+            this.txtnome.Location = new System.Drawing.Point(437, 88);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(274, 20);
             this.txtnome.TabIndex = 27;
@@ -254,7 +256,7 @@ namespace Definição_do_objetivo_do_sistema
             "2x",
             "3x",
             "4x"});
-            this.cbparcelas.Location = new System.Drawing.Point(492, 218);
+            this.cbparcelas.Location = new System.Drawing.Point(437, 181);
             this.cbparcelas.Name = "cbparcelas";
             this.cbparcelas.Size = new System.Drawing.Size(121, 21);
             this.cbparcelas.TabIndex = 28;
@@ -265,7 +267,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblparcelas.AutoSize = true;
             this.lblparcelas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblparcelas.ForeColor = System.Drawing.Color.White;
-            this.lblparcelas.Location = new System.Drawing.Point(339, 217);
+            this.lblparcelas.Location = new System.Drawing.Point(284, 180);
             this.lblparcelas.Name = "lblparcelas";
             this.lblparcelas.Size = new System.Drawing.Size(66, 18);
             this.lblparcelas.TabIndex = 29;
@@ -277,7 +279,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnconfirmado.BackColor = System.Drawing.Color.DarkOrange;
             this.btnconfirmado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnconfirmado.ForeColor = System.Drawing.Color.White;
-            this.btnconfirmado.Location = new System.Drawing.Point(342, 354);
+            this.btnconfirmado.Location = new System.Drawing.Point(287, 317);
             this.btnconfirmado.Name = "btnconfirmado";
             this.btnconfirmado.Size = new System.Drawing.Size(144, 41);
             this.btnconfirmado.TabIndex = 30;
@@ -287,7 +289,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             // mtvencimento
             // 
-            this.mtvencimento.Location = new System.Drawing.Point(678, 188);
+            this.mtvencimento.Location = new System.Drawing.Point(623, 151);
             this.mtvencimento.Mask = "00/00";
             this.mtvencimento.Name = "mtvencimento";
             this.mtvencimento.Size = new System.Drawing.Size(55, 20);
@@ -298,7 +300,7 @@ namespace Definição_do_objetivo_do_sistema
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.QR_CODE;
-            this.pictureBox1.Location = new System.Drawing.Point(509, 125);
+            this.pictureBox1.Location = new System.Drawing.Point(454, 88);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(163, 157);
             this.pictureBox1.TabIndex = 32;
@@ -306,38 +308,49 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1.Visible = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // gbPagamentos
+            // 
+            this.gbPagamentos.Controls.Add(this.pictureBox1);
+            this.gbPagamentos.Controls.Add(this.mtvencimento);
+            this.gbPagamentos.Controls.Add(this.btnconfirmado);
+            this.gbPagamentos.Controls.Add(this.lblparcelas);
+            this.gbPagamentos.Controls.Add(this.cbparcelas);
+            this.gbPagamentos.Controls.Add(this.txtnome);
+            this.gbPagamentos.Controls.Add(this.txtcvv);
+            this.gbPagamentos.Controls.Add(this.lblvencimento);
+            this.gbPagamentos.Controls.Add(this.lblcvv);
+            this.gbPagamentos.Controls.Add(this.lblnumerocartao);
+            this.gbPagamentos.Controls.Add(this.lblnomecartao);
+            this.gbPagamentos.Controls.Add(this.txtcartaonumero);
+            this.gbPagamentos.Controls.Add(this.groupBox1);
+            this.gbPagamentos.Controls.Add(this.lblboleto);
+            this.gbPagamentos.Controls.Add(this.lblcd);
+            this.gbPagamentos.Controls.Add(this.lblcc);
+            this.gbPagamentos.Controls.Add(this.lblpix);
+            this.gbPagamentos.Controls.Add(this.lblpagamentos);
+            this.gbPagamentos.Location = new System.Drawing.Point(55, 37);
+            this.gbPagamentos.Name = "gbPagamentos";
+            this.gbPagamentos.Size = new System.Drawing.Size(716, 389);
+            this.gbPagamentos.TabIndex = 33;
+            this.gbPagamentos.TabStop = false;
+            this.gbPagamentos.Text = "groupBox2";
+            // 
             // Pagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.mtvencimento);
-            this.Controls.Add(this.btnconfirmado);
-            this.Controls.Add(this.lblparcelas);
-            this.Controls.Add(this.cbparcelas);
-            this.Controls.Add(this.txtnome);
-            this.Controls.Add(this.txtcvv);
-            this.Controls.Add(this.lblvencimento);
-            this.Controls.Add(this.lblcvv);
-            this.Controls.Add(this.lblnumerocartao);
-            this.Controls.Add(this.lblnomecartao);
-            this.Controls.Add(this.txtcartaonumero);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblboleto);
-            this.Controls.Add(this.lblcd);
-            this.Controls.Add(this.lblcc);
-            this.Controls.Add(this.lblpix);
-            this.Controls.Add(this.lblpagamentos);
+            this.Controls.Add(this.gbPagamentos);
             this.Name = "Pagamentos";
             this.Text = ",";
             this.Load += new System.EventHandler(this.Pagamentos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gbPagamentos.ResumeLayout(false);
+            this.gbPagamentos.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -365,5 +378,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.Button btnconfirmado;
         private System.Windows.Forms.MaskedTextBox mtvencimento;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox gbPagamentos;
     }
 }

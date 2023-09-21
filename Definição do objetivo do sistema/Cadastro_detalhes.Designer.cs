@@ -57,9 +57,11 @@ namespace Definição_do_objetivo_do_sistema
             this.txtEst = new System.Windows.Forms.TextBox();
             this.txtCid = new System.Windows.Forms.TextBox();
             this.mtCep = new System.Windows.Forms.MaskedTextBox();
+            this.gbDetalhe = new System.Windows.Forms.GroupBox();
             this.gbBanheiro.SuspendLayout();
             this.gbQuarto.SuspendLayout();
             this.gbVagas.SuspendLayout();
+            this.gbDetalhe.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -67,7 +69,7 @@ namespace Definição_do_objetivo_do_sistema
             this.textBox1.BackColor = System.Drawing.Color.Orange;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(509, 82);
+            this.textBox1.Location = new System.Drawing.Point(388, 33);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(311, 38);
             this.textBox1.TabIndex = 61;
@@ -78,7 +80,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnCadastro.BackColor = System.Drawing.Color.Orange;
             this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCadastro.Location = new System.Drawing.Point(499, 504);
+            this.btnCadastro.Location = new System.Drawing.Point(378, 455);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(272, 41);
             this.btnCadastro.TabIndex = 60;
@@ -94,7 +96,7 @@ namespace Definição_do_objetivo_do_sistema
             this.gbBanheiro.Controls.Add(this.radioButton6);
             this.gbBanheiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbBanheiro.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gbBanheiro.Location = new System.Drawing.Point(519, 167);
+            this.gbBanheiro.Location = new System.Drawing.Point(398, 118);
             this.gbBanheiro.Name = "gbBanheiro";
             this.gbBanheiro.Size = new System.Drawing.Size(291, 74);
             this.gbBanheiro.TabIndex = 35;
@@ -142,7 +144,7 @@ namespace Definição_do_objetivo_do_sistema
             this.gbQuarto.Controls.Add(this.radioButton1);
             this.gbQuarto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbQuarto.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gbQuarto.Location = new System.Drawing.Point(162, 167);
+            this.gbQuarto.Location = new System.Drawing.Point(41, 118);
             this.gbQuarto.Name = "gbQuarto";
             this.gbQuarto.Size = new System.Drawing.Size(291, 74);
             this.gbQuarto.TabIndex = 34;
@@ -190,7 +192,7 @@ namespace Definição_do_objetivo_do_sistema
             this.gbVagas.Controls.Add(this.radioButton9);
             this.gbVagas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbVagas.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gbVagas.Location = new System.Drawing.Point(863, 167);
+            this.gbVagas.Location = new System.Drawing.Point(742, 118);
             this.gbVagas.Name = "gbVagas";
             this.gbVagas.Size = new System.Drawing.Size(291, 74);
             this.gbVagas.TabIndex = 36;
@@ -234,7 +236,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.txtReg.BackColor = System.Drawing.Color.Orange;
             this.txtReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReg.Location = new System.Drawing.Point(593, 267);
+            this.txtReg.Location = new System.Drawing.Point(472, 218);
             this.txtReg.Name = "txtReg";
             this.txtReg.Size = new System.Drawing.Size(141, 26);
             this.txtReg.TabIndex = 62;
@@ -245,7 +247,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblRegiao.AutoSize = true;
             this.lblRegiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegiao.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblRegiao.Location = new System.Drawing.Point(527, 270);
+            this.lblRegiao.Location = new System.Drawing.Point(406, 221);
             this.lblRegiao.Name = "lblRegiao";
             this.lblRegiao.Size = new System.Drawing.Size(60, 20);
             this.lblRegiao.TabIndex = 63;
@@ -256,7 +258,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblBairro.AutoSize = true;
             this.lblBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBairro.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblBairro.Location = new System.Drawing.Point(536, 426);
+            this.lblBairro.Location = new System.Drawing.Point(415, 377);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(51, 20);
             this.lblBairro.TabIndex = 64;
@@ -267,7 +269,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblMetros.AutoSize = true;
             this.lblMetros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMetros.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMetros.Location = new System.Drawing.Point(446, 400);
+            this.lblMetros.Location = new System.Drawing.Point(325, 351);
             this.lblMetros.Name = "lblMetros";
             this.lblMetros.Size = new System.Drawing.Size(141, 20);
             this.lblMetros.TabIndex = 65;
@@ -278,7 +280,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblCep.AutoSize = true;
             this.lblCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCep.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCep.Location = new System.Drawing.Point(546, 374);
+            this.lblCep.Location = new System.Drawing.Point(425, 325);
             this.lblCep.Name = "lblCep";
             this.lblCep.Size = new System.Drawing.Size(41, 20);
             this.lblCep.TabIndex = 66;
@@ -289,7 +291,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblPonto.AutoSize = true;
             this.lblPonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPonto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPonto.Location = new System.Drawing.Point(432, 345);
+            this.lblPonto.Location = new System.Drawing.Point(311, 296);
             this.lblPonto.Name = "lblPonto";
             this.lblPonto.Size = new System.Drawing.Size(155, 20);
             this.lblPonto.TabIndex = 67;
@@ -300,7 +302,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblEstado.Location = new System.Drawing.Point(527, 321);
+            this.lblEstado.Location = new System.Drawing.Point(406, 272);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(60, 20);
             this.lblEstado.TabIndex = 68;
@@ -311,7 +313,7 @@ namespace Definição_do_objetivo_do_sistema
             this.lblCidade.AutoSize = true;
             this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidade.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCidade.Location = new System.Drawing.Point(528, 295);
+            this.lblCidade.Location = new System.Drawing.Point(407, 246);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(59, 20);
             this.lblCidade.TabIndex = 69;
@@ -321,7 +323,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.txtBai.BackColor = System.Drawing.Color.Orange;
             this.txtBai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBai.Location = new System.Drawing.Point(593, 423);
+            this.txtBai.Location = new System.Drawing.Point(472, 374);
             this.txtBai.Name = "txtBai";
             this.txtBai.Size = new System.Drawing.Size(141, 26);
             this.txtBai.TabIndex = 70;
@@ -330,7 +332,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.txtMet.BackColor = System.Drawing.Color.Orange;
             this.txtMet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMet.Location = new System.Drawing.Point(593, 397);
+            this.txtMet.Location = new System.Drawing.Point(472, 348);
             this.txtMet.Name = "txtMet";
             this.txtMet.Size = new System.Drawing.Size(141, 26);
             this.txtMet.TabIndex = 71;
@@ -339,7 +341,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.txtPont.BackColor = System.Drawing.Color.Orange;
             this.txtPont.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPont.Location = new System.Drawing.Point(593, 345);
+            this.txtPont.Location = new System.Drawing.Point(472, 296);
             this.txtPont.Name = "txtPont";
             this.txtPont.Size = new System.Drawing.Size(141, 26);
             this.txtPont.TabIndex = 73;
@@ -348,7 +350,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.txtEst.BackColor = System.Drawing.Color.Orange;
             this.txtEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEst.Location = new System.Drawing.Point(593, 318);
+            this.txtEst.Location = new System.Drawing.Point(472, 269);
             this.txtEst.Name = "txtEst";
             this.txtEst.Size = new System.Drawing.Size(141, 26);
             this.txtEst.TabIndex = 74;
@@ -358,7 +360,7 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.txtCid.BackColor = System.Drawing.Color.Orange;
             this.txtCid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCid.Location = new System.Drawing.Point(593, 292);
+            this.txtCid.Location = new System.Drawing.Point(472, 243);
             this.txtCid.Name = "txtCid";
             this.txtCid.Size = new System.Drawing.Size(141, 26);
             this.txtCid.TabIndex = 75;
@@ -367,39 +369,49 @@ namespace Definição_do_objetivo_do_sistema
             // 
             this.mtCep.BackColor = System.Drawing.Color.Orange;
             this.mtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtCep.Location = new System.Drawing.Point(593, 374);
+            this.mtCep.Location = new System.Drawing.Point(472, 325);
             this.mtCep.Mask = "000-0000";
             this.mtCep.Name = "mtCep";
             this.mtCep.Size = new System.Drawing.Size(141, 26);
             this.mtCep.TabIndex = 76;
             this.mtCep.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // txtBair
+            // gbDetalhe
+            // 
+            this.gbDetalhe.Controls.Add(this.mtCep);
+            this.gbDetalhe.Controls.Add(this.txtCid);
+            this.gbDetalhe.Controls.Add(this.txtEst);
+            this.gbDetalhe.Controls.Add(this.txtPont);
+            this.gbDetalhe.Controls.Add(this.txtMet);
+            this.gbDetalhe.Controls.Add(this.txtBai);
+            this.gbDetalhe.Controls.Add(this.lblCidade);
+            this.gbDetalhe.Controls.Add(this.lblEstado);
+            this.gbDetalhe.Controls.Add(this.lblPonto);
+            this.gbDetalhe.Controls.Add(this.lblCep);
+            this.gbDetalhe.Controls.Add(this.lblMetros);
+            this.gbDetalhe.Controls.Add(this.lblBairro);
+            this.gbDetalhe.Controls.Add(this.lblRegiao);
+            this.gbDetalhe.Controls.Add(this.txtReg);
+            this.gbDetalhe.Controls.Add(this.gbVagas);
+            this.gbDetalhe.Controls.Add(this.textBox1);
+            this.gbDetalhe.Controls.Add(this.btnCadastro);
+            this.gbDetalhe.Controls.Add(this.gbBanheiro);
+            this.gbDetalhe.Controls.Add(this.gbQuarto);
+            this.gbDetalhe.Location = new System.Drawing.Point(121, 49);
+            this.gbDetalhe.Name = "gbDetalhe";
+            this.gbDetalhe.Size = new System.Drawing.Size(1118, 557);
+            this.gbDetalhe.TabIndex = 77;
+            this.gbDetalhe.TabStop = false;
+            this.gbDetalhe.Text = "groupBox1";
+            // 
+            // Cadastro_detalhes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1365, 625);
-            this.Controls.Add(this.mtCep);
-            this.Controls.Add(this.txtCid);
-            this.Controls.Add(this.txtEst);
-            this.Controls.Add(this.txtPont);
-            this.Controls.Add(this.txtMet);
-            this.Controls.Add(this.txtBai);
-            this.Controls.Add(this.lblCidade);
-            this.Controls.Add(this.lblEstado);
-            this.Controls.Add(this.lblPonto);
-            this.Controls.Add(this.lblCep);
-            this.Controls.Add(this.lblMetros);
-            this.Controls.Add(this.lblBairro);
-            this.Controls.Add(this.lblRegiao);
-            this.Controls.Add(this.txtReg);
-            this.Controls.Add(this.gbVagas);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnCadastro);
-            this.Controls.Add(this.gbBanheiro);
-            this.Controls.Add(this.gbQuarto);
-            this.Name = "txtBair";
+            this.Controls.Add(this.gbDetalhe);
+            this.Name = "Cadastro_detalhes";
             this.Text = "Detalhes";
             this.Load += new System.EventHandler(this.Detalhes_Load);
             this.gbBanheiro.ResumeLayout(false);
@@ -408,8 +420,9 @@ namespace Definição_do_objetivo_do_sistema
             this.gbQuarto.PerformLayout();
             this.gbVagas.ResumeLayout(false);
             this.gbVagas.PerformLayout();
+            this.gbDetalhe.ResumeLayout(false);
+            this.gbDetalhe.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -442,5 +455,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.TextBox txtEst;
         private System.Windows.Forms.TextBox txtCid;
         private System.Windows.Forms.MaskedTextBox mtCep;
+        private System.Windows.Forms.GroupBox gbDetalhe;
     }
 }

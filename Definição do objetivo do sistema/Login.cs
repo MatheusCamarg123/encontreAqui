@@ -37,6 +37,16 @@ namespace Definição_do_objetivo_do_sistema
         private void frmBV_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+
+            {
+                WindowState = FormWindowState.Maximized;
+
+
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbLogin.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbLogin.Height) / 2;
+                gbLogin.Location = new Point(x, y);
+
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -148,6 +158,11 @@ namespace Definição_do_objetivo_do_sistema
         {
             
            
+        }
+
+        private void gbLogin_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 
