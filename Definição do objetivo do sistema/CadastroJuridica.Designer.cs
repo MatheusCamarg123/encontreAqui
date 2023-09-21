@@ -116,7 +116,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(433, 26);
             this.txtNome.TabIndex = 1;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
+            //this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // label5
             // 

@@ -293,7 +293,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtVaga.Name = "txtVaga";
             this.txtVaga.Size = new System.Drawing.Size(141, 29);
             this.txtVaga.TabIndex = 3;
-            this.txtVaga.TextChanged += new System.EventHandler(this.txtVaga_TextChanged);
+            // this.txtVaga.TextChanged += new System.EventHandler(this.txtVaga_TextChanged);
             // 
             // pictureBox1
             // 

@@ -131,7 +131,7 @@ namespace Definição_do_objetivo_do_sistema
             Form CD = new Cadastro_Detalhes();
             CD.WindowState = FormWindowState.Maximized;
             CD.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

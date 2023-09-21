@@ -72,7 +72,7 @@ namespace Definição_do_objetivo_do_sistema
             Form login = new frmBV();
             login.WindowState = FormWindowState.Maximized;
             login.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

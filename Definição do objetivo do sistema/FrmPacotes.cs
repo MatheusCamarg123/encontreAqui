@@ -79,10 +79,10 @@ namespace Definição_do_objetivo_do_sistema
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form CM = new CadastroMapa();
+            Form CM = new CadastroMapa(true, this.id_pj);
             CM.WindowState = FormWindowState.Maximized;
             CM.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

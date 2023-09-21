@@ -34,7 +34,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void CadastroMapa_Load(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
+            
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -187,14 +187,14 @@ namespace Definição_do_objetivo_do_sistema
                 Form pj = new CadastroJuridica();
                 pj.WindowState = FormWindowState.Maximized;
                 pj.Show();
-                this.Hide();
+                this.Close();
             }
             else
             {
                 Form pf = new CadastroFisica();
                 pf.WindowState = FormWindowState.Maximized;
                 pf.Show();
-                this.Hide();
+                this.Close();
             }
                 
         }

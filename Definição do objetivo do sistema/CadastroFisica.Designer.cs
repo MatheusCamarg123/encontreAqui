@@ -210,7 +210,7 @@ namespace Definição_do_objetivo_do_sistema
             this.txtsenha.PasswordChar = '*';
             this.txtsenha.Size = new System.Drawing.Size(147, 26);
             this.txtsenha.TabIndex = 7;
-            this.txtsenha.TextChanged += new System.EventHandler(this.txtsenha_TextChanged);
+            //this.txtsenha.TextChanged += new System.EventHandler(this.txtsenha_TextChanged);
             // 
             // label4
             // 
