@@ -42,6 +42,8 @@ namespace Definição_do_objetivo_do_sistema
                     MessageBox.Show("Não possui fotos");
                     Form cadastro = new cadastrada(this.qtimoveis);
                     cadastro.Show();
+                    this.Hide();
+                    return;
                 }
 
                 mostrarFotos();
@@ -51,6 +53,22 @@ namespace Definição_do_objetivo_do_sistema
         private void Detalhes_Load(object sender, EventArgs e)
         {
             
+
+
+            {
+                WindowState = FormWindowState.Maximized;
+
+
+
+
+
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbDetalhes.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbDetalhes.Height) / 2;
+                gbDetalhes.Location = new Point(x, y);
+
+
+
+            }
         }
 
         private void mostrarFotos()
@@ -80,9 +98,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.posicao = this.posicao == 0? this.fotos.Count() - 1: this.posicao - 1;
-
-            mostrarFotos();
+            
         }
 
         private void btnProximo_Click(object sender, EventArgs e)
@@ -95,6 +111,13 @@ namespace Definição_do_objetivo_do_sistema
         private void fotomovel_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            this.posicao = this.posicao == 0 ? this.fotos.Count() - 1 : this.posicao - 1;
+
+            mostrarFotos();
         }
     }
 }

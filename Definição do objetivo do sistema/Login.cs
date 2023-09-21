@@ -37,6 +37,25 @@ namespace Definição_do_objetivo_do_sistema
         private void frmBV_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+
+           
+
+
+
+            {
+                WindowState = FormWindowState.Maximized;
+
+
+
+
+
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbBemvindo.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbBemvindo.Height) / 2;
+                gbBemvindo.Location = new Point(x, y);
+
+
+
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -124,6 +143,7 @@ namespace Definição_do_objetivo_do_sistema
                 {
                     Form detalhes = new Cadastro_Detalhes();
                     detalhes.Show();
+                    this.Close();
                 }
                 else
                 {
@@ -138,9 +158,14 @@ namespace Definição_do_objetivo_do_sistema
                     };
 
                     Definição_do_objetivo_do_sistema.Models.Pagamentos p = db.Database.SqlQuery<Definição_do_objetivo_do_sistema.Models.Pagamentos>(query, parameters).SingleOrDefault();
-
+                    if (p == null)
+                    {
+                        MessageBox.Show("Usuario não fez o pagamento");
+                        return;
+                    }
                     Form cadastrada = new cadastrada(p.pacote);
                     cadastrada.Show();
+                    this.Close();
                 }
                     
             }
@@ -176,6 +201,11 @@ namespace Definição_do_objetivo_do_sistema
         {
             
            
+        }
+
+        private void gbBemvindo_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 

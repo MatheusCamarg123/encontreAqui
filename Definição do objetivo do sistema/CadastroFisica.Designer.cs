@@ -50,9 +50,11 @@ namespace Definição_do_objetivo_do_sistema
             this.versenha = new System.Windows.Forms.PictureBox();
             this.ocultarsenha = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gbPF = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ocultarsenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gbPF.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnConfirma
@@ -60,7 +62,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnConfirma.BackColor = System.Drawing.Color.DarkOrange;
             this.btnConfirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirma.ForeColor = System.Drawing.Color.White;
-            this.btnConfirma.Location = new System.Drawing.Point(576, 547);
+            this.btnConfirma.Location = new System.Drawing.Point(475, 524);
             this.btnConfirma.Name = "btnConfirma";
             this.btnConfirma.Size = new System.Drawing.Size(210, 72);
             this.btnConfirma.TabIndex = 9;
@@ -71,7 +73,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtLocalidade
             // 
             this.txtLocalidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocalidade.Location = new System.Drawing.Point(686, 340);
+            this.txtLocalidade.Location = new System.Drawing.Point(585, 317);
             this.txtLocalidade.Name = "txtLocalidade";
             this.txtLocalidade.Size = new System.Drawing.Size(147, 26);
             this.txtLocalidade.TabIndex = 4;
@@ -79,7 +81,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(686, 247);
+            this.txtNome.Location = new System.Drawing.Point(585, 224);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(403, 26);
             this.txtNome.TabIndex = 1;
@@ -90,7 +92,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(392, 340);
+            this.label5.Location = new System.Drawing.Point(291, 317);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 29);
             this.label5.TabIndex = 19;
@@ -101,7 +103,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(392, 308);
+            this.label3.Location = new System.Drawing.Point(291, 285);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(255, 29);
             this.label3.TabIndex = 17;
@@ -112,7 +114,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(392, 247);
+            this.label2.Location = new System.Drawing.Point(291, 224);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 29);
             this.label2.TabIndex = 16;
@@ -124,7 +126,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label1.BackColor = System.Drawing.Color.DarkOrange;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(121, 43);
+            this.label1.Location = new System.Drawing.Point(20, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1161, 66);
             this.label1.TabIndex = 15;
@@ -135,7 +137,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtData
             // 
             this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtData.Location = new System.Drawing.Point(686, 308);
+            this.txtData.Location = new System.Drawing.Point(585, 285);
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(78, 26);
@@ -146,7 +148,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(686, 398);
+            this.txtEmail.Location = new System.Drawing.Point(585, 375);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(427, 26);
             this.txtEmail.TabIndex = 6;
@@ -157,7 +159,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(392, 398);
+            this.label6.Location = new System.Drawing.Point(291, 375);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 29);
             this.label6.TabIndex = 30;
@@ -167,7 +169,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtCpf
             // 
             this.txtCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpf.Location = new System.Drawing.Point(686, 276);
+            this.txtCpf.Location = new System.Drawing.Point(585, 253);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(147, 26);
             this.txtCpf.TabIndex = 2;
@@ -177,7 +179,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(392, 276);
+            this.label7.Location = new System.Drawing.Point(291, 253);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(71, 29);
             this.label7.TabIndex = 32;
@@ -186,7 +188,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtTelefone
             // 
             this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone.Location = new System.Drawing.Point(686, 369);
+            this.txtTelefone.Location = new System.Drawing.Point(585, 346);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(147, 26);
             this.txtTelefone.TabIndex = 5;
@@ -196,7 +198,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(392, 369);
+            this.label8.Location = new System.Drawing.Point(291, 346);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(125, 29);
             this.label8.TabIndex = 34;
@@ -205,19 +207,18 @@ namespace Definição_do_objetivo_do_sistema
             // txtsenha
             // 
             this.txtsenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsenha.Location = new System.Drawing.Point(686, 430);
+            this.txtsenha.Location = new System.Drawing.Point(585, 407);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.PasswordChar = '*';
             this.txtsenha.Size = new System.Drawing.Size(147, 26);
             this.txtsenha.TabIndex = 7;
-            //this.txtsenha.TextChanged += new System.EventHandler(this.txtsenha_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(392, 430);
+            this.label4.Location = new System.Drawing.Point(291, 407);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 29);
             this.label4.TabIndex = 36;
@@ -226,7 +227,7 @@ namespace Definição_do_objetivo_do_sistema
             // txtconfsenha
             // 
             this.txtconfsenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtconfsenha.Location = new System.Drawing.Point(686, 462);
+            this.txtconfsenha.Location = new System.Drawing.Point(585, 439);
             this.txtconfsenha.Name = "txtconfsenha";
             this.txtconfsenha.PasswordChar = '*';
             this.txtconfsenha.Size = new System.Drawing.Size(147, 26);
@@ -238,7 +239,7 @@ namespace Definição_do_objetivo_do_sistema
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(392, 462);
+            this.label9.Location = new System.Drawing.Point(291, 439);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(215, 29);
             this.label9.TabIndex = 38;
@@ -247,7 +248,7 @@ namespace Definição_do_objetivo_do_sistema
             // versenha
             // 
             this.versenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.view;
-            this.versenha.Location = new System.Drawing.Point(848, 430);
+            this.versenha.Location = new System.Drawing.Point(747, 407);
             this.versenha.Name = "versenha";
             this.versenha.Size = new System.Drawing.Size(22, 26);
             this.versenha.TabIndex = 39;
@@ -257,7 +258,7 @@ namespace Definição_do_objetivo_do_sistema
             // ocultarsenha
             // 
             this.ocultarsenha.Image = global::Definição_do_objetivo_do_sistema.Properties.Resources.view;
-            this.ocultarsenha.Location = new System.Drawing.Point(848, 462);
+            this.ocultarsenha.Location = new System.Drawing.Point(747, 439);
             this.ocultarsenha.Name = "ocultarsenha";
             this.ocultarsenha.Size = new System.Drawing.Size(22, 26);
             this.ocultarsenha.TabIndex = 40;
@@ -274,33 +275,42 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
+            // gbPF
+            // 
+            this.gbPF.Controls.Add(this.ocultarsenha);
+            this.gbPF.Controls.Add(this.versenha);
+            this.gbPF.Controls.Add(this.txtconfsenha);
+            this.gbPF.Controls.Add(this.label9);
+            this.gbPF.Controls.Add(this.txtsenha);
+            this.gbPF.Controls.Add(this.label4);
+            this.gbPF.Controls.Add(this.txtTelefone);
+            this.gbPF.Controls.Add(this.label8);
+            this.gbPF.Controls.Add(this.txtCpf);
+            this.gbPF.Controls.Add(this.label7);
+            this.gbPF.Controls.Add(this.txtEmail);
+            this.gbPF.Controls.Add(this.label6);
+            this.gbPF.Controls.Add(this.txtData);
+            this.gbPF.Controls.Add(this.btnConfirma);
+            this.gbPF.Controls.Add(this.txtLocalidade);
+            this.gbPF.Controls.Add(this.txtNome);
+            this.gbPF.Controls.Add(this.label5);
+            this.gbPF.Controls.Add(this.label3);
+            this.gbPF.Controls.Add(this.label2);
+            this.gbPF.Controls.Add(this.label1);
+            this.gbPF.Location = new System.Drawing.Point(101, 23);
+            this.gbPF.Name = "gbPF";
+            this.gbPF.Size = new System.Drawing.Size(1214, 633);
+            this.gbPF.TabIndex = 51;
+            this.gbPF.TabStop = false;
+            // 
             // CadastroFisica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1353, 750);
+            this.Controls.Add(this.gbPF);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ocultarsenha);
-            this.Controls.Add(this.versenha);
-            this.Controls.Add(this.txtconfsenha);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtsenha);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtTelefone);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtCpf);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtData);
-            this.Controls.Add(this.btnConfirma);
-            this.Controls.Add(this.txtLocalidade);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "CadastroFisica";
             this.Text = "Pessoa Fisica";
             this.Load += new System.EventHandler(this.CodigoFisica_Load);
@@ -308,8 +318,9 @@ namespace Definição_do_objetivo_do_sistema
             ((System.ComponentModel.ISupportInitialize)(this.versenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ocultarsenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gbPF.ResumeLayout(false);
+            this.gbPF.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -335,5 +346,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.PictureBox versenha;
         private System.Windows.Forms.PictureBox ocultarsenha;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox gbPF;
     }
 }

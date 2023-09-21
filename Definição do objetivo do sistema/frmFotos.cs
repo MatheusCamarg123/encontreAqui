@@ -92,6 +92,7 @@ namespace Definição_do_objetivo_do_sistema
             {
 
                 string query = @"INSERT INTO fotos (foto,id_imovel ) VALUES (@pfotos, @pid_imovel)";
+                MessageBox.Show("i: " + this.id_imovel);
 
                 var parameters = new[]
 
@@ -99,7 +100,7 @@ namespace Definição_do_objetivo_do_sistema
 
                     new MySqlParameter("@pfotos", url ),
 
-                    new MySqlParameter("@pid_imovel", id_imovel )
+                    new MySqlParameter("@pid_imovel", this.id_imovel )
 
                 };
 

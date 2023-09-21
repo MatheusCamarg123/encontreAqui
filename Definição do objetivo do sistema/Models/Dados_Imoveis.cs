@@ -46,15 +46,15 @@ namespace Definição_do_objetivo_do_sistema.Models
 
         [Column("banheir")]
 
-        public int banheir { get; set; }
+        public int? banheir { get; set; }
 
         [Column("quart")]
 
-        public int quart { get; set; }
+        public int? quart { get; set; }
 
         [Column("vag")]
 
-        public int vag { get; set; }
+        public int? vag { get; set; }
 
 
 

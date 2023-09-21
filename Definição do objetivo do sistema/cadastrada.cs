@@ -25,7 +25,7 @@ namespace Definição_do_objetivo_do_sistema
 
             {
 
-                string query = "SELECT * FROM encontre_aqui.dados_imoveis LIMIT " + qtimoveis+";";
+                string query = "SELECT * FROM encontre_aqui.cadastro_detalhes LIMIT " + qtimoveis+";";
 
                 List <Dados_Imoveis> imoveis = db.Database.SqlQuery<Dados_Imoveis>(query).ToList();
 
@@ -46,6 +46,7 @@ namespace Definição_do_objetivo_do_sistema
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("i: "+ this.idProdutoSelecionado);
             Form Detalhes = new Detalhes(this.idProdutoSelecionado, this.qtimoveis);
             Detalhes.Show();
         }
@@ -54,11 +55,8 @@ namespace Definição_do_objetivo_do_sistema
         {
             if (e.RowIndex >= 0)
             {
-                int id;
-                if (int.TryParse(dGImoveisCadastrados.Rows[e.RowIndex].Cells["id"].Value.ToString(), out id))
-                {
-                    this.idProdutoSelecionado = id;
-                }
+                this.idProdutoSelecionado = Convert.ToInt32(dGImoveisCadastrados.Rows[e.RowIndex].Cells["id"].Value.ToString());
+                MessageBox.Show("selecionado: " + this.idProdutoSelecionado);
             }
         }
 

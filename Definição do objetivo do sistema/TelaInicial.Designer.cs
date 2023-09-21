@@ -33,16 +33,18 @@ namespace Definição_do_objetivo_do_sistema
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnIniciar = new System.Windows.Forms.Button();
+            this.gbInicial = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gbInicial.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(57, 165);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 184);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(660, 479);
+            this.pictureBox1.Size = new System.Drawing.Size(566, 383);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -63,7 +65,7 @@ namespace Definição_do_objetivo_do_sistema
             this.btnIniciar.BackColor = System.Drawing.Color.DarkOrange;
             this.btnIniciar.FlatAppearance.BorderSize = 0;
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(997, 563);
+            this.btnIniciar.Location = new System.Drawing.Point(923, 480);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(252, 140);
             this.btnIniciar.TabIndex = 1;
@@ -71,20 +73,31 @@ namespace Definição_do_objetivo_do_sistema
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
+            // gbInicial
+            // 
+            this.gbInicial.Controls.Add(this.btnIniciar);
+            this.gbInicial.Controls.Add(this.pictureBox1);
+            this.gbInicial.Location = new System.Drawing.Point(74, 66);
+            this.gbInicial.Name = "gbInicial";
+            this.gbInicial.Size = new System.Drawing.Size(1413, 646);
+            this.gbInicial.TabIndex = 7;
+            this.gbInicial.TabStop = false;
+            this.gbInicial.Text = "groupBox1";
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1367, 757);
-            this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.gbInicial);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "TelaInicial";
             this.Text = "TelaInicial";
             this.Load += new System.EventHandler(this.TelaInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gbInicial.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,5 +108,6 @@ namespace Definição_do_objetivo_do_sistema
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.GroupBox gbInicial;
     }
 }

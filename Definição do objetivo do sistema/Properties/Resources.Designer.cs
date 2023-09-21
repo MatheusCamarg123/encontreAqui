@@ -83,6 +83,16 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aaaaaaaa {
+            get {
+                object obj = ResourceManager.GetObject("aaaaaaaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AAAAAAAAAAAA {
             get {
                 object obj = ResourceManager.GetObject("AAAAAAAAAAAA", resourceCulture);
@@ -776,6 +786,16 @@ namespace Definição_do_objetivo_do_sistema.Properties {
         internal static System.Drawing.Bitmap img63826b4315a2b33 {
             get {
                 object obj = ResourceManager.GetObject("img63826b4315a2b33", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jdskjdks {
+            get {
+                object obj = ResourceManager.GetObject("jdskjdks", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -139,6 +139,13 @@ namespace Definição_do_objetivo_do_sistema
                 };
 
                     int imov_id = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
+
+                    if (imov_id == null)
+                    {
+                        MessageBox.Show("Não cadastrou a casa");
+                        return;
+                    }
+                    MessageBox.Show("i: " + imov_id);
                     MessageBox.Show("Detalhes do imóvel cadastrados com sucesso :)");
                     Form Cadastro_detalhes = new frmFotos(imov_id);
                     Cadastro_detalhes.Show();
@@ -161,7 +168,24 @@ namespace Definição_do_objetivo_do_sistema
 
         private void Detalhes_Load(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
 
+
+
+            {
+                WindowState = FormWindowState.Maximized;
+
+
+
+
+
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbDetalhess.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbDetalhess.Height) / 2;
+                gbDetalhess.Location = new Point(x, y);
+
+
+
+            }
         }
 
         private void cMobiliado_CheckedChanged(object sender, EventArgs e)

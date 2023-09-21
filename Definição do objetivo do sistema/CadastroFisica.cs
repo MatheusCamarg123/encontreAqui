@@ -137,8 +137,25 @@ namespace Definição_do_objetivo_do_sistema
 
         private void CodigoFisica_Load(object sender, EventArgs e)
         {
-           
-            
+            WindowState = FormWindowState.Maximized;
+
+
+
+            {
+                WindowState = FormWindowState.Maximized;
+
+
+
+
+
+                int x = (Screen.PrimaryScreen.WorkingArea.Width - gbPF.Width) / 2;
+                int y = (Screen.PrimaryScreen.WorkingArea.Height - gbPF.Height) / 2;
+                gbPF.Location = new Point(x, y);
+
+
+
+            }
+
         }
 
         private void txtData_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
